@@ -19,7 +19,8 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "graasp", // Usually your GitHub org/user name.
-  projectName: "graasp-docs", // Usually your repo name.
+  projectName: "docs", // Usually your repo name.
+  deploymentBranch: "gh-pages",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -110,15 +111,15 @@ const config = {
             items: [
               {
                 label: "User Tutorials",
-                to: "docs/user/intro",
+                to: "user/intro",
               },
               {
                 label: "Developer",
-                to: "docs/developer",
+                to: "developer/intro",
               },
               {
                 label: "App Development",
-                to: "docs/developer/apps/intro",
+                to: "/developer/apps/intro",
               },
             ],
           },

@@ -6,7 +6,7 @@ type HomepageLinkItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<"svg">>;
   description: JSX.Element;
-  buttonText: string;
+  to: string;
 };
 
 const HomePageLinkList: HomepageLinkItem[] = [
@@ -21,7 +21,7 @@ const HomePageLinkList: HomepageLinkItem[] = [
       </>
     ),
     Svg: require("@site/static/img/home-developer.svg").default,
-    buttonText: "Go to Docs !",
+    to: "developer/intro",
   },
   {
     title: "User Resources",
@@ -32,15 +32,15 @@ const HomePageLinkList: HomepageLinkItem[] = [
       </>
     ),
     Svg: require("@site/static/img/home-user-resources.svg").default,
-    buttonText: "Learn how to use Graasp!",
+    to: "user/intro",
   },
 ];
 
-const HomepageLink = ({ title, description, Svg }: HomepageLinkItem) => {
+const HomepageLink = ({ title, description, Svg, to }: HomepageLinkItem) => {
   return (
     <div className="mx-auto my-4 max-w-md md:max-w-lg border rounded-lg hover:ring ring-indigo-500 hover:ease-in-out duration-300">
       <Link
-        to={"developer/intro"}
+        to={to}
         className="no-underline text-current hover:no-underline hover:text-current"
       >
         <div className="p-4">
@@ -53,12 +53,6 @@ const HomepageLink = ({ title, description, Svg }: HomepageLinkItem) => {
               <p className="my-auto">{description}</p>
             </div>
           </div>
-          {/* <Link
-            className="button button--block button--lg"
-            to="developer/intro"
-          >
-            {buttonText}
-          </Link> */}
         </div>
       </Link>
     </div>
