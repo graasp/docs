@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Graasp Docs Blog</title>
+        <link>https://graasp.github.io/docs/blog</link>
+        <description>Graasp Docs Blog</description>
+        <lastBuildDate>Thu, 16 Feb 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Graasp Docs is born !]]></title>
+            <link>https://graasp.github.io/docs/blog/graasp-docs-birth</link>
+            <guid>https://graasp.github.io/docs/blog/graasp-docs-birth</guid>
+            <pubDate>Thu, 16 Feb 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[In pursuit of better and more efficient development]]></description>
+            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-caution alert alert--warning admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_S0QG"><p style="text-align:center"><em>In pursuit of better and more efficient development</em></p></div></div><p>What does all striving great project need ?</p><ul><li>Money? <em>Sure...</em></li><li>Smart people? <em>Yes need lots of those!</em></li><li>...</li></ul><p>DOCS! It need well organized, searchable and maintainable <strong>docs</strong> !</p><p>So, on we went to search for the best tool to build our docs.</p><p>We needed a few things in our docs:</p><ul><li>High level description of our architecture and how...</li></ul>]]></content:encoded>
+            <category>development</category>
+            <category>docs</category>
+        </item>
+    </channel>
+</rss>
