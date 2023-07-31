@@ -4,16 +4,11 @@ sidebar_position: 1
 
 # Introduction
 
-Introduction to the Graasp Developer docs.
+Welcome to the Developer docs for the Graasp online learning platform.
 
-```mermaid
-graph TB;
-  label((Example graph))
-  builder(Graasp Builder)
-  backend[Graasp API]
-  builder-->backend;
-  builder-->openAI;
-```
+This documentation focuses on how to run Graasp locally, how to participate in the development of Graasp and gives technical insights into the architecture and vision of Graasp.
+
+For a user point of view please refer to the [User docs](/user/intro)
 
 ## Getting Started
 
