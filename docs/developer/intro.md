@@ -4,18 +4,23 @@ sidebar_position: 1
 
 # Introduction
 
-Introduction to the Graasp Developer docs.
+This is the documentation of the Graasp digital education platform targeted at developers.
 
-```mermaid
-graph TB;
-  label((Example graph))
-  builder(Graasp Builder)
-  backend[Graasp API]
-  builder-->backend;
-  builder-->openAI;
-```
+:::info
 
-## Getting Started
+This is not the end user documentation nor a tutorial on how to use the platform.
+
+For the end-user documentation refer to the [User docs](/user/intro)
+
+For tutorials head to [TBA](/)
+
+:::
+
+This documentation focuses on:
+
+- the setup and installation of the platform on your machine
+- the guidelines and protocols to participate and contribute in the development of Graasp
+- a technical description of the architecture and features of Graasp
 
 Get started by **creating a new site**.
 
