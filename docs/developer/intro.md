@@ -4,13 +4,23 @@ sidebar_position: 1
 
 # Introduction
 
-Welcome to the Developer docs for the Graasp online learning platform.
+This is the documentation of the Graasp digital education platform targeted at developers.
 
-This documentation focuses on how to run Graasp locally, how to participate in the development of Graasp and gives technical insights into the architecture and vision of Graasp.
+:::info
 
-For a user point of view please refer to the [User docs](/user/intro)
+This is not the end user documentation nor a tutorial on how to use the platform.
 
-## Getting Started
+For the end-user documentation refer to the [User docs](/user/intro)
+
+For tutorials head to [TBA](/)
+
+:::
+
+This documentation focuses on:
+
+- the setup and installation of the platform on your machine
+- the guidelines and protocols to participate and contribute in the development of Graasp
+- a technical description of the architecture and features of Graasp
 
 Get started by **creating a new site**.
 
