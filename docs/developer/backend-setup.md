@@ -29,5 +29,5 @@ Now we can `yarn watch` to start backend.
 If everything went well, go `https://localhost:3000/status`, you should see OK.
 
 :::tip
-Your browser might not be able to resolve `localstack`. To use localstack with the Docker installation, it is necessary to edit your `/etc/hosts` with the following line `127.0.0.1 localstack`. This is necessary because the backend creates signed urls with the localstack container hostname. Without changing the hosts, the developpement machine cannot resolve the http://localstack hostname.
+Your browser might not be able to resolve `localstack`. To use localstack with the Docker installation, it is necessary to edit your `/etc/hosts` with the following line `127.0.0.1 localstack`. This is necessary because the backend creates signed urls with the localstack container hostname. Without changing the hosts, the development machine cannot resolve the http://localstack hostname.
 :::
