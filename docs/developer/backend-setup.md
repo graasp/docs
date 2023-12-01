@@ -20,7 +20,7 @@ Run following to get a new `SECURE_SESSION_SECRET_KEY`:
 npx @fastify/secure-session > secret-key && node -e "let fs=require('fs'),file=path.join(__dirname, 'secret-key');console.log(fs.readFileSync(file).toString('hex'));fs.unlinkSync(file)"
 ```
 
-Put the new key into `SECURE_SESSION_SECRET_KEY` field in `env.development`, and also other fields that can be the same as `SECURE_SESSION_SECRET_KEY` (use the search funtion to find them).
+Put the new key into `SECURE_SESSION_SECRET_KEY` field in `env.development`, and also other fields that can be the same as `SECURE_SESSION_SECRET_KEY` (use the search function to find them).
 
 ## Running backend
 
