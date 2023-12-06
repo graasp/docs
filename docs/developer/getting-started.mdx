@@ -44,3 +44,15 @@ You can head over to [the Graasp App Development section](/developer/apps/intro)
 ## Best practices
 
 - conventional commits
+
+## Enabling Yarn with `nvm`
+
+
+The recommended way of enabling yarn is using `corepack`
+
+Start by running `corepack enable`
+Then `corepack prepare yarn@stable --activate`
+
+You should now have yarn eabled with your version of node defined by nvm.
+
+This opperation should be repeated every time you update the version of node you use.
