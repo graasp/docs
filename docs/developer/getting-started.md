@@ -75,7 +75,7 @@ We should be all set. Run `yarn watch` to start the backend server.
 
 If everything went well, opening `https://localhost:3000/status` in your browser should greet you with "OK".
 
-If you are facing an error, check [the Troubleshooting page](/developers/trouble-shooting) to see if your issue is mentioned there.
+If you are facing an error, check [the Troubleshooting page](/developer/trouble-shooting) to see if your issue is mentioned there.
 
 :::tip
 Your browser might not be able to resolve the `localstack` domain when uploading and viewing files. To use localstack with the Docker installation, it is necessary to edit your `/etc/hosts` with the following line `127.0.0.1 localstack`. This is necessary because the backend creates signed urls with the localstack container hostname. Without changing the hosts, the development machine cannot resolve the `http://localstack` hostname.
