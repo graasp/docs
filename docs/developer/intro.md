@@ -8,11 +8,9 @@ This is the documentation of the Graasp digital education platform targeted at d
 
 :::info
 
-This is not the end user documentation nor a tutorial on how to use the platform.
+This documentation focuses on Development guides and tutorials (i.e people that write code).
 
-For the end-user documentation refer to the [User docs](/user/intro)
-
-For tutorials head to [TBA](/)
+For the end-user documentation, tutorials and reference, please go to [the User docs](/user/intro)
 
 :::
 
@@ -22,40 +20,36 @@ This documentation focuses on:
 - the guidelines and protocols to participate and contribute in the development of Graasp
 - a technical description of the architecture and features of Graasp
 
-Get started by **creating a new site**.
+## Prerequisites
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+This documentation assumes that you are familiar with the command line.
+We will guide you and tell you which commands to run, but it is best if you can understand what they will do.
 
-### What you'll need
+If you need a complete refresher on how to do web development you should have a look at [the Odin Project](https://www.theodinproject.com/)
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## What you'll need
 
-## Generate a new site
+Here we list the tools that you should have installed in order to make your development work easier.
 
-Generate a new Docusaurus site using the **classic template**.
+### Required
 
-The classic template will automatically be added to your project after you run the command:
+- A modern browser: Chrome, Firefox or others will work, choose based on your personal preference
+- [Node.js](https://nodejs.org/en/download) version 20.0 or above:
+  - We recommend to use [`nvm`, the node version manager](https://github.com/nvm-sh/nvm)
+- A code editor: we recommend that you use [VSCode](https://code.visualstudio.com) because we will be using [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) to create our development environment for the backend.
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/): to run containers
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+### Nice to have
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- [Postman](https://www.postman.com/downloads): lets you send API requests with a GUI
+- [Starship](https://starship.rs/): a utility to improve your terminal prompt (git branch, node version etc...)
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## Best practices
 
-## Start your site
+We use:
 
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at <http://localhost:3000/>.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- [Typescript](https://www.typescriptlang.org/)
+- [Linters](https://eslint.org/)
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- Test suits: [Cypress](https://www.cypress.io/) and [Playwright](https://playwright.dev/)
+- [Semantic versionning](https://semver.org/)
