@@ -1,8 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+import { themes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -127,9 +125,16 @@ const config = {
             title: "Resources",
             items: [
               {
-                label: "User Tutorials",
-                // todo: change link
-                href: "https://builder.graasp.org",
+                label: "Tutorials in English",
+                href: "https://player.graasp.org/9d80d81f-ec9d-4bfb-836a-1c6b125aef2f",
+              },
+              {
+                label: "Tutoriels en Français",
+                href: "https://player.graasp.org/bd918837-5f57-49d2-8867-1d3438377842",
+              },
+              {
+                label: "Tutorial auf Deutsch",
+                href: "https://player.graasp.org/07773683-c882-48b5-961e-1fe54833b58c",
               },
             ],
           },
@@ -179,8 +184,8 @@ const config = {
         copyright: `© 2014 - ${new Date().getFullYear()} Graasp. Built with ❤️ in 🇨🇭.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: themes.github,
+        darkTheme: themes.dracula,
       },
     }),
 

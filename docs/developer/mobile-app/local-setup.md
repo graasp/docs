@@ -11,7 +11,7 @@ For simplicity we will assume that you are using **macOS** as your operating sys
 ### XCode (needed to build and run for iOS devices)
 
 You will need to have `XCode` installed if you are planning on running the iOS version of the app.
-Link to download Xcode in the Mac app Store: https://apps.apple.com/us/app/xcode/id497799835
+Download [Xcode in the Mac app Store](https://apps.apple.com/us/app/xcode/id497799835)
 
 Once downloaded:
 
@@ -41,7 +41,7 @@ brew install openjdk@11
 
 The project needs configuration files for the google services (firebase).
 
-You should go to https://console.firebase.google.com and create a new project.
+You should go to [the firebase console](https://console.firebase.google.com) and create a new project.
 
 After that you will need to add iOS and Android sdk to your project (use the little icons on the project page).
 
