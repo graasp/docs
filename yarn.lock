@@ -3066,7 +3066,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/module-type-aliases@npm:3.0.1, @docusaurus/module-type-aliases@npm:^3.0.1":
+"@docusaurus/module-type-aliases@npm:3.0.1":
   version: 3.0.1
   resolution: "@docusaurus/module-type-aliases@npm:3.0.1"
   dependencies:
@@ -3082,6 +3082,25 @@ __metadata:
     react: "*"
     react-dom: "*"
   checksum: f1610ec8674b368bf28cc74f617e458d149a100f23d80844d7c3f8269c1a0ca453d12f633902c4556e3ada590846a1ddd809a5248f1c5d5611f52a0dd34ef472
+  languageName: node
+  linkType: hard
+
+"@docusaurus/module-type-aliases@npm:^3.0.1":
+  version: 3.1.0
+  resolution: "@docusaurus/module-type-aliases@npm:3.1.0"
+  dependencies:
+    "@docusaurus/react-loadable": "npm:5.5.2"
+    "@docusaurus/types": "npm:3.1.0"
+    "@types/history": "npm:^4.7.11"
+    "@types/react": "npm:*"
+    "@types/react-router-config": "npm:*"
+    "@types/react-router-dom": "npm:*"
+    react-helmet-async: "npm:*"
+    react-loadable: "npm:@docusaurus/react-loadable@5.5.2"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+  checksum: 37f586d29871ca68f04386815c3c9b4766413d4e4459eb8538b663967bffff62bb2ac385b0cc74ab985aaabba534ae106eb03191823af7cdbad280c2afbe01f7
   languageName: node
   linkType: hard
 
@@ -3410,6 +3429,26 @@ __metadata:
     react: ^18.0.0
     react-dom: ^18.0.0
   checksum: 90cd24012c4970c346b4bd5d1ec3c1598b0496d2cad3672fc5a73bf68e32a002dfbafc4c8c4350fc695ce7abb7f8c4b957021ea0ab64b24623cfdcb418468e95
+  languageName: node
+  linkType: hard
+
+"@docusaurus/types@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@docusaurus/types@npm:3.1.0"
+  dependencies:
+    "@mdx-js/mdx": "npm:^3.0.0"
+    "@types/history": "npm:^4.7.11"
+    "@types/react": "npm:*"
+    commander: "npm:^5.1.0"
+    joi: "npm:^17.9.2"
+    react-helmet-async: "npm:^1.3.0"
+    utility-types: "npm:^3.10.0"
+    webpack: "npm:^5.88.1"
+    webpack-merge: "npm:^5.9.0"
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: 2aa02d4604c402c78bc646aee3278c43f2d64e61275ca3f9ade1cac6f170f5d80bd60d4eee9bb1a1dd4146d3f003ccca137d7060002ec12edf4ce7dd7d54c76c
   languageName: node
   linkType: hard
 
