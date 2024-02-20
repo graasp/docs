@@ -3,6 +3,14 @@ title: Staging Updates
 unlisted: true
 ---
 
+Below are the latest changes deployed on [Graasp Staging](https://builder.stage.graasp.org).
+
+:::warning
+
+- You might need to create a new account on https://auth.stage.graasp.org since the staging environment uses a different database as production's.
+- Use a different browser or an incognito session to prevent cookie collision.
+  :::
+
 **Graasp Account:**
 
 - Translations have been updated to improve language support.
