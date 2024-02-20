@@ -5,7 +5,7 @@ unlisted: true
 
 Below are the latest changes deployed on [Graasp Staging](https://builder.stage.graasp.org).
 
-:::warning
+:::warning[Important notes]
 
 - You might need to create a new account on https://auth.stage.graasp.org since the staging environment uses a different database as production's.
 - Use a different browser or an incognito session to prevent cookie collision.
@@ -45,8 +45,11 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 - **Text Analysis introduces an auto-save feature.**
 - Calculator now supports Spanish and Italian translations.
-- Updates have been implemented for Collaborative ideation, Likert Scale, and Short Answer apps.
+- Updates have been implemented for
+  - Collaborative ideation
+  - Likert Scale
+  - Short Answer
 
-These updates aim to enrich the platform experience, providing users with enhanced functionality, improved accessibility, and a more streamlined workflow.
-
-We warmly welcome and encourage feedback from our users to continuously improve our platform. You can contact us by email admin@graasp.org or by submitting an issue in this [Github repository](https://github.com/graasp/graasp-feedback).
+:::info[For editors and developers]
+Feel free to update this text for later official release: https://github.com/graasp/docs/blob/main/blog/unlisted-staging-updates.md
+:::
