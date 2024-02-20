@@ -95,7 +95,7 @@ const config = {
             position: "right",
           },
           {
-            href: "https://github.com/graasp",
+            href: "https://github.com/graasp/docs",
             position: "right",
             label: "Github",
           },
