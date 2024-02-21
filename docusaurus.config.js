@@ -54,7 +54,12 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/graasp/docs/blob/main/",
+          editUrl: ({ blogPath }) => {
+            if (blogPath.split("/").includes("unlisted")) {
+              return "https://github.com/graasp/docs/blob/main/";
+            }
+            return undefined;
+          },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

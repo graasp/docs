@@ -65,5 +65,5 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 We warmly welcome and encourage feedback from our users to continuously improve our platform. You can contact us by email [admin@graasp.org](mailto:admin@graasp.org) or by submitting an issue in this [Github repository](https://github.com/graasp/graasp-feedback).
 
 :::info[For editors and developers]
-Feel free to update this text for later official release:
+Feel free to update this text before we officially release it using the "Edit this page" button at the end of the article
 :::
