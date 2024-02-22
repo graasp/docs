@@ -73,7 +73,7 @@ Repeat the process until you have generated all necessary keys. You can search f
 
 We should be all set. Run `yarn watch` to start the backend server.
 
-If everything went well, opening `https://localhost:3000/status` in your browser should greet you with "OK".
+If everything went well, opening `http://localhost:3000/status` in your browser should greet you with "OK".
 
 If you are facing an error, check [the Troubleshooting page](/developer/trouble-shooting) to see if your issue is mentioned there.
 
