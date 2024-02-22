@@ -1,4 +1,8 @@
-# Introduction
+---
+title: General concepts
+slug: general-concepts
+---
+
 
 Graasp can embed web applications as a resource. They should be added as an item of type `app` to access the Graasp API and get authenticated with a token.
 
