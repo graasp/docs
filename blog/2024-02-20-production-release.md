@@ -1,5 +1,9 @@
 # February 20th, 2024 - New Features and Improvements
 
+In this update, discover a more inclusive platform with email notifications now offered in Spanish and Italian. Explore the improvements in Graasp Builder, and enjoy smoother performance in Graasp Player. Exciting updates to interactive apps have been prepared, read further to see the full details!
+
+<!-- truncate -->
+
 **Authentication Enhancements:**
 
 - Emails now support Spanish and Italian languages, providing greater accessibility and inclusivity.
@@ -27,4 +31,4 @@
 
 These updates aim to enrich the platform experience, providing users with enhanced functionality, improved accessibility, and a more streamlined workflow.
 
-We warmly welcome and encourage feedback from our users to continuously improve our platform. You can contact us by email admin@graasp.org or by submitting an issue in this [Github repository](https://github.com/graasp/graasp-feedback).
+We warmly welcome and encourage feedback from our users to continuously improve our platform. You can contact us by email [admin@graasp.org](mailto:admin@graasp.org) or by submitting an issue in this [Github repository](https://github.com/graasp/graasp-feedback).

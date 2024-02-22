@@ -1,15 +1,27 @@
 ---
 title: Staging Updates
+description: Fresh updates for the Graasp platform
+# todo: change me
+date: 2024-02-21
 unlisted: true
+authors: 
+  - graasp
+  - spaenleh
+  - pyphilia
 ---
+
+Explore enhanced language support throughout the platform, with updated translations in Graasp Account and Spanish integration in Graasp Analytics. Graasp Builder now offers HTML editing and improved Chatbox functionality. Graasp Map introduces new features for easier management, while Graasp Player enhances language transitions and viewing experiences. Additionally, Text Analysis brings auto-save functionality, and various apps receive translation updates.
+
+<!-- truncate -->
 
 Below are the latest changes deployed on [Graasp Staging](https://builder.stage.graasp.org).
 
 :::warning[Important notes]
 
-- You might need to create a new account on https://auth.stage.graasp.org since the staging environment uses a different database as production's.
+- You might need to create a new account on [the staging environnement](https://auth.stage.graasp.org) since the staging environment uses a different database as production's.
 - Use a different browser or an incognito session to prevent cookie collision.
-  :::
+
+:::
 
 **Graasp Account:**
 
@@ -50,6 +62,8 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
   - Likert Scale
   - Short Answer
 
+We warmly welcome and encourage feedback from our users to continuously improve our platform. You can contact us by email [admin@graasp.org](mailto:admin@graasp.org) or by submitting an issue in this [Github repository](https://github.com/graasp/graasp-feedback).
+
 :::info[For editors and developers]
-Feel free to update this text for later official release: https://github.com/graasp/docs/blob/main/blog/unlisted-staging-updates.md
+Feel free to update this text before we officially release it using the "Edit this page" button at the end of the article
 :::
