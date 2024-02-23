@@ -122,7 +122,11 @@ const config = {
               },
               {
                 label: "App Development",
-                to: "/developer/apps/intro",
+                to: "/developer/apps/",
+              },
+              {
+                label: "Troubleshooting",
+                to: "/developer/troubleshooting/",
               },
             ],
           },
