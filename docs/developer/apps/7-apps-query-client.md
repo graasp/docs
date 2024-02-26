@@ -70,7 +70,7 @@ configureQueryClient({
 ```
 
 - `API_HOST`: The default API host. This should be configured to point toward the Graasp API or your local development server.
-- `notifier`: A function of type [`Notifier`](https://github.com/graasp/graasp-apps-query-client/blob/39ca322cca72cbc5245730600bfb844b2191c0a9/src/types.ts#L16) to process messages from the query client.
+- `notifier`: A function of type [`Notifier`](https://github.com/graasp/graasp-apps-query-client/blob/main/src/types.ts#L16) to process messages from the query client.
 - `refetchOnWindowFocus`: The name is explicit.
 - `keepPreviousData`: Keep current data when refetching new data.
 - `staleTime`: Time during which the data cannot be refetched after a fetch.
@@ -80,6 +80,77 @@ configureQueryClient({
 - `enableWebsocket`: Enable the protocol for realtime notifications by the server through websockets.
 
 ### Using the apps query client
+
+After configuration, the query client returns multiple objects that you can use throughout your app.
+
+#### `queryClient`
+This object represents the query client. You mostly need to passe it to the `QueryClientProvider`.
+
+#### `QueryClientProvider`
+This is the context in which you can put all the logic that requires the query client. Usually, you will encapsulate most of your app in this context to allow your components to use the configured query client.
+
+In the template app, this context is setup in the **Root** component.
+
+```tsx
+import {
+  GraaspContextDevTool,
+  WithLocalContext,
+  WithTokenContext,
+  useObjectState,
+} from '@graasp/apps-query-client';
+
+// Logic, theme and other stuff...
+
+const Root: FC = () => {
+  // Logic of the Root...
+  return (
+    <QueryClientProvider client={queryClient}>
+      <WithLocalContext
+        defaultValue={window.Cypress ? window.appContext : mockContext}
+        LoadingComponent={<Loader />}
+        useGetLocalContext={hooks.useGetLocalContext}
+        useAutoResize={hooks.useAutoResize}
+        onError={() => {
+          // eslint-disable-next-line no-console
+          console.error(
+            'An error occurred while fetching the context.',
+          );
+        }}
+      >
+        <WithTokenContext
+          LoadingComponent={<Loader />}
+          useAuthToken={hooks.useAuthToken}
+          onError={() => {
+            // eslint-disable-next-line no-console
+            console.error(
+              'An error occurred while requesting the token.',
+            );
+          }}
+        >
+          // This is where your app can use the query client.
+          <App />
+          {import.meta.env.DEV && (
+            <GraaspContextDevTool
+              members={mockMembers}
+              context={mockContext}
+              setContext={setMockContext}
+            />
+          )}
+        </WithTokenContext>
+      </WithLocalContext>
+      {import.meta.env.DEV && (
+        <ReactQueryDevtools position="bottom-left" />
+      )}
+    </QueryClientProvider>
+  );
+};
+```
+
+- `hooks`
+- `API_ROUTES`
+- `mutations`
+- `ReactQueryDevtools`
+- `QUERY_KEYS`
 
 :::warning
 Doc under construction.

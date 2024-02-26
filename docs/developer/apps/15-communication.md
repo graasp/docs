@@ -1,7 +1,7 @@
 # Authentication Process
 
 :::info[React Framework]
-We provide a library for React based apps, to easily connect to the API. Take a look at this [repository](https://github.com/graasp/graasp-apps-query-client).
+We provide a library for React based apps, to easily connect to the API. Go to the [query client](./7-apps-query-client.md) or take a look at this [repository](https://github.com/graasp/graasp-apps-query-client).
 :::
 
 In order to access the API and get the app token, the apps should fullfil the following requirements:
