@@ -5,8 +5,6 @@ date: 2024-02-27
 unlisted: true
 authors:
   - graasp
-  - spaenleh
-  - pyphilia
 ---
 
 Recent updates across Graasp bring significant improvements: the Quiz App now supports more languages and has improved question display. The Calculator App now saves analytics, and the Graasp Account features improved translation and a lighter bundle. Read further to see the full details!
@@ -22,18 +20,20 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
-**Graasp Apps**
+<!-- New changes -->
+
+## Graasp Apps
 
 - In the Quiz App, more languages have been added. Additionally, it addresses the display of invalid questions for players.
 - The Calculator App now features the ability to save analytics.
 - The Chatbot App has received updates as well.
 
-**Graasp Account**
+## Graasp Account
 
 The Graasp Account has been updated to improve translation and make it more gender-neutral. Additionally, a lighter bundle has been introduced.
 Backend:
 
-**Others**
+## Others
 
 Updates have been made to Italian translations for emails.
 
