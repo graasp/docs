@@ -35,7 +35,7 @@ Backend:
 
 ## Others
 
-- Graasp Builder, Graasp Player, Graasp Analytics and Graasp Account got optimized for faster loading.
+- Graasp Builder, Graasp Player, Graasp Analytics, Graasp Account and Graasp Auth got optimized for faster loading.
 - Updates have been made to Italian translations for emails.
 
 We warmly welcome and encourage feedback from our users to continuously improve our platform. You can contact us by email [admin@graasp.org](mailto:admin@graasp.org) or by submitting an issue in this [Github repository](https://github.com/graasp/graasp-feedback).
