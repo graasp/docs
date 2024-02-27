@@ -30,12 +30,13 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 ## Graasp Account
 
-The Graasp Account has been updated to improve translation and make it more gender-neutral. Additionally, a lighter bundle has been introduced.
+Graasp Account has been updated to improve translation and make it more gender-neutral. Additionally, a lighter bundle has been introduced.
 Backend:
 
 ## Others
 
-Updates have been made to Italian translations for emails.
+- Graasp Builder, Graasp Player, Graasp Analytics and Graasp Account got optimized for faster loading.
+- Updates have been made to Italian translations for emails.
 
 We warmly welcome and encourage feedback from our users to continuously improve our platform. You can contact us by email [admin@graasp.org](mailto:admin@graasp.org) or by submitting an issue in this [Github repository](https://github.com/graasp/graasp-feedback).
 
