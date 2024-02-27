@@ -10,15 +10,15 @@ When an app is added as a resource, it is linked to an item. Therefore, two adde
 
 ## Features
 
-### App Context
+### App Context {#app-context}
 
 The app context contains additional information which might be interesting for your app such as `members` or `item`.
 
-### App Actions
+### App Actions {#app-actions}
 
 App actions are analytic traces the app might save.
 
-### App Data
+### App Data {#app-data}
 
 App data are all data the app might save. App Data are created by a member and are available to in a given scope.
 
