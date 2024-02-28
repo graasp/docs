@@ -14,9 +14,15 @@ When an app is added as a resource, it is linked to an item. Therefore, two adde
 
 The app context contains additional information which might be interesting for your app such as `members` or `item`.
 
+The `members` key contains the list of users that have a permission on the item, this does not include users viewing the app in public mode. You can use this list to display the name of a user that has created some data in your app for example.
+
+The `item` key contains the properties of the item (the app instance) such as `name`, `description`, `path` etc.
+
 ### App Actions {#app-actions}
 
 App actions are analytic traces the app might save.
+
+You can only GET and POST app actions, it is not possible to delete app actions after their creation.
 
 ### App Data {#app-data}
 
