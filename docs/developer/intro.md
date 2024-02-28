@@ -35,7 +35,8 @@ Here we list the tools that you should have installed in order to make your deve
 
 - A modern browser: Chrome, Firefox or others will work, choose based on your personal preference
 - [Node.js](https://nodejs.org/en/download) version 20.0 or above:
-  - We recommend to use [`nvm`, the node version manager](https://github.com/nvm-sh/nvm)
+  - We recommend to use [`volta`, a node version manager](https://volta.sh/)
+  - You can also use [`nvm`, an older node version manager](https://github.com/nvm-sh/nvm)
 - A code editor: we recommend that you use [VSCode](https://code.visualstudio.com) because we will be using [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) to create our development environment for the backend.
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/): to run containers
 
@@ -52,4 +53,5 @@ We use:
 - [Linters](https://eslint.org/)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - Test suits: [Cypress](https://www.cypress.io/) and [Playwright](https://playwright.dev/)
+- [Storybook](https://storybook.js.org/) for component library design, prototyping and documentation
 - [Semantic versionning](https://semver.org/)

@@ -21,10 +21,23 @@ We will assume that you have a UNIX compatible machine at your disposal (Mac, Li
 If not done already please install these required tools
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) (if using Mac or Windows), on Linux you should be good with installing the docker package.
-- [Node](https://nodejs.org/en/download) version 20 or above with `nvm` (recommend)
+- [Node](https://nodejs.org/en/download) version 20 or above with `volta` or `nvm` (recommend, see the [intro section](./intro#required))
 - `git` for version control operations
 
+### Installing Yarn with `volta`
+
+Volta allows you to use global packages as if you were using local ones.
+
+```bash
+volta install node
+volta install yarn
+```
+
 ### Enabling Yarn with `nvm`
+
+:::note
+Skip this section if you are using `volta` as your package manager.
+:::
 
 Yarn is a package manager for node and javascript projects. It is faster than `npm`.
 The recommended way of enabling yarn is using `corepack`.
@@ -44,21 +57,51 @@ This operation should be repeated every time you update the version of node you 
 
 Go to the [Graasp backend repo](https://github.com/graasp/graasp) and clone it locally.
 
+:::tip
+If you are using the [`Github CLI`](https://cli.github.com/) simply `gh repo clone graasp/graasp`.
+We recommend using the Github CLI as it helps with interacting with GitHub trough the terminal if this is your thing. (We think it is is faster for a lot of things, but you are welcome to use a GUI (Graphical user interface) if you prefer.)
+:::
+
 ### Opening dev containers
 
-Open the repo in VSCode. Make sure the ["Dev Containers" extension](https://code.visualstudio.com/docs/devcontainers/tutorial#_install-the-extension) is downloaded and enabled.
+1. Open the Docker Desktop app.
 
-Then open the folder in the dev-container by using the command palette `cmd`+`shift`+`P` (or `ctrl` instead of `cmd`), and typing **Open Folder in Container**.
+:::note
+This app should run in the background. You do not need to add have it automatically start when you open your session. It simply needs to run when you want to use the backend to code.
+:::
+
+2. Open the repo in VSCode. Make sure the ["Dev Containers" extension](https://code.visualstudio.com/docs/devcontainers/tutorial#_install-the-extension) is downloaded and enabled.
+
+3. Then open the folder in the dev-container by using the command palette `cmd`+`shift`+`P` (or `ctrl` instead of `cmd`), and typing **Open Folder in Container**.
+
+4. You should now wait for VSCode to pull the containers and initialize the development environnement. You will know that the process if finished once the window says: `workspace [Dev Container: Node.js & PostgreSQL @desktop-linux]` and no more loaders are present.
+
+If you encounter an error at this stage, make sure that the Docker Desktop app is open. If you encounter an issue with the definition of the dev-container not willing to start you can open an issue on the [graasp backend repository on GitHub](https://github.com/graasp/graasp/issues/new) or send an email to [the graasp developers](mailto:dev@graasp.org). We try to offer support as best as we can.
 
 ### Installing dependencies
 
-After the containers are up and running execute `yarn` (you can do `yarn install` which is the same) in the container terminal to install dependencies.
+After the containers are up and running execute `yarn` (you can also run `yarn install` which is the same) in the dev-container terminal (in VSCode) to install the backend dependencies.
+
+:::tip
+The install command will take some time to run the first time. This is a good time to take a small break, enjoy a :coffee: or a :tea:.
+:::
+
+:::note
+If the command exits with an error you might have to allocate more resources to the docker container.
+
+For this go to the Docker Desktop app settings and under "Resources" allocate up to 8GB of RAM (depending on your system resources you might want to allocate less) and up to 4CPUs.
+:::
 
 ### Add environment variables
 
-Go to [the configuration in the Readme](https://github.com/graasp/graasp#configuration) and copy it to a new root file in your backend folder named `.env.development`.
+Open [the configuration in the README.md](https://github.com/graasp/graasp#configuration).
+Copy it to a new file named `.env.development` in the root of your backend folder.
 
-You will need to generate a few secret values. Open the `.env.development` file and look of places that ask for these.
+Most of the configuration values have already been set for you in the readme, but you will need to generate some secret keys for your application.
+
+#### Secret keys
+
+Open the `.env.development` file and look for places that ask for `<secret-key>`.
 The first one should be `SECURE_SESSION_SECRET_KEY`.
 To generate a secret you can simply run:
 
@@ -66,16 +109,46 @@ To generate a secret you can simply run:
 npx @fastify/secure-session > secret-key && node -e "let fs=require('fs'),file=path.join(__dirname, 'secret-key');console.log(fs.readFileSync(file).toString('hex'));fs.unlinkSync(file)"
 ```
 
-Replace the `<content>` placeholder with the output of the command (a string of numbers).
-Repeat the process until you have generated all necessary keys. You can search for `<content>` in the file in order to located them.
+Replace the `<secret-key>` placeholder with the output of the command (a string of numbers).
+Repeat the process until you have generated all necessary keys. You can search for `<secret-key>` in the file in order to located them  (you can use `cmd+f` to search in the file).
+
+#### Google RECAPTCHA key
+
+:::note
+This part should be optional, but if you want to be as close as possible to the how the app works in the real world, it is recommended to set it up.
+
+You will need a Google account.
+:::
+
+You should also create a google RECAPTCHA key for your local development. Generate your RECAPTCHA key from [the reCAPTCHA admin console](https://www.google.com/recaptcha/admin/create).
+
+1. Choose a name that will let you know later what the purpose of that site was. `Graasp local development` is a good starting point.
+2. Select the v3 alternative
+3. Set `localhost` as the domain
+
+This should let you generate the `<google-recaptcha-key>` (secret key for the backend) and the `VITE_RECAPTCHA_SITE_KEY` (site key to use in Graasp Auth, see later).
+
+#### OpenAI API Key
+
+:::note
+Also optional, this part allows you to have access to ChatGPT functionality in the Graasp Apps running in your local environnement.
+
+This requires an OpenAI account and a payment method. See [OpenAI documentation](https://openai.com/pricing).
+:::
 
 ### Running backend
 
-We should be all set. Run `yarn watch` to start the backend server.
+We should be all set. Run `yarn watch` in the VSCode terminal to start the backend server.
+
+Wait a moment, for the server to build, will see the `[Node] [nodemon] restarting due to changes...` text printed to the console. Wait to see:
+
+```
+[Node] {"level":30,"time":1709056074491,"pid":33974,"hostname":"4ca0ec878e31","msg":"Server listening at http://0.0.0.0:3000"}
+```
 
 If everything went well, opening `http://localhost:3000/status` in your browser should greet you with "OK".
 
-If you are facing an error, check [the Troubleshooting page](/developer/trouble-shooting) to see if your issue is mentioned there.
+If you are facing an error, check [the Troubleshooting page](./trouble-shooting) to see if your issue is mentioned there.
 
 :::tip
 Your browser might not be able to resolve the `localstack` domain when uploading and viewing files. To use localstack with the Docker installation, it is necessary to edit your `/etc/hosts` with the following line `127.0.0.1 localstack`. This is necessary because the backend creates signed urls with the localstack container hostname. Without changing the hosts, the development machine cannot resolve the `http://localstack` hostname.
