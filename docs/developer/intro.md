@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction
+# Introduction {#intro}
 
 This is the documentation of the Graasp digital education platform targeted at developers.
 
@@ -20,7 +20,7 @@ This documentation focuses on:
 - the guidelines and protocols to participate and contribute in the development of Graasp
 - a technical description of the architecture and features of Graasp
 
-## Prerequisites
+## Prerequisites {#pre-requisites}
 
 This documentation assumes that you are familiar with the command line.
 We will guide you and tell you which commands to run, but it is best if you can understand what they will do.
@@ -31,7 +31,7 @@ If you need a complete refresher on how to do web development you should have a 
 
 Here we list the tools that you should have installed in order to make your development work easier.
 
-### Required
+### Required {#required}
 
 - A modern browser: Chrome, Firefox or others will work, choose based on your personal preference
 - [Node.js](https://nodejs.org/en/download) version 20.0 or above:
@@ -40,12 +40,12 @@ Here we list the tools that you should have installed in order to make your deve
 - A code editor: we recommend that you use [VSCode](https://code.visualstudio.com) because we will be using [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) to create our development environment for the backend.
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/): to run containers
 
-### Nice to have
+### Nice to have {#nice-to-have}
 
 - [Postman](https://www.postman.com/downloads): lets you send API requests with a GUI
 - [Starship](https://starship.rs/): a utility to improve your terminal prompt (git branch, node version etc...)
 
-## Best practices
+## Best practices {#tools}
 
 We use:
 
@@ -54,4 +54,4 @@ We use:
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 - Test suits: [Cypress](https://www.cypress.io/) and [Playwright](https://playwright.dev/)
 - [Storybook](https://storybook.js.org/) for component library design, prototyping and documentation
-- [Semantic versionning](https://semver.org/)
+- [Semantic versioning](https://semver.org/)
