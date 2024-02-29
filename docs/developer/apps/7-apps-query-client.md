@@ -5,7 +5,7 @@ slug: apps-query-client
 
 # Query client for apps
 
-As you start to build your app from [the template](./5-app-template.md), you will see that it comes with a pre-configured query client. This configuration is located in `src/config/queryClient.ts` and contains everything you need to configure the apps query client.
+As you start to build your app from [the template](./app-template), you will see that it comes with a pre-configured query client. This configuration is located in `src/config/queryClient.ts` and contains everything you need to configure the apps query client.
 
 More informations on how to use the query client can be found in [its repo](https://github.com/graasp/graasp-apps-query-client).
 
@@ -84,9 +84,11 @@ configureQueryClient({
 After configuration, the query client returns multiple objects that you can use throughout your app.
 
 #### `queryClient`
+
 This object represents the query client. You mostly need to passe it to the `QueryClientProvider`.
 
 #### `QueryClientProvider`
+
 This is the context in which you can put all the logic that requires the query client. Usually, you will encapsulate most of your app in this context to allow your components to use the configured query client.
 
 In the template app, this context is setup in the **Root** component.
@@ -155,11 +157,13 @@ Hooks are available for the three data domains, [app data](./1-introduction.md#a
 For app data:
 
 ##### `useAppData`
+
 ##### `useAppDataFile`
 
 For app settings:
 
 ##### `useAppSettings`
+
 ##### `useAppSettingFile`
 
 For app actions:
@@ -167,6 +171,7 @@ For app actions:
 ##### `useAppActions`
 
 #### `mutations`
+
 - `API_ROUTES`
 - `ReactQueryDevtools`
 - `QUERY_KEYS`

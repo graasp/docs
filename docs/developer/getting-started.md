@@ -9,7 +9,7 @@ By the end of this guide you should have a working version of the Graasp platfor
 
 :::tip
 If you want to develop a Graasp app, you don't need the full setup.
-You can head over to [the Graasp App Development section](/developer/apps/intro).
+You can head over to [the Graasp App Development section](/developer/apps).
 :::
 
 :::important
@@ -141,7 +141,7 @@ Wait a moment, for the server to build, will see the `[Node] [nodemon] restartin
 
 If everything went well, opening [`http://localhost:3000/status`](http://localhost:3000/status) in your browser should greet you with "OK".
 
-If you are facing an error, check [the Troubleshooting page](./trouble-shooting) to see if your issue is mentioned there.
+If you are facing an error, check [the Troubleshooting page](./troubleshooting) to see if your issue is mentioned there.
 
 :::tip
 Your browser might not be able to resolve the `localstack` domain when uploading and viewing files. To use localstack with the Docker installation, it is necessary to edit your `/etc/hosts` with the following line `127.0.0.1 localstack`. This is necessary because the backend creates signed urls with the localstack container hostname. Without changing the hosts, the development machine cannot resolve the `http://localstack` hostname.

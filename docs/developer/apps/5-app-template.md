@@ -5,7 +5,7 @@ slug: app-template
 
 # Graasp App Template
 
-We provide a template to quickly start a new app for Graasp with the [React framework](https://react.dev/) and our [query client](./7-apps-query-client.md).
+We provide a template to quickly start a new app for Graasp with the [React framework](https://react.dev/) and our [query client](./apps-query-client).
 
 You can find the rest of the instructions on how to use the template in the [README of the template](https://github.com/graasp/graasp-app-starter-ts-vite/blob/main/README.md).
 

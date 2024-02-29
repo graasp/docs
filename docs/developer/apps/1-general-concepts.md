@@ -1,6 +1,5 @@
 ---
 title: General concepts
-slug: general-concepts
 ---
 
 

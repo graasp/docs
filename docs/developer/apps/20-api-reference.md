@@ -4,11 +4,11 @@ slug: api-reference
 ---
 
 
-All following requests need an authentication token received as described in the [guide](15-communication).
+All following requests need an authentication token received as described in the [guide](./communication).
 
 Therefore, don't forget to use `Authorization: Bearer <token>` in your request's headers.
 
-Please refer to [Introduction](1-introduction)'s vocabulary to understand the concepts.
+Please refer to [the General Concepts](./general-concepts)'s vocabulary to understand the concepts.
 
 ### Query strings
 
@@ -184,7 +184,7 @@ Within Graasp, the apps are given some information by query string:
 
 ## Parent Window
 
-Since apps are embedded in Graasp with an iframe, it is possible to communicate with the parent window using both regular `window.postMessage` and `MessageChannel`. One should first use `window.postMessage` to get the context, as well as the `MessageChannel`'s port to continue the process (see [guide](15-communcation)).
+Since apps are embedded in Graasp with an iframe, it is possible to communicate with the parent window using both regular `window.postMessage` and `MessageChannel`. One should first use `window.postMessage` to get the context, as well as the `MessageChannel`'s port to continue the process (see [guide](./communication)).
 
 ### `window.postMessage`
 
