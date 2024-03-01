@@ -9,6 +9,10 @@ As you start to build your app from [the template](./app-template), you will see
 
 More informations on how to use the query client can be found in [its repo](https://github.com/graasp/graasp-apps-query-client).
 
+:::warning
+This documentation is still under construction.
+:::
+
 ### queryClient.ts
 
 ```ts
@@ -129,7 +133,7 @@ const Root: FC = () => {
             );
           }}
         >
-          // This is where your app can use the query client.
+          {/* This is where your app can use the query client. */}
           <App />
           {import.meta.env.DEV && (
             <GraaspContextDevTool
@@ -154,28 +158,36 @@ The hooks are special functions that you can use to fetch data. To understand th
 
 Hooks are available for the three data domains, [app data](./1-general-concepts.md#app-data), [app settings](./1-general-concepts.md#app-settings), and [app actions](./1-general-concepts.md#app-actions). The `hooks` object contains all the hooks.
 
-For app data:
+<!-- TODO: complete links -->
+All the hooks described below are using the [`useQuery`](https://tanstack.com/query/v4/docs/framework/react/reference/useQuery) hook provided by the [TanStack Query package v4](https://tanstack.com/query/v4/docs/framework/react/overview).
 
 ##### `useAppData`
 
+With this hook, you can query the app data. The hook returns an object containing the `data` property. This property contains the array of [`AppData`](https://github.com/graasp/graasp-sdk/tree/main/src/app/app.ts#L48) type.
+
 ##### `useAppDataFile`
 
-For app settings:
+_To be completed. See [`useAppDataFile`](https://github.com/graasp/graasp-apps-query-client/tree/main/src/hooks/appData.ts#L57)._
 
 ##### `useAppSettings`
 
+The `data` property is an array of [`AppSetting`](https://github.com/graasp/graasp-sdk/tree/main/src/app/app.ts#L60).
+
 ##### `useAppSettingFile`
 
-For app actions:
+_To be completed. See [`useAppSettingFile`](https://github.com/graasp/graasp-apps-query-client/src/main/src/hooks/appSetting.ts#L53)._
 
 ##### `useAppActions`
 
+The `data` property is an array of [`AppAction`](https://github.com/graasp/graasp-sdk/tree/main/src/app/app.ts#L34).
+
 #### `mutations`
 
-- `API_ROUTES`
-- `ReactQueryDevtools`
-- `QUERY_KEYS`
+_To be completed. See [mutations](https://github.com/graasp/graasp-apps-query-client/tree/main/src/mutations)._
 
-:::warning
-Doc under construction.
-:::
+<!-- #### `API_ROUTES` -->
+#### `ReactQueryDevtools`
+
+This component can be used to display panel in your app to help you debug the query client.
+
+<!-- #### `QUERY_KEYS` -->

@@ -53,4 +53,4 @@ END $$;
 ```
 
 3. Then you will need to add an app item with url `http://apps.localhost:3012`.
-4. Run your app on `http://apps.localhost:3012`.
+4. Run your app on `http://apps.localhost:3012`. Set the env variable `VITE_GRAASP_APP_KEY` to the key you used to register your app in the database (here `3211293d-5e8e-4f5a-9576-7df30c2175c3`).
