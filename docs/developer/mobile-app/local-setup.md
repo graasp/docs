@@ -1,4 +1,4 @@
-# Local development
+# Developing locally
 
 This document describes the steps needed to develop on the Graasp mobile app locally.
 
