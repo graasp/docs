@@ -29,6 +29,7 @@ The Library gets some update, it now has a side menu that allows you to navigate
 - Place the description below the title for better display.
 - Eliminate any unused "None" values in the document flavor.
 - Enhance the functionality of the mode button.
+- Hide aria-description message on row ordering
 
 ## Graasp Apps
 
