@@ -8,10 +8,10 @@ Developing an app locally requires some initial data in the database. Then your 
 ```sql
 DO $$
 DECLARE
-    # random UUID
+    -- random UUID
     publisher_id UUID := '98e4bcb8-6caf-4af8-988b-600aa3af5a86';
     publisher_name varchar := 'Graasp';
-    # random UUID
+    -- random UUID
     app_id UUID := '3211293d-5e8e-4f5a-9576-7df30c2175c3';
     app_name varchar := 'MyApp';
     app_port int := 3012;
