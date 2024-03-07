@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Fresh updates for the Graasp platform
-date: 2024-03-05
+date: 2024-03-07
 unlisted: true
 authors:
   - graasp
@@ -18,32 +18,23 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
   :::
 
+This comprehensive update enhances various aspects across the Graasp platforms, introducing description placement for items, streamlined data sharing features, analytics view integration, code highlighting fixes, and resolving login issues for enhanced user experience. Read further to see the full details!
+
 <!-- needed to show title? -->
-
-## Graasp Library
-
-The Library gets some update, it now has a side menu that allows you to navigate to common pages such as the search, and recent collections. When logged in it is also possible to go directly to your public user profile and liked collections page. The app should feel faster and more responsive. Spanish translations have been added.
 
 ## Graasp Builder
 
-- Place the description below the title for better display.
-- Eliminate any unused "None" values in the document flavor.
-- Enhance the functionality of the mode button.
-- Hide aria-description message on row ordering
+- Enable the option to <strong>position the description</strong> below each item, enhancing its visibility and presentation within the interface.
 
 ## Graasp Apps
 
-- Text Analysis:
-  - Maintain the casing of text keywords in keyword or chatbot views.
-  - Enhance keyword management in the builder view for editing and filtering.
-  - Update translations for improved language support.
-- Calculator:
-  - Introduce an Analytics view for enhanced data analysis.
-  - Update Italian translations for better localization.
+- Empower reader users to seamlessly share data with other users.
+- Enhance the Quiz app by introducing an analytics view
+- Resolve highlighting issues for Python code in the Code Capsule app.
 
 ## General
 
-- Resolve the issue with item login to ensure the reuse of the same user based on the username.
+- Resolve the item login issue to guarantee seamless user reuse based on their usernames.
 
 <!-- Generic message -->
 
