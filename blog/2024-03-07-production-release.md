@@ -14,13 +14,13 @@ The new changes includes improvements for Graasp Apps, including maintaining key
 
 The Library gets some update, it now has a side menu that allows you to navigate to common pages such as the search, and recent collections. When logged in it is also possible to go directly to your public user profile and liked collections page. The app should feel faster and more responsive. Spanish translations have been added.
 
-# Graasp Builder
+## Graasp Builder
 
 - Eliminate any unused "None" values in the document flavor.
 - Enhance the functionality of the mode button.
 - Hide aria-description message on row ordering
 
-# Graasp Apps
+## Graasp Apps
 
 - Text Analysis:
   - Maintain the casing of text keywords in keyword or chatbot views.
@@ -30,7 +30,7 @@ The Library gets some update, it now has a side menu that allows you to navigate
   - Introduce an Analytics view for enhanced data analysis.
   - Update Italian translations for better localization.
 
-# General
+## General
 
 - Resolve the issue with item login to ensure the reuse of the same user based on the username.
 
