@@ -56,10 +56,11 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: ({ blogPath }) => {
             if (blogPath.split("/").includes("unlisted")) {
-              return "https://github.com/graasp/docs/blob/main/";
+              return `https://github.com/graasp/docs/blob/main/blog/${blogPath}`;
             }
             return undefined;
           },
+          blogTitle: "News and Updates from the Graasp Team",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
