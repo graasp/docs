@@ -5,7 +5,7 @@ import { themes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Graasp Docs",
-  tagline: "The Hub for everything Graasp",
+  tagline: "Enrich your Graasp experience",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -96,10 +96,6 @@ const config = {
             label: "User Resources",
           },
           { to: "/blog", label: "Blog", position: "left" },
-          {
-            type: "docsVersionDropdown",
-            position: "right",
-          },
           {
             href: "https://github.com/graasp/docs",
             position: "right",
@@ -210,6 +206,17 @@ const config = {
           return postcssOptions;
         },
       };
+    },
+  ],
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preload",
+        href: "/fonts/Nunito.ttf",
+        as: "font",
+        crossorigin: "anonymous",
+      },
     },
   ],
 };

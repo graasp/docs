@@ -7,6 +7,8 @@ authors:
   - graasp
 ---
 
+<!-- TODO: Need to add a summary here ! -->
+
 <!-- truncate -->
 
 Below are the latest changes deployed on [Graasp Staging](https://builder.stage.graasp.org).

@@ -8,6 +8,8 @@ authors:
 
 The new changes includes improvements for Graasp Apps, including maintaining keyword casing and enhancing keyword management in Text Analysis, along with introducing an Analytics view in Calculator for advanced data analysis. Additionally, General enhancements include resolving a login issue for user reuse based on usernames and improving functionality such as the mode button and hiding unnecessary messages for a cleaner interface. Read further to see the full details!
 
+<!-- truncate -->
+
 <!-- New changes -->
 
 ## Graasp Library

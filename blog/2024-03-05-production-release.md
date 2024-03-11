@@ -8,7 +8,7 @@ authors:
 
 Recent updates across Graasp bring significant improvements: the Quiz App now supports more languages and has improved question display. The Calculator App now saves analytics, and the Graasp Account features improved translation and a lighter bundle. Read further to see the full details!
 
-<!-- New changes -->
+<!-- truncate -->
 
 ## Graasp Apps
 
