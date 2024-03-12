@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Fresh updates for the Graasp platform
-date: 2024-03-07
+date: 2024-03-12
 unlisted: true
 authors:
   - graasp
@@ -20,23 +20,35 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
   :::
 
-This comprehensive update enhances various aspects across the Graasp platforms, introducing description placement for items, streamlined data sharing features, analytics view integration, code highlighting fixes, and resolving login issues for enhanced user experience. Read further to see the full details!
+The latest updates to Graasp bring numerous improvements across its modules. Highlights include a new map layout mode and dropzone displays in Graasp Builder, resolved avatar crop modal issues in Graasp Account, and significant enhancements to the Sketchfab. Read further to see the full details!
 
-<!-- needed to show title? -->
+<!-- truncate -->
 
 ## Graasp Builder
 
-- Enable the option to <strong>position the description</strong> below each item, enhancing its visibility and presentation within the interface.
+- Introducing the new map layout mode, providing users with an alternative view for organizing content, enhancing their overall experience.
+- Incorporating dropzone display for empty folders, offering clearer visual cues within the interface, improving user navigation.
+
+## Graasp Account
+
+- Resolving issues related to the avatar crop modal to enhance user customization and ensure a seamless profile visual update experience.
 
 ## Graasp Apps
 
-- Empower reader users to seamlessly share data with other users.
-- Enhance the Quiz app by introducing an analytics view
-- Resolve highlighting issues for Python code in the Code Capsule app.
+- Sketchfab:
+  - Adding Spanish translations to broaden accessibility and inclusivity.
+  - Introducing an analytic view feature for insightful data insights.
+  - Migrating to TypeScript for improved codebase maintainability.
+  - Enabling users to save actions performed while interacting with 3D models in the player view, enhancing sharing capabilities.
 
-## General
+## Graasp Library
 
-- Resolve the item login issue to guarantee seamless user reuse based on their usernames.
+- Enhancing privacy by hiding the parent items of private content.
+- Adding translations to broaden accessibility for users with different language preferences.
+
+# General
+
+- Implementing optimizations to streamline analytic traces for smoother platform performance and an enhanced user experience overall.
 
 <!-- Generic message -->
 
