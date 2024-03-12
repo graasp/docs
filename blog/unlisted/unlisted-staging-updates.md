@@ -24,7 +24,7 @@ The latest updates to Graasp bring numerous improvements across its modules. Hig
 
 <!-- truncate -->
 
-## Graasp Player
+## Graasp Player
 
 - Introducing a navigation bar to consume content linearly
 
