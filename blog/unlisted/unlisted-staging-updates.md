@@ -20,9 +20,15 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
   :::
 
-The latest updates to Graasp bring numerous improvements across its modules. Highlights include a new map layout mode and dropzone displays in Graasp Builder, resolved avatar crop modal issues in Graasp Account, and significant enhancements to the Sketchfab. Read further to see the full details!
+The latest updates to Graasp bring numerous improvements across its modules. Highlights include a <strong>navigation between sections in Graasp Player</strong>, a new map layout mode and dropzone displays in Graasp Builder, resolved avatar crop modal issues in Graasp Account, and significant enhancements to the Sketchfab. Read further to see the full details!
 
 <!-- truncate -->
+
+## Graasp Player
+
+- Introducing a navigation bar to consume content linearly
+
+![alt text](../screenshots/2024-03-12-player-navigation.png)
 
 ## Graasp Builder
 
