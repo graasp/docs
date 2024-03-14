@@ -52,7 +52,9 @@ The latest update to Graasp bring numerous improvements. Highlights include a <s
 
 ## General
 
-- Implementing optimizations to streamline analytic traces for smoother platform performance and an enhanced user experience overall.
+- Implemented optimizations to streamline analytic traces for smoother platform performance and an enhanced user experience overall.
+- Fixed an issue that prevented to change the "Show iframe" setting for link elements.
+- Improved translation of emails, the small text at the end should now be translated too.
 
 <!-- Generic message -->
 
