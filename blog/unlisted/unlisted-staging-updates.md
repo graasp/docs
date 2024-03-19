@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Fresh updates for the Graasp platform
-date: 2024-03-12
+date: 2024-03-19
 unlisted: true
 authors:
   - graasp
@@ -16,39 +16,32 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
-The latest update to Graasp bring numerous improvements. Highlights include a <strong>navigation between sections in Graasp Player</strong>, a new map layout mode and a dropzone helper in Graasp Builder. We resolved an issue that prevented the update of the profile picture in Graasp Account, and significant enhancements to the Sketchfab app. Read further to see the full details!
+The latest updates focus on enhancing user experience and ensuring linguistic accuracy within the Graasp platform. It involves implementing customizable full-screen mode within Graasp Player, renaming features for clarity, and restoring search functionality within folder views. Read further to see the full details!
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Graasp Player
+## Graasp Auth
 
-- Introducing a navigation bar. This makes navigating lessons in order a lot easier.
-
-![alt text](../screenshots/2024-03-12-player-navigation.png)
+- Enhance user experience by retaining language selection throughout the registration process.
+- Ensure language translations are up to date to provide users with accurate information.
 
 ## Graasp Builder
 
-- Introduced the new map layout mode. You can now see your items on a map (items will need to have a geo-location set). This new view completes the existing ones: List and Grid.
-- To improve the user experience in empty folders, a helper is now displayed. This should improve the first experiences of users and allow them to add content more easily on the platform.
-
-## Graasp Account
-
-- Fixed an issue preventing to update the profile picture because the modal shown to crop the image was not displaying the file.
-
-## Graasp Apps
-
-- Sketchfab:
-  - Added Spanish translations.
-  - Introduced an analytic view for insightful data insights.
-  - Migrated to TypeScript for improved codebase maintainability.
-  - The app now saves actions when users interact with a 3D model in the player view.
+- Improve the loading layout for move, copy, and shortcut modals to enhance user experience on low network.
+- Modify the term "favorite" to "bookmark" for improved clarity and consistency.
+- Restore the ability to search for items within the folder view.
 
 ## Graasp Library
 
-- Fixed an issue where a collection could display parent element that were not published. This issue only leaked the parent names, as users were not able to access the private elements. Now a collection that is published inside a private parent will show in the same way as if it was not inside that parent element allow users to organize their collections however they like without the parent structure showing in the library.
-- Updated translations to broaden accessibility for users with different language preferences.
-- Improved loading animations and reduced layout shifts after load for a better user experience.
+- Update language translations to ensure accuracy and relevancy.
+- Improve the loading layout for public profile to enhance user experience on low network.
+- Fix breadcrumbs layout for clearer navigation.
+
+## Graasp Player
+
+- Implement a feature to enable customizable full-screen mode given a parameter.
+- Update language translations to ensure accuracy and relevancy.
 
 ## General
 
