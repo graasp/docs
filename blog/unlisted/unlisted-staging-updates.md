@@ -21,6 +21,10 @@ The latest updates focus on enhancing user experience and ensuring linguistic ac
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
+## Graasp Analytics
+
+- Display analytic traces of apps.
+
 ## Graasp Auth
 
 - Enhance user experience by retaining language selection throughout the registration process.
@@ -31,6 +35,7 @@ The latest updates focus on enhancing user experience and ensuring linguistic ac
 - Improve the loading layout for move, copy, and shortcut modals to enhance user experience on low network.
 - Modify the term "favorite" to "bookmark" for improved clarity and consistency.
 - Restore the ability to search for items within the folder view.
+- Allow downloading H5p files
 
 ## Graasp Library
 
@@ -42,12 +47,6 @@ The latest updates focus on enhancing user experience and ensuring linguistic ac
 
 - Implement a feature to enable customizable full-screen mode given a parameter.
 - Update language translations to ensure accuracy and relevancy.
-
-## General
-
-- Implemented optimizations to streamline analytic traces for smoother platform performance and an enhanced user experience overall.
-- Fixed an issue that prevented to change the "Show iframe" setting for link elements.
-- Improved translation of emails, the small text at the end should now be translated too.
 
 <!-- Generic message -->
 
