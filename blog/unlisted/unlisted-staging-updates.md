@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Fresh updates for the Graasp platform
-date: 2024-03-19
+date: 2024-03-26
 unlisted: true
 authors:
   - graasp
@@ -16,37 +16,46 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
-The latest updates focus on enhancing user experience and ensuring linguistic accuracy within the Graasp platform. It involves implementing customizable full-screen mode within Graasp Player, renaming features for clarity, and restoring search functionality within folder views. Read further to see the full details!
+Through meticulous attention to detail, the Graasp team enhances clarity with refined translations, introduces advanced features like geolocation settings, and provides insightful analytics to empower users with deeper insights. Moreover, the team ensures platform security and stability by regularly updating dependencies. Read further to see the full details!
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
+## Graasp Account
+
+- Enhancing translations for improved clarity and understanding.
+- Correcting social links form to ensure complex inputs.
+- Updating dependencies to maintain optimal functionality.
+- Refining mobile color schemes for a visually pleasing experience.
+
 ## Graasp Analytics
 
-- Display analytic traces of apps.
+- Presenting insightful analytic traces for apps to illuminate usage patterns.
 
 ## Graasp Auth
 
-- Enhance user experience by retaining language selection throughout the registration process.
-- Ensure language translations are up to date to provide users with accurate information.
+- Introducing a connection indicator for enhanced user feedback.
 
 ## Graasp Builder
 
-- Improve the loading layout for move, copy, and shortcut modals to enhance user experience on low network.
-- Modify the term "favorite" to "bookmark" for improved clarity and consistency.
-- Restore the ability to search for items within the folder view.
-- Allow downloading H5p files
-
-## Graasp Library
-
-- Update language translations to ensure accuracy and relevancy.
-- Improve the loading layout for public profile to enhance user experience on low network.
-- Fix breadcrumbs layout for clearer navigation.
+- Crafting a new title for the chatbox to better resonate with users.
+- Introducing advanced settings for geolocation, providing finer control.
+- Implementing permissions within map view for a smoother user experience.
 
 ## Graasp Player
 
-- Implement a feature to enable customizable full-screen mode given a parameter.
-- Update language translations to ensure accuracy and relevancy.
+- Bringing to life the <strong>navigation island</strong> for intuitive exploration.
+
+## Graasp Apps
+
+- Unveiling an analytics view for Code Capsule, offering deeper insights.
+- Adding Italian translations to Sketchfab.
+
+## Backend
+
+- Ensuring the preservation of item language when copied.
+- Accompanying items with their respective permissions for further network optimization.
+- Updating dependencies to maintain the platform's integrity.
 
 <!-- Generic message -->
 
