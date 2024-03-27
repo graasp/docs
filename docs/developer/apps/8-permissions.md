@@ -15,7 +15,7 @@ User with `admin` permission can get/patch/delete any app data. User with `read`
 
 ## Example {#example}
 
-Consider an app with three users:
+Consider an app with four users:
 
 1. A with `admin` permission
 2. B with `read` permission
