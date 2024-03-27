@@ -11,7 +11,7 @@ Each app data has a `visibility` field. It can take two values: `member` or `ite
 
 Combined with the permission of the member on the item, it defines all the access rights. Currently, there is no difference between `read` and `write` permission when using the app API.
 
-User with `admin` permission can get/patch/delete any app data. User with `read` or `write` permission can get app data that they created or that are adressed to them (with `member` being set to their member id). App data that have their visibility set to `member` can only be seen (get) by their creator, member, all `admin`. App data with visibility set to `item` can be seen by all users, but only creator, member, and admin can patch/delete them.
+User with `admin` permission can get/patch/delete any app data. User with `read` or `write` permission can get app data that they created or that are adressed to them (with `member` being set to their member id). App data that have their visibility set to `member` can only be seen (get) by their creator, member, and all members with `admin` permission. App data with visibility set to `item` can be seen by all users, but only creator, member, and members with `admin` permission can patch/delete them.
 
 ## Example {#example}
 
