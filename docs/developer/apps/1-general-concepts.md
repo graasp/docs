@@ -27,9 +27,15 @@ You can only GET and POST app actions, it is not possible to delete app actions 
 
 App data are all data the app might save. App Data are created by a member and are available to in a given scope.
 
-- **Visibility**: Availability of the app data, either `member` or `item` (default: `member`)
+- **Visibility**: Availability of the app data, either `member` or `item` (default: `member`).
   - `member`: the app data can be managed by the creator and members with admin permission. Members with write permission can view them but cannot modify them.
   - `item`: the app data can be managed by the creator and members with admin permission. All other members can view them but cannot modify them.
+
+:::info
+
+Have look at the [permissions section](./apps-permissions) for more details on the visibility of app data and the associated permissions.
+
+:::
 
 ### App Settings
 
