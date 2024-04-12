@@ -46,5 +46,6 @@ Through meticulous attention to detail, the Graasp team enhances clarity with re
 - Ensuring the preservation of item language when copied.
 - Accompanying items with their respective permissions for further network optimization.
 - Updating dependencies to maintain the platform's integrity.
+- **Increase database capacity**: Enhance the capacity of the database infrastructure to handle higher user loads efficiently, aiming for better performance and responsiveness for all users.
 
 We warmly welcome and encourage feedback from our users to continuously improve our platform. You can contact us by email [admin@graasp.org](mailto:admin@graasp.org) or by submitting an issue in this [Github repository](https://github.com/graasp/graasp-feedback).
