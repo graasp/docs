@@ -30,7 +30,7 @@ The Graasp team prioritized transparency by prompting users to review and accept
 
 ## Graasp Player
 
-- **Add padding to prevent island to hide content**: Following a user feedback, padding adjustments were applied to prevent content from being hovered.
+- **Add padding to prevent island from hiding content**: Following a user feedback, padding adjustments were applied to prevent content from being hidden by the new navigation island.
 - **Shortcut to folders are displayed as folder cards**: Represent shortcuts to folders as distinct folder cards rather than a spread-out format, enhancing visual coherence and usability.
 - **Folder cards now display the item thumbnail**: Enhance the visual presentation of folder cards by displaying the item thumbnail if available, providing users with additional context and visual cues.
 - **Improve loading elements on navigation**: Enhance the loading indicators and transitions during navigation to improve the overall user experience and perception of responsiveness.
