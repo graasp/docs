@@ -40,6 +40,12 @@ This release bring a fresh look with a new font.
 - **New Page for export actions**: With this new page, we aim at making the export action process more visible. This page now features a detailed description of what is included in the archive that users can download.
 - **Update favicons and header color**: These small changes allow to align the website with the guidelines we have developed and make the service more identifiable.
 
+# Graasp Auth
+
+- **Introduce new font**
+- **Updated SignIn and Register buttons**: The buttons used to signin and register will now display a loader while we fetch the necessary data. Before the buttons would simply be clickable again, and users with slow connections would wonder if the action had been performed correctly. This improvement should provide users with better feedback and it should be clear that something is happening.
+- **Display errors directly below input field**: When an error occurs, we used to display a toast in the corner of the screen. For users with big screens this meant that these error messages were hard to see. We are now displaying these errors closer to where they originated so users are aware of issues related to missing email or invalid passwords for example.
+
 # Miscellaneous
 
 - **Harmonized errors set on invalid login**: the errors sent by the backend for web and mobile when users try to login with an email that is not associated with an account are now the same in order to reduce confusion.
