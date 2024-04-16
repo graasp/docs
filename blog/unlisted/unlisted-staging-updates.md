@@ -33,6 +33,13 @@ This release bring a fresh look with a new font.
 - **Update favicon and use theme color in header**
 - **Improve look of the storage bar**: The Storage bar look as been improved. This improvement is only visible on Safari and Chrome-compatible browses due to difference in implementation for Firefox. But Firefox users are not losing any functionality, the styling on the storage bar is just simpler.
 
+## Graasp Analytics
+
+- **Introduce new font**
+- **Actions now provide a useful legend**: To improve understanding and proficiency with the analyses displayed, we added a legend for the actions that explains what the action represents.
+- **New Page for export actions**: With this new page, we aim at making the export action process more visible. This page now features a detailed description of what is included in the archive that users can download.
+- **Update favicons and header color**: These small changes allow to align the website with the guidelines we have developed and make the service more identifiable.
+
 # Miscellaneous
 
 - **Harmonized errors set on invalid login**: the errors sent by the backend for web and mobile when users try to login with an email that is not associated with an account are now the same in order to reduce confusion.
