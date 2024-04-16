@@ -21,6 +21,34 @@ This release bring a fresh look with a new font.
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
+## General
+
+We're thrilled to unveil our latest visual enhancement: the introduction of a new font _Nunito_. This addition marks a pivotal moment in our journey toward revitalizing our aesthetic, amplifying our communication and reinforcing our distinct identity across all platforms. We're moving all of our interfaces to use this font, the change might take some time to be 100% effective. Let us know if we missed any spot!
+
+![library new font](../screenshots/2024-04-15-library-home-new-font.png)
+
+## Graasp Account
+
+- **Update favicon and use theme color in header**
+- **Improve look of the storage bar**: The Storage bar look as been improved. This improvement is only visible on Safari and Chrome-compatible browses due to difference in implementation for Firefox. But Firefox users are not losing any functionality, the styling on the storage bar is just simpler.
+
+## Graasp Analytics
+
+We addressed a common challenge faced in Graasp analytics: unclear data labels. Previously, users often struggled to discern the meaning behind different elements on the dashboard due to ambiguous naming conventions. To bring more clarity and organization to the analytics dashboard, we added a dialog offering a **legend** for all graphics. With clear labels and color-coded indicators, the data representation is now simpler and more intuitive. There are plenty of rooms to improve the descriptions, so if you have any feedback on the descriptions, write to us!
+
+![analytics legend](../screenshots/2024-04-15-analytics-legends.png)
+
+We've also introduced a dedicated page for our often overlooked feature: **exporting analytics**. This functionality enables users to locally save analytic data pertaining to specific items along with their related information, facilitating further analysis, sharing, or archival needs. Our new page not only showcases the contents of the downloaded archive but also emphasizes how we optimize its archival process.
+
+![analytics export page](../screenshots/2024-04-15-analytics-export-page.png)
+
+- **Update favicons and header color**: These small changes allow to align the website with the guidelines we have developed and make the service more identifiable.
+
+## Graasp Auth
+
+- **Updated SignIn and Register buttons**: The buttons used to signin and register will now display a loader while we fetch the necessary data. Before the buttons would simply be clickable again, and users with slow connections would wonder if the action had been performed correctly. This improvement should provide users with better feedback and it should be clear that something is happening.
+- **Display errors directly below input field**: When an error occurs, we used to display a toast in the corner of the screen. For users with big screens this meant that these error messages were hard to see. We are now displaying these errors closer to where they originated so users are aware of issues related to missing email or invalid passwords for example.
+
 ## Graasp Builder
 
 - **Introduce new font**: After brainstorming ideas for a new visual identity, a new font has been chosen, moving a step towards this plan.
@@ -29,39 +57,7 @@ This release bring a fresh look with a new font.
 - **Add license selection options in item settings**: In order to allow users to set the license of an item before publishing it, we added the possibility to set the license in the item settings.
 - **Update favicon**
 
-## Graasp Account
-
-- **Introduce new font**
-- **Update favicon and use theme color in header**
-- **Improve look of the storage bar**: The Storage bar look as been improved. This improvement is only visible on Safari and Chrome-compatible browses due to difference in implementation for Firefox. But Firefox users are not losing any functionality, the styling on the storage bar is just simpler.
-
-## Graasp Analytics
-
-- **Introduce new font**
-- **Actions now provide a useful legend**: To improve understanding and proficiency with the analyses displayed, we added a legend for the actions that explains what the action represents.
-- **New Page for export actions**: With this new page, we aim at making the export action process more visible. This page now features a detailed description of what is included in the archive that users can download.
-- **Update favicons and header color**: These small changes allow to align the website with the guidelines we have developed and make the service more identifiable.
-
-## Graasp Auth
-
-- **Introduce new font**
-- **Updated SignIn and Register buttons**: The buttons used to signin and register will now display a loader while we fetch the necessary data. Before the buttons would simply be clickable again, and users with slow connections would wonder if the action had been performed correctly. This improvement should provide users with better feedback and it should be clear that something is happening.
-- **Display errors directly below input field**: When an error occurs, we used to display a toast in the corner of the screen. For users with big screens this meant that these error messages were hard to see. We are now displaying these errors closer to where they originated so users are aware of issues related to missing email or invalid passwords for example.
-
-## Graasp Library
-
-- **Introduce new font**
-
-## Graasp Player
-
-Miscellaneous fixes for small bugs, or issues.
-
-## Miscellaneous
-
-- **Harmonized errors set on invalid login**: the errors sent by the backend for web and mobile when users try to login with an email that is not associated with an account are now the same in order to reduce confusion.
-- **Translations of emails have been updated to match the new features released**
-
-## Graasp Apps
+## Apps
 
 - App Chatbots
   - Fix an issue related to duplicated helper text in the chatbot config
