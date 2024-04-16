@@ -48,6 +48,7 @@ We've also introduced a dedicated page for our often overlooked feature: **expor
 
 - **Updated SignIn and Register buttons**: The buttons used to signin and register will now display a loader while we fetch the necessary data. Before the buttons would simply be clickable again, and users with slow connections would wonder if the action had been performed correctly. This improvement should provide users with better feedback and it should be clear that something is happening.
 - **Display errors directly below input field**: When an error occurs, we used to display a toast in the corner of the screen. For users with big screens this meant that these error messages were hard to see. We are now displaying these errors closer to where they originated so users are aware of issues related to missing email or invalid passwords for example.
+- **Add a checkbox to let the user enable or disable analytic traces**
 
 ## Graasp Builder
 
