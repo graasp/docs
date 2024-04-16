@@ -48,10 +48,25 @@ This release bring a fresh look with a new font.
 - **Updated SignIn and Register buttons**: The buttons used to signin and register will now display a loader while we fetch the necessary data. Before the buttons would simply be clickable again, and users with slow connections would wonder if the action had been performed correctly. This improvement should provide users with better feedback and it should be clear that something is happening.
 - **Display errors directly below input field**: When an error occurs, we used to display a toast in the corner of the screen. For users with big screens this meant that these error messages were hard to see. We are now displaying these errors closer to where they originated so users are aware of issues related to missing email or invalid passwords for example.
 
+## Graasp Library
+
+- **Introduce new font**
+
+## Graasp Player
+
+Miscellaneous fixes for small bugs, or issues.
+
 # Miscellaneous
 
 - **Harmonized errors set on invalid login**: the errors sent by the backend for web and mobile when users try to login with an email that is not associated with an account are now the same in order to reduce confusion.
 - **Translations of emails have been updated to match the new features released**
+
+## Graasp Apps
+
+- App Chatbots
+  - Fix an issue related to duplicated helper text in the chatbot config
+- App Quiz
+  - Improve feedback text shown in a text answer
 
 <!-- Generic message -->
 
