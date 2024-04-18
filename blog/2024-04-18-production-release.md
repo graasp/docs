@@ -20,7 +20,8 @@ We're thrilled to unveil our latest visual enhancement: the introduction of a ne
 ## Graasp Account
 
 - **Update favicon and use theme color in header**
-- **Improve look of the storage bar**: The Storage bar look as been improved. This improvement is only visible on Safari and Chrome-compatible browses due to difference in implementation for Firefox. But Firefox users are not losing any functionality, the styling on the storage bar is just simpler.
+- **Improve look of the storage bar**: The Storage bar look as been improved. This improvement is only visible on Safari and Chrome-compatible browsers due to difference in implementation for Firefox. But Firefox users are not losing any functionality, the styling on the storage bar is just simpler.
+- **Allow user to change username**
 
 ## Graasp Analytics
 
@@ -33,6 +34,7 @@ We've also introduced a dedicated page for our often overlooked feature: **expor
 ![analytics export page](../screenshots/2024-04-15-analytics-export-page.png)
 
 - **Update favicons and header color**: These small changes allow to align the website with the guidelines we have developed and make the service more identifiable.
+- **Fix crash when displaying shared items**
 
 ## Graasp Auth
 
