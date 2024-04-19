@@ -76,7 +76,7 @@ We use automated tools to release software versions. If you do not format your P
 
 Always review the set of changes you propose in a PR before adding reviewers.
 
-When you ask for reviews you should make sure that you are aware of what code changes you are submitting. It is easy to forget a `console.log()`, or to commit some debugging code. While this is not the end of the world you should **always respect the time and effort** that others will take to review your code. Your code is the literal representation of your work. If you want to work well, you should always take the time to review your own code to ensure it follows the standards. This is exactly the same as proof-reading an important email before sending it, you don't want typos and badly written sentences to slip in do you ?
+When you ask for reviews you should make sure that you are aware of what code changes you are submitting. It is easy to forget a `console.log()`, or to commit some debugging code. While this is not the end of the world you should **always respect the time and effort** that others will take to review your code. Your code is the literal representation of your work. If you want to work well, you should always take the time to review your own code to ensure it follows the standards. This is exactly the same as proof-reading an important email before sending it, you don't want typos and badly written sentences to slip in, do you?
 
 You can do this proof-reading when creating the PR in GitHub, as there is a nice summary of the changes presented at this time. You can also do it by opening the `Files Changed` tab after the PR has been created.
 
@@ -94,7 +94,7 @@ When sharing code with co-workers and developers alike please take the time to f
 
 ### For documents and comments where you can specify the language used {#markdown-code-blocks}
 
-GitHub supports markdown nearly everywhere from issue and pr body to review comments. You should always define the language of your code snippets. Define a code block with 3 backticks and add the language after the backticks on the first line, like so:
+GitHub supports markdown nearly everywhere from issue and Pull Request body to review comments. You should always define the language of your code snippets. Define a code block with 3 backticks and add the language after the backticks on the first line, like so:
 
 ~~~md
 ```ts
@@ -112,8 +112,8 @@ Read [the Basics of Markdown formatting](https://docs.github.com/en/get-started/
 
 ### For messages (Slack etc)
 
-Most instant messaging platforms allow you to use code blocks for sending multiline code in messages. In slack it uses the same 3 backticks syntax as described in [the markdown section](#markdown-code-blocks), but does not support adding the language. So there is no syntax highlighting available.
+Most instant messaging platforms allow you to use code blocks for sending multiline code in messages. In Slack it uses the same 3 backticks syntax as described in [the markdown section](#markdown-code-blocks), but does not support language highlighting. 
 
 ### Code present in GitHub
 
-Use Github permalinks to reference code snippets in messages. Navigate to the source code that you want to send, click on the line number, click on the 3 dots and select "Copy permalink". This will create a link that you can send to your co-worker to improve communication about bits of code (there will even be a preview generated on the fly, how cool !).
+Use Github permalinks to reference code snippets in messages. Navigate to the source code that you want to send, click on the line number, click on the 3 dots and select "Copy permalink". This will create a link that you can send to your co-worker to improve communication about bits of code (there will even be a preview generated on the fly, how cool!).
