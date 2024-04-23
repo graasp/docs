@@ -22,6 +22,7 @@ We're thrilled to unveil our latest visual enhancement: the introduction of a ne
 - **Update favicon and use theme color in header**
 - **Improve look of the storage bar**: The Storage bar look as been improved. This improvement is only visible on Safari and Chrome-compatible browsers due to difference in implementation for Firefox. But Firefox users are not losing any functionality, the styling on the storage bar is just simpler.
 - **Allow user to change username**
+- **Allow user to enable or disable action saving**
 
 ## Graasp Analytics
 
