@@ -1,5 +1,5 @@
 ---
-title: April 23th, 2024 - New Features and Improvements
+title: April 24th, 2024 - New Features and Improvements
 description: Fresh updates for the Graasp platform
 date: 2024-04-24
 authors:
@@ -23,15 +23,15 @@ We've introduced user-friendly updates allowing to change username and control a
 
 ## Graasp Builder
 
-- Added settings option in the item menu for enhanced customization.
-- Pages now support dynamic titles, enhancing user experience.
-- Map:
-  - Improved French translations
-  - Show locations in clusters on zoomed out display
-  - Introduced an advanced geolocation modal
+- An option to access settings directly from the item menu has been added, providing users with enhanced customization capabilities.
+- Pages within the builder now support dynamic titles, offering an improved user experience.
+- Regarding the map feature:
+  - French translations have been refined for better clarity.
+  - Locations are now displayed in clusters when the map is zoomed out.
+  - An advanced geolocation modal has been introduced to provide users with more detailed location information.
 
 ## Graasp Library
 
-- Optimization for retrieving collections associated with a user.
+- The system has been optimized to retrieve collections associated with a user more efficiently.
 
 We warmly welcome and encourage feedback from our users to continuously improve our platform. You can contact us by email [admin@graasp.org](mailto:admin@graasp.org) or by submitting an issue in this [Github repository](https://github.com/graasp/graasp-feedback).
