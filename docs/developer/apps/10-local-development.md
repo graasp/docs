@@ -2,8 +2,12 @@
 
 Developing an app locally requires some initial data in the database. Then your app needs to apply the login process
 
-1. Change your `hosts` file so that `apps.localhost` redirects to `localhost`.
-2. Run the following SQL query to add the necessary instance for running apps locally:
+1. Change your `hosts` file (located at `/etc/hosts`) so that `apps.localhost` redirects to `localhost`.
+    1. Open the file in sudo mode
+    2. Add the line: `127.0.0.1    apps.localhost`
+    3. Save and close the file
+    4. You may need to restart your computer for the changes to apply
+3. Run the following SQL query to add the necessary instance for running apps locally:
 
 ```sql
 DO $$
