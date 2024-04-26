@@ -31,6 +31,7 @@ The latest updates to Graasp include username length restrictions, thumbnail man
 - During the export process, only writers have the privilege to access hidden items.
 - The functionality to copy item thumbnails has been introduced.
 - The interface introduces some visual changes. We're in the process of adding more changes in the future releases.
+- The resizing setting for images is fixed.
 
 ## Graasp Player
 
@@ -40,6 +41,7 @@ The latest updates to Graasp include username length restrictions, thumbnail man
 ## Apps
 
 - GPT versions utilized by the platform have been upgraded to the latest available versions.
+- The height of the calculator app is improved.
 
 <!-- Generic message -->
 
