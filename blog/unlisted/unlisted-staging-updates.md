@@ -16,32 +16,12 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
-The latest updates to Graasp include username length restrictions, thumbnail management features in the builder, optional display names in the player, and upgraded GPT versions in the apps. Read further for more details!
-
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Graasp Account
-
-- The system now applies restrictions on length of usernames to ensure compliance with specified limits.
-
-## Graasp Builder
-
-- Users now have the ability to delete thumbnails associated with items.
-- During the export process, only writers have the privilege to access hidden items.
-- The functionality to copy item thumbnails has been introduced.
-- The interface introduces some visual changes. We're in the process of adding more changes in the future releases.
-- The resizing setting for images is fixed.
-
-## Graasp Player
-
-- Users are now allowed to leave their display names empty if they choose to do so.
-- The interface introduces some visual changes. We're in the process of adding more changes in the future releases.
-
 ## Apps
 
-- GPT versions utilized by the platform have been upgraded to the latest available versions.
-- The height of the calculator app is improved.
+- A small scrolling issue in Code capsule app has been fixed
 
 <!-- Generic message -->
 
