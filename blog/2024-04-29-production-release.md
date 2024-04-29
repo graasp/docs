@@ -47,7 +47,6 @@ The latest updates to Graasp include an improved design for the content in the P
 - A small bug preventing users from seeing all their items in the recent items view has been fixed, now clicking "Show More" should be allowed until all items are displayed on the page.
 - Small issues have been fixed to improve the overall look of the recent items page. (Loading skeletons, thumbnails etc)
 
-
 ## Apps
 
 - GPT versions utilized by the platform have been upgraded to the latest available versions.
