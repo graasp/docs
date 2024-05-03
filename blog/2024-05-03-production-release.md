@@ -6,7 +6,7 @@ authors:
   - graasp
 ---
 
-The latest updates outline various enhancements and additions across Graasp Builder, Graasp Player, Graasp Library, and Apps, including improvements to folder creation, licensing options, and a brand new OER information page! Read further for more information.
+The latest updates outline various enhancements and additions across Graasp Builder, Graasp Player, Graasp Library, and Apps, including improvements to folder creation, licensing options, and a brand new OER information page! We also officially release the newest version of our mobile app! Read further for more information.
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
@@ -31,7 +31,22 @@ The latest updates outline various enhancements and additions across Graasp Buil
 
 ## Apps
 
-- **Quiz: Prevent Same Choice**: Implement a validation mechanism within the Quiz app to prevent users from adding the same choice for multiple questions, ensuring the integrity and accuracy of quiz responses.
+- **Prevent Same Choice in Quiz**: Implement a validation mechanism within the Quiz app to prevent users from adding the same choice for multiple questions, ensuring the integrity and accuracy of quiz responses.
+
+## Graasp Mobile
+
+![mobile app logo](./screenshots/2024-05-03-mobile-google-play.png)
+
+We deployed the newest version of the mobile app which features:
+
+- We renamed the application to Graasp (instead of Graasp Builder). We plan to group all planned features in one app!
+- One can use the app without being signed in
+- Integrated the Map view
+- Add Bookmarked Tab
+- Add Library Tab
+- Integrated Chatbox
+
+You can find it on <a href="https://play.google.com/store/apps/details?id=org.graasp.mobile&hl=en&gl=US">Google Play</a> or <a href="https://apps.apple.com/my/app/graasp/id1579895549">Apple Store</a>.
 
 <!-- Generic message -->
 

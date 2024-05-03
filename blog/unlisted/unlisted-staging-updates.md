@@ -19,9 +19,9 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Apps
+## Builder
 
-- A small scrolling issue in Code capsule app has been fixed
+- implements automatic suffix to copied item
 
 <!-- Generic message -->
 
