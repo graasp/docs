@@ -23,6 +23,19 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 - implements automatic suffix to copied item
 
+## Library
+
+- set the default search to not include content inside collection. This setting was previously enabled by default but resulted in confused results. Is is not disabled by default and can be enabled if users need to explore more content.
+
+## Player
+
+- fix some small issues with lost query parameters on navigate
+- update translations in Spanish, Italian and German
+
+## Apps
+
+Apps have been updated to use the transparent background to blend in with the new purple-ish background.
+
 <!-- Generic message -->
 
 We warmly welcome and encourage feedback from our users to continuously improve our platform. You can contact us by email [admin@graasp.org](mailto:admin@graasp.org) or by submitting an issue in this [Github repository](https://github.com/graasp/graasp-feedback).
