@@ -21,20 +21,13 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 ## Builder
 
-- implements automatic suffix to copied item
-
-## Library
-
-- set the default search to not include content inside collection. This setting was previously enabled by default but resulted in confused results. Is is not disabled by default and can be enabled if users need to explore more content.
-
-## Player
-
-- fix some small issues with lost query parameters on navigate
-- update translations in Spanish, Italian and German
+- Implement CSV structure import feature to allow users to easily import user structures from CSV files.
+- Perform optimization tasks to improve the overall performance and efficiency of the application with more compact items data.
+- Update language translations.
 
 ## Apps
 
-Apps have been updated to use the transparent background to blend in with the new purple-ish background.
+- File Drop: update application
 
 <!-- Generic message -->
 
