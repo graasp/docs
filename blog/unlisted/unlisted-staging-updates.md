@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Fresh updates for the Graasp platform
-date: 2024-04-24
+date: 2024-05-21
 unlisted: true
 authors:
   - graasp
@@ -21,13 +21,12 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 ## Builder
 
-- Implement CSV structure import feature to allow users to easily import user structures from CSV files.
-- Perform optimization tasks to improve the overall performance and efficiency of the application with more compact items data.
-- Update language translations.
+- Update map: check permission over geolocation, does not show add item if cannot write in parent
 
-## Apps
+## Player
 
-- File Drop: update application
+- Show current title page in browser tab
+- Reduce island size hide buttons for better integration on small screens
 
 <!-- Generic message -->
 
