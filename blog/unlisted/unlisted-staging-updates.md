@@ -51,6 +51,11 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 - Resolve an issue on iOS where QR codes could not be read and adding a close button to the camera view for better usability.
 - Add a map button to the Shared Elements screen.
 - Request location permissions from the app configuration, ensuring proper functionality and compliance.
+- Automatically set the default language to the phone's language when the user is signed out.
+- Eliminate the recurring toast notification upon signing out.
+- Close the menu immediately after a bookmark is added or removed.
+- Enable navigating between items within the library collection.
+- Prefill the library search field with "graasper" by default.
 
 <!-- Generic message -->
 
