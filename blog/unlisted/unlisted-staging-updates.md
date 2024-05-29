@@ -33,6 +33,9 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 - Display the current title page in the browser tab, improving navigation and context for users.
 - Reduce the size of the island to hide buttons, optimizing the interface for better integration on smaller screens.
+- Add loading state to navigation buttons
+- Show back buttons after clicking on a shortcut
+- Show map button if the item is geolocalized
 
 ## Backend
 
