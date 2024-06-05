@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Fresh updates for the Graasp platform
-date: 2024-06-04
+date: 2024-06-05
 unlisted: true
 authors:
   - graasp
@@ -19,6 +19,22 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
+## Graasp Builder
+
+- Allow apps to dynamically resize in builder
+- Improve new item modal texts for French
+- Map:
+  - Auto close dialog when filling geolocation field
+  - Zoom on items when searching
+  - Show loading wheel on fetching to provide feedback for slow network
+
+## Graasp Mobile (1.5.0)
+
+- The space between elements in the player view has been reduced, and titles are now better aligned
+- Item list options have been improved
+- A QR code display feature has been added, available in the item list options
+- The sharing feature has been simplified to share the builder view
+- The message in the player for folders containing only folders has been improved
 
 <!-- Generic message -->
 
