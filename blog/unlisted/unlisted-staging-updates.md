@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Fresh updates for the Graasp platform
-date: 2024-05-30
+date: 2024-06-04
 unlisted: true
 authors:
   - graasp
@@ -19,24 +19,6 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Account
-
-- Enhancement of the Graasp account home page: A concise summary of user data is now displayed, and users can update their avatars. Additional improvements will be implemented in the coming weeks!
-
-![graasp account home page](../screenshots/graasp-account-home-page.png)
-
-## Builder
-
-- Enhance the user interface for adding links.
-- Update and improve the map functionality.
-- Implement embedding settings and optimize iframe display.
-
-## Backend
-
-- Implement endpoint to retrieve user actions for the dashboard view.
-- Improve export actions to support CSV format.
-- Enable URL updates for links while restricting HTML edits.
-- Fix issue where copy suffix cannot increment beyond 3.
 
 <!-- Generic message -->
 
