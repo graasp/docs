@@ -30,7 +30,7 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 - Fix a bug regarding getting a lot of tags
 - Update of libraries
 
-## Graasp Mobile (1.5.0)
+## Graasp Mobile (1.5.1)
 
 - The space between elements in the player view has been reduced, and titles are now better aligned
 - Item list options have been improved
