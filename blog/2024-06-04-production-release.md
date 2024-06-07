@@ -31,6 +31,7 @@ As the sunny days make their return, here is your new Graasp update, with a new 
 ## Player
 
 - Improvements to fix small usability issues
+- Temporary removal of geolocation button
 
 ## Backend
 

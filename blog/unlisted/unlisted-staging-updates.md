@@ -19,16 +19,18 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Graasp Builder
+## Graasp Analytics
 
-- Allow apps to dynamically resize in builder
-- Improve new item modal texts for French
-- Map:
-  - Auto close dialog when filling geolocation field
-  - Zoom on items when searching
-  - Show loading wheel on fetching to provide feedback for slow network
+- Allow users to export actions as csv files.
 
-## Graasp Mobile (1.5.0)
+![download export action csv](./analytics-export-csv.png)
+
+## Backend
+
+- Fix a bug regarding getting a lot of tags
+- Update of libraries
+
+## Graasp Mobile (1.5.0)
 
 - The space between elements in the player view has been reduced, and titles are now better aligned
 - Item list options have been improved
