@@ -19,11 +19,21 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Graasp Analytics
+## Account
+
+- Fix display of avatar.
+
+## Analytics
 
 - Allow users to export actions as csv files.
 
 ![download export action csv](./analytics-export-csv.png)
+
+## Builder
+
+- **Publication Page Enhancement**: The publication page has undergone a comprehensive revamp, featuring extensive guidelines for setting useful metadata. Validation is now required whenever an item is updated. While the process still involves a validation followed by the publication — a future improvement will consolidate these steps into a single click.
+
+![publication library](./builder-publication.png)
 
 ## Backend
 
