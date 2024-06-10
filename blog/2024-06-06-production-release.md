@@ -1,7 +1,7 @@
 ---
-title: June 4th, 2024 - New Features and Improvements
+title: June 6th, 2024 - New Features and Improvements
 description: Fresh updates for the Graasp platform
-date: 2024-06-04
+date: 2024-06-06
 authors:
   - graasp
 ---
