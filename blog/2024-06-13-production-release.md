@@ -6,7 +6,7 @@ authors:
   - graasp
 ---
 
-The Graasp team brings to you new updates including CSV export for user actions and a revamped publication page with new metadata guidelines. Read further for more details!
+The Graasp team brings to you new updates including CSV export for user actions and a revamped publication page with new metadata guidelines. Additionally, a new version of the mobile app is out! Read further for more details!
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
@@ -38,6 +38,14 @@ The Graasp team brings to you new updates including CSV export for user actions 
 - Optimize getting tags for items
 - Allow type filtering and to take out hidden items for descendants items
 - Update of libraries
+
+## Graasp Mobile (1.5.1)
+
+- The space between elements in the player view has been reduced, and titles are now better aligned
+- Item list options have been improved
+- A QR code display feature has been added, available in the item list options
+- The sharing feature has been simplified to share the builder view
+- The message in the player for folders containing only folders has been improved
 
 <!-- Generic message -->
 
