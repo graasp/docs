@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Fresh updates for the Graasp platform
-date: 2024-06-05
+date: 2024-06-28
 unlisted: true
 authors:
   - graasp
@@ -18,6 +18,23 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
+
+## Graasp Analytics
+
+![analytics member dashboard](./analytics-member-dashboard.png)
+
+- **Member Statistic Page:** We developed a dashboard to display the member statistics across the entire Graasp ecosystem. This tool will allow users to track their activity and engagement over time with visual representations such as graphs and charts. By providing insights into usage patterns, the dashboard helps users understand their involvement and productivity within the platform. Additional graphics and interactive features will be added soon to enhance the user experience and provide even deeper insights.
+
+## Graasp Builder
+
+![upload file dropzone](./upload-file-dropzone.png)
+
+- Improved dropzone and its notifications, and replace import ZIP/H5P buttons.
+
+## Graasp Player
+
+- Fix problem with navigation with links.
+- Fix image an caption sizing.
 
 <!-- Generic message -->
 
