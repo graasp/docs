@@ -56,6 +56,7 @@ We also added the possibility to choose the alignment of the media, so you cna c
 
 - Add update email endpoints (coming soon)
 - Allow emails with long extension (ie. `.swiss`)
+- Remove the possibility to link an existing member account to a pseudonimised item.
 
 <!-- Generic message -->
 
