@@ -1,39 +1,44 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-import { themes } from 'prism-react-renderer';
+import { themes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Graasp Docs',
-  staticDirectories: ['blog/screenshots', 'static'],
-  tagline: 'Enrich your Graasp experience',
-  favicon: 'img/favicon.ico',
+  title: "Graasp Docs",
+  staticDirectories: ["blog/screenshots", "static"],
+  tagline: "Enrich your Graasp experience",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://graasp.github.io/',
+  url: "https://graasp.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs/',
+  baseUrl: "/docs/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'graasp', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  organizationName: "graasp", // Usually your GitHub org/user name.
+  projectName: "docs", // Usually your repo name.
+  deploymentBranch: "gh-pages",
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en", "fr", "de"],
+    localeConfigs: {
+      en: {
+        htmlLang: "en-GB",
+      },
+    },
   },
 
   // add mermaid theme to enable diagrams in markdown
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: ["@docusaurus/theme-mermaid"],
   markdown: {
     // enable mermaid diagrams in markdown
     mermaid: true,
@@ -41,30 +46,30 @@ const config = {
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/graasp/docs/blob/main',
-          routeBasePath: '/',
+          editUrl: "https://github.com/graasp/docs/blob/main",
+          routeBasePath: "/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: ({ blogPath }) => {
-            if (blogPath.split('/').includes('unlisted')) {
+            if (blogPath.split("/").includes("unlisted")) {
               return `https://github.com/graasp/docs/blob/main/blog/${blogPath}`;
             }
             return undefined;
           },
-          blogTitle: 'News and Updates from the Graasp Team',
+          blogTitle: "News and Updates from the Graasp Team",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -75,115 +80,102 @@ const config = {
     ({
       // Replace with your project's social card
       // todo: create a social card
-      image: 'img/graasp-social-card.png',
+      image: "img/graasp-social-card.png",
       navbar: {
-        title: 'Docs',
+        title: "Docs",
         logo: {
-          alt: 'Graasp',
-          src: 'img/graasp-develop.svg',
-          srcDark: 'img/graasp-develop_dark.svg',
+          alt: "Graasp",
+          src: "img/graasp-develop.svg",
+          srcDark: "img/graasp-develop_dark.svg",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'developer/intro',
-            position: 'left',
-            label: 'Developer',
+            type: "doc",
+            docId: "developer/intro",
+            position: "left",
+            label: "Developer",
           },
           {
-            type: 'doc',
-            docId: 'user/intro',
-            position: 'left',
-            label: 'User Resources',
+            type: "doc",
+            docId: "user/intro",
+            position: "left",
+            label: "User Resources",
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: 'https://github.com/graasp/docs',
-            position: 'right',
-            label: 'Github',
+            href: "https://github.com/graasp/docs",
+            position: "right",
+            label: "Github",
+          },
+          {
+            type: "localeDropdown",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'User Tutorials',
-                to: 'user/intro',
+                label: "User Tutorials",
+                to: "user/intro",
               },
               {
-                label: 'Developer',
-                to: 'developer/intro',
+                label: "Developer",
+                to: "developer/intro",
               },
               {
-                label: 'App Development',
-                to: '/developer/apps/',
+                label: "App Development",
+                to: "/developer/apps/",
               },
               {
-                label: 'Troubleshooting',
-                to: '/developer/troubleshooting/',
+                label: "Troubleshooting",
+                to: "/developer/troubleshooting/",
               },
             ],
           },
           {
-            title: 'Resources',
+            title: "Graasp",
             items: [
               {
-                label: 'Tutorials in English',
-                href: 'https://player.graasp.org/9d80d81f-ec9d-4bfb-836a-1c6b125aef2f',
+                label: "Website",
+                href: "https://graasp.org",
               },
               {
-                label: 'Tutoriels en Français',
-                href: 'https://player.graasp.org/bd918837-5f57-49d2-8867-1d3438377842',
+                label: "Association",
+                href: "https://association.graasp.org",
               },
               {
-                label: 'Tutorial auf Deutsch',
-                href: 'https://player.graasp.org/07773683-c882-48b5-961e-1fe54833b58c',
+                label: "Library",
+                href: "https://library.graasp.org",
+              },
+              {
+                label: "Builder",
+                href: "https://builder.graasp.org",
+              },
+              {
+                label: "Player",
+                href: "https://player.graasp.org",
               },
             ],
           },
           {
-            title: 'Graasp',
+            title: "More",
             items: [
               {
-                label: 'Website',
-                href: 'https://graasp.org',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'Association',
-                href: 'https://association.graasp.org',
+                label: "GitHub",
+                href: "https://github.com/graasp",
               },
               {
-                label: 'Library',
-                href: 'https://library.graasp.org',
-              },
-              {
-                label: 'Builder',
-                href: 'https://builder.graasp.org',
-              },
-              {
-                label: 'Player',
-                href: 'https://player.graasp.org',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/graasp',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/graasp',
+                label: "Twitter",
+                href: "https://twitter.com/graasp",
               },
             ],
           },
@@ -199,11 +191,11 @@ const config = {
   plugins: [
     async function myPlugin(context, options) {
       return {
-        name: 'docusaurus-tailwindcss',
+        name: "docusaurus-tailwindcss",
         configurePostCss(postcssOptions) {
           // Appends TailwindCSS and AutoPrefixer.
-          postcssOptions.plugins.push(require('tailwindcss'));
-          postcssOptions.plugins.push(require('autoprefixer'));
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
           return postcssOptions;
         },
       };
@@ -211,12 +203,12 @@ const config = {
   ],
   headTags: [
     {
-      tagName: 'link',
+      tagName: "link",
       attributes: {
-        rel: 'preload',
-        href: '/fonts/Nunito.ttf',
-        as: 'font',
-        crossorigin: 'anonymous',
+        rel: "preload",
+        href: "/fonts/Nunito.ttf",
+        as: "font",
+        crossorigin: "anonymous",
       },
     },
   ],
