@@ -1,0 +1,15 @@
+---
+graasp:
+  name: Équipe de développement
+  url: https://github.com/graasp
+  image_url: https://github.com/graasp.png
+  email: contact@graasp.org
+spaenleh:
+  name: Basile Spaenlehauer
+  title: Ingénieur logiciel
+  url: https://github.com/spaenleh
+  image_url: https://github.com/spaenleh.png
+pyphilia:
+  title: Ingénieur logiciel
+  url: https://github.com/pyphilia
+  image_url: https://github.com/pyphilia.png
