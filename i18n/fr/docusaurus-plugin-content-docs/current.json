@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.developerSidebar.category.🕹️ Graasp Apps": {
+    "message": "🕹️ Graasp Apps",
+    "description": "The label for category 🕹️ Graasp Apps in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.🛠️ Architecture": {
+    "message": "🛠️ Architecture",
+    "description": "The label for category 🛠️ Architecture in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.mobile-app": {
+    "message": "📱 Mobile App lol",
+    "description": "The label for category 📱 Mobile App in sidebar developerSidebar"
+  },
+  "sidebar.userSidebar.category.account": {
+    "message": "Compte",
+    "description": "The label for category account in sidebar developerSidebar"
+  }
+}

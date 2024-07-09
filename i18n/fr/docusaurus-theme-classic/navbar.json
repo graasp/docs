@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Documentation",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Graasp",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Developer": {
+    "message": "Développement",
+    "description": "Navbar item with label Developer"
+  },
+  "item.label.User Resources": {
+    "message": "Notice utilisateurs",
+    "description": "Navbar item with label User Resources"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Github": {
+    "message": "Github",
+    "description": "Navbar item with label Github"
+  }
+}
