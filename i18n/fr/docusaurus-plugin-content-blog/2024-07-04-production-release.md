@@ -18,7 +18,7 @@ L'été approche et l'équipe Graasp a travaillé sur des mises à jour intéres
 
 ## Analytique
 
-![analytics member dashboard](https://github.com/graasp/docs/blob/main/i18n/fr/docusaurus-plugin-content-blog/screenshots/2024-07-04-analytics-member-dashboard.png?raw=true)
+![analytics member dashboard](./screenshots/2024-07-04-analytics-member-dashboard.png)
 
 - **Page de statistiques des membres :** nous avons développé un tableau de bord pour afficher les statistiques des membres dans l'ensemble de l'écosystème Graasp. Cet outil permettra aux utilisateurs de suivre leur activité et leur engagement au fil du temps avec des représentations visuelles telles que des graphiques et des diagrammes. En fournissant des informations sur les modes d'utilisation, le tableau de bord aide les utilisateurs à comprendre leur implication et leur productivité au sein de la plateforme. Des graphiques et des fonctionnalités interactives supplémentaires seront bientôt ajoutés pour améliorer l'expérience utilisateur et fournir des informations encore plus approfondies.
 
@@ -34,7 +34,8 @@ Nous avons ajouté quelques paramètres pour vous aider à dimensionner votre m�
 
 Ci-dessous vous pouvez voir quelques exemples dans le lecteur, avec des images de différentes tailles et alignées en utilisant toutes les valeurs possibles.
 
-![sizing settings](./screenshots/2024-07-04-sizing-demo.png) ![alignment settings](./screenshots/2024-07-04-alignment-demo.png)
+![sizing settings](./screenshots/2024-07-04-sizing-demo.png)
+![alignment settings](./screenshots/2024-07-04-alignment-demo.png)
 
 Nous avons également ajouté la possibilité de choisir l'alignement du média, vous pouvez donc choisir entre gauche, droite et centré. La légende de l'élément sera également alignée sur le côté que vous aurez choisi pour l'afficher de la manière la plus cohérente possible.
 
