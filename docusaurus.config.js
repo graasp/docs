@@ -13,7 +13,7 @@ const config = {
   url: "https://graasp.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/docs/",
+  baseUrl: process.env.BASE ?? "/docs/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -29,7 +29,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "fr", "de"],
+    locales: ["en", "fr"],
     localeConfigs: {
       en: {
         htmlLang: "en-GB",

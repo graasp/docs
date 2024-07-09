@@ -14,5 +14,9 @@
   "sidebar.developerSidebar.category.📱 Mobile App": {
     "message": "📱 Mobile App",
     "description": "The label for category 📱 Mobile App in sidebar developerSidebar"
+  },
+  "sidebar.userSidebar.category.account": {
+    "message": "Account",
+    "description": "The label for category account in sidebar userSideBar"
   }
 }
