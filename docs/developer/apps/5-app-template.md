@@ -1,5 +1,4 @@
 ---
-title: App Template
 slug: app-template
 ---
 
@@ -34,7 +33,7 @@ The CLI will ask you a few questions to help you setup your project. It suggests
 - Auto-install project dependencies
 - Initialize a local git repository
 
-<details >
+<details>
 <summary><h3>Directly from GitHub</h3></summary>
 
 Should you choose to bootstrap your graasp app manually, you will need to execute the following steps.
