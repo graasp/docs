@@ -9,7 +9,6 @@ import HomepageLinks from "../components/HomepageLinks";
 import Translate, { translate } from "@docusaurus/Translate";
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <header
       className={clsx(
@@ -19,17 +18,34 @@ function HomepageHeader() {
     >
       <div className="container flex flex-col items-center">
         <h1 className="hero__title font-extrabold w-max text-transparent bg-clip-text bg-gradient-to-br from-[#56B0F8] from-10% via-[#5050D2] to-90% to-[#C658D0]">
-          <Translate
-            id="pages.index.header"
-            description="The homepage welcome message"
-          >
-            Graasp Docs
-          </Translate>
+          {translate({
+            id: "pages.home.title",
+            description: "The homepage welcome message",
+          })}
         </h1>
         <p className="hero__subtitle">
-          Browse <span className={styles.emphText}>documentation</span>, Read{" "}
-          <span className={styles.emphText}>news</span>, Enrich your Graasp{" "}
-          <span className={styles.emphText}>experience</span>
+          <Translate
+            id="pages.home.description"
+            values={{
+              docs: (
+                <span className={styles.emphText}>
+                  {translate({ id: "pages.home.description.docs" })}
+                </span>
+              ),
+              news: (
+                <span className={styles.emphText}>
+                  {translate({ id: "pages.home.description.news" })}
+                </span>
+              ),
+              experience: (
+                <span className={styles.emphText}>
+                  {translate({ id: "pages.home.description.experience" })}
+                </span>
+              ),
+            }}
+          >
+            {"Browse {docs}, Read {news}, Enrich your {experience}"}
+          </Translate>
         </p>
       </div>
     </header>

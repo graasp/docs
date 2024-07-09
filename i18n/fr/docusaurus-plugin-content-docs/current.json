@@ -11,8 +11,12 @@
     "message": "🛠️ Architecture",
     "description": "The label for category 🛠️ Architecture in sidebar developerSidebar"
   },
-  "sidebar.developerSidebar.category.📱 Mobile App": {
-    "message": "📱 Mobile App",
+  "sidebar.developerSidebar.category.mobile-app": {
+    "message": "📱 Mobile App lol",
     "description": "The label for category 📱 Mobile App in sidebar developerSidebar"
+  },
+  "sidebar.userSidebar.category.account": {
+    "message": "Compte",
+    "description": "The label for category account in sidebar developerSidebar"
   }
 }

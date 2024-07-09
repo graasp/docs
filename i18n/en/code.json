@@ -293,5 +293,45 @@
   "theme.unlistedContent.message": {
     "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
     "description": "The unlisted content banner message"
+  },
+  "pages.home.title": {
+    "message": "Graasp Docs",
+    "description": "The homepage welcome message"
+  },
+  "pages.home.description": {
+    "message": "Explore {docs}, Read {news}, Enrich your {experience}"
+  },
+  "pages.home.description.docs": {
+    "message": "Documentation"
+  },
+  "pages.home.description.news": {
+    "message": "News"
+  },
+  "pages.home.description.experience": {
+    "message": "Graasp experience"
+  },
+  "pages.home.latestNews": {
+    "message": "Latest News",
+    "description": "Title for the latest news section"
+  },
+  "pages.home.developerDocs": {
+    "message": "Developer Docs",
+    "description": "Title for the developer docs section"
+  },
+  "pages.home.userResources": {
+    "message": "User Resources",
+    "description": "Title for the user resources section"
+  },
+  "pages.home.latestNews.description": {
+    "message": "Latest News from the development team. Fresh out the oven, see what is new and all the goodies we have in store for you.",
+    "description": "Description for the latest news section"
+  },
+  "pages.home.developerDocs.description": {
+    "message": "From general architecture to code examples and individual code snippets explanations, everything necessary to understand and contribute to the Graasp project",
+    "description": "Description for the developer docs section"
+  },
+  "pages.home.userResources.description": {
+    "message": "End-user centered documentation, describing features and proposing learning scenarios.",
+    "description": "Description for the user resources section"
   }
 }

@@ -294,8 +294,44 @@
     "message": "Cette page n'est pas répertoriée. Les moteurs de recherche ne l'indexeront pas, et seuls les utilisateurs ayant un lien direct peuvent y accéder.",
     "description": "The unlisted content banner message"
   },
-  "pages.index.header": {
+  "pages.home.title": {
     "message": "Documentation Graasp",
     "description": "The homepage welcome message"
+  },
+  "pages.home.description": {
+    "message": "Explorer la {docs}, lire les {news}, enrichir votre {experience}."
+  },
+  "pages.home.description.docs": {
+    "message": "documentation"
+  },
+  "pages.home.description.news": {
+    "message": "nouvelles"
+  },
+  "pages.home.description.experience": {
+    "message": "expérience Graasp"
+  },
+  "pages.home.latestNews": {
+    "message": "Dernières nouvelles",
+    "description": "Title for the latest news section"
+  },
+  "pages.home.developerDocs": {
+    "message": "Documentation pour développeurs",
+    "description": "Title for the developer docs section"
+  },
+  "pages.home.userResources": {
+    "message": "Notice utilisateurs",
+    "description": "Title for the user resources section"
+  },
+  "pages.home.latestNews.description": {
+    "message": "Dernière nouvelles de l'équipe de développement. Bien fraîches, découvrez les dernières mises à jour que nous avons en stock pour vous.",
+    "description": "Description for the latest news section"
+  },
+  "pages.home.developerDocs.description": {
+    "message": "De l'architecture générale aux exemples de code et explication contextuelles, tout ce dont vous avez besoin pour comprendre et contribuer au projet Graasp.",
+    "description": "Description for the developer docs section"
+  },
+  "pages.home.userResources.description": {
+    "message": "Documentation pour les utilisateurs finaux de la plateforme. Descriptions des fonctionnalités et propositions de scénarios d'apprentissage.",
+    "description": "Description for the user resources section"
   }
 }

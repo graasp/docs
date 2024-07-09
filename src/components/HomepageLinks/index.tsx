@@ -1,50 +1,61 @@
 import Link from "@docusaurus/Link";
+import { translate } from "@docusaurus/Translate";
 import React from "react";
 
 type HomepageLinkItem = {
   title: string;
   key: string;
   Svg: React.ComponentType<React.ComponentProps<"svg">>;
-  description: JSX.Element;
+  description: string;
   to: string;
 };
 
 const HomePageLinkList: HomepageLinkItem[] = [
   {
-    title: "Latest News",
+    title: translate({
+      id: "pages.home.latestNews",
+      message: "Latest News",
+      description: "Title for the latest news section",
+    }),
     key: "news",
-    description: (
-      <>
-        Latest <strong>News</strong> from the development team. Fresh out the
-        oven, see what is new and all the goodies we have in store for you.
-      </>
-    ),
+    description: translate({
+      id: "pages.home.latestNews.description",
+      message:
+        "Latest News from the development team. Fresh out the oven, see what is new and all the goodies we have in store for you.",
+      description: "Description for the latest news section",
+    }),
     Svg: require("@site/static/img/home-news-feed.svg").default,
     to: "blog",
   },
   {
-    title: "Developer Docs",
+    title: translate({
+      id: "pages.home.developerDocs",
+      message: "Developer Docs",
+      description: "Title for the developer docs section",
+    }),
     key: "docs",
-    description: (
-      <>
-        From <strong>general architecture</strong> to{" "}
-        <strong>code examples</strong> and individual code snippets
-        explanations, everything necessary to understand and contribute to the
-        Graasp project
-      </>
-    ),
+    description: translate({
+      id: "pages.home.developerDocs.description",
+      message:
+        "From general architecture to code examples and individual code snippets explanations, everything necessary to understand and contribute to the Graasp project",
+      description: "Description for the developer docs section",
+    }),
     Svg: require("@site/static/img/home-developers.svg").default,
     to: "developer/intro",
   },
   {
-    title: "User Resources",
+    title: translate({
+      id: "pages.home.userResources",
+      message: "User Resources",
+      description: "Title for the user resources section",
+    }),
     key: "users",
-    description: (
-      <>
-        End-user centered documentation, describing <strong>features</strong>{" "}
-        and proposing <strong>learning scenarios</strong>.
-      </>
-    ),
+    description: translate({
+      id: "pages.home.userResources.description",
+      message:
+        "End-user centered documentation, describing features and proposing learning scenarios.",
+      description: "Description for the user resources section",
+    }),
     Svg: require("@site/static/img/home-users.svg").default,
     to: "user/intro",
   },
