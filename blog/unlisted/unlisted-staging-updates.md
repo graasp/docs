@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Fresh updates for the Graasp platform
-date: 2024-07-05
+date: 2024-07-15
 unlisted: true
 authors:
   - graasp
@@ -16,12 +16,29 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
+We've revamped the item list in Builder with a sleek, redesigned interface featuring intuitive drag-and-drop capabilities. Additionally, we've improved the account profile page, quiz app and analytics dashboard! Read further for more details!
+
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
+## Account
+
+- Implemented a dedicated email validation page to enhance security and ensure valid email addresses.
+- Added a new section for user preferences in the settings page, allowing users to customize their experience.
+- Enabled users to edit various sections of their profile page for better personalization and control.
+
+## Analytics
+
+- Removed the "Starting from Today" option in the **My Statistics** date picker to simplify date selection.
+- Improved Arabic translations across the dashboard
+
 ## Builder
 
-We revamp the item list view for a more attractive design, it will be refined step by step given the feedback. This redesign comes with the new features:
+We've revamped the item list view to feature a more attractive design, which will be refined step by step based on user feedback. This redesign introduces several new features:
+
+:::warning[Operations on multiple items]
+The multiple items operations have been disabled for now, but will come back in a very near future. Let us know if it's a key feature you need!
+:::
 
 - **Drag & upload files in between items**
 
@@ -35,9 +52,28 @@ We revamp the item list view for a more attractive design, it will be refined st
 
 ![move in item](./move-in-item.gif)
 
-:::warning[Operations on multiple items]
-The multiple items operations have been disabled for now, but will come back in a very near future. Let us know if it's a key feature you need!
-:::
+Additionally, the following change has been made in the Builder:
+
+- Display the current position on the map, if permitted.
+
+## Library
+
+- Updated all dependency libraries to their latest versions.
+
+## Apps
+
+- **Quiz**:
+  - Enabled users to add twice the same questions
+  - Enhanced the clarity and quality of the explanation texts
+
+## Backend
+
+- Enhanced the reordering mechanism to allow creating items at a specific position in a list.
+- Implemented dependency injection (DI) for streamlined service integration.
+- Mentioned email address in email notifications when updating your email.
+- Optimized performance with a smart filtering when requesting descendant elements.
+- Ensured automatic member logout upon deletion.
+- Updated all dependency libraries to their latest versions.
 
 <!-- Generic message -->
 
