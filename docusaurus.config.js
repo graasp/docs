@@ -141,6 +141,10 @@ const config = {
             title: "Graasp",
             items: [
               {
+                label: "Contact",
+                href: "mailto:contact@graasp.org",
+              },
+              {
                 label: "Website",
                 href: "https://graasp.org",
               },
@@ -151,14 +155,6 @@ const config = {
               {
                 label: "Library",
                 href: "https://library.graasp.org",
-              },
-              {
-                label: "Builder",
-                href: "https://builder.graasp.org",
-              },
-              {
-                label: "Player",
-                href: "https://player.graasp.org",
               },
             ],
           },

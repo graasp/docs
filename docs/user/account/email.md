@@ -12,17 +12,24 @@ If you do not see an email address, this means you are logged in with a pseudony
 
 ## How to change my email ? {#change-email}
 
-You can change your email in your Graasp account informations.
+You can change the email used with your Graasp account on [the Graasp Account profile page](https://account.graasp.org/profile).
 
 1. Log in to Graasp using your email or email + password if you have set one.
-   1. If you do not have a password set and you do not have access to the email you used in Graasp please contact us.
+   1. If you do not have a password set and you do not have access to the email you used in Graasp please contact us (contact information at the end of this page).
 2. Click on your account name in the top right corner of the screen and select "See Profile" in the popup.
+  ![Account popup](./account-popup.png)
 3. Select "Profile" in the left navigation menu.
 4. Click on the "Edit" button in your personal information section
 5. Fill in the new email you would like to use.
-6. An email will be sent to your new address.
+6. Save the changes.
+  
+   Here is a recap of the steps 3 to 6:
+   ![Update Email](./update-email.gif)
+
+7. An email will be sent to your new email address.
    1. If you do not get an email, it might mean you tried to use an email that is already registered with Graasp.
-7. Click on the link sent in the email.
-8. Click on the "Validate" button on the page.
-   1. If you get an error ensure you are using a fresh link and that you did not use the new email to register an account in the meantime. Links last 24 hours. If your link is older, please update your email again in your profile and use the new link that you will receive.
-9. Once validation is successful you can log in with your new email. Your old email will receive a last message letting you know that you moved your account to your new email.
+8. Click on the link sent in the email.
+9. Click on the "Validate" button on the page.
+   1. If you get an error ensure you are using a fresh link. Links last 24 hours. If your link is older, please update your email again in your profile and use the new link that you will receive.
+   2. Ensure you did not create a Graasp account with your new email.
+10. Once validation is successful you can log in with your new email. Your old email will receive a last message letting you know that you moved your account to your new email.

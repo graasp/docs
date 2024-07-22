@@ -17,10 +17,10 @@
   },
   "sidebar.userSidebar.category.account": {
     "message": "Account",
-    "description": "The label for category account in sidebar userSideBar"
+    "description": "The label for category account in sidebar userSidebar"
   },
   "sidebar.developerSidebar.category.guides": {
     "message": "📖 Guides",
-    "description": "The label for guides in sidebar developerSidebar"
+    "description": "The label for category guides in sidebar developerSidebar"
   }
 }

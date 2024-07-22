@@ -39,14 +39,6 @@
     "message": "Bibliothèque",
     "description": "The label of footer link with label=Library linking to https://library.graasp.org"
   },
-  "link.item.label.Builder": {
-    "message": "Constructeur",
-    "description": "The label of footer link with label=Builder linking to https://builder.graasp.org"
-  },
-  "link.item.label.Player": {
-    "message": "Lecteur",
-    "description": "The label of footer link with label=Player linking to https://player.graasp.org"
-  },
   "link.item.label.Blog": {
     "message": "Blog",
     "description": "The label of footer link with label=Blog linking to /blog"
@@ -62,5 +54,9 @@
   "copyright": {
     "message": "© 2014 - 2024 Graasp. Codé avec ❤️ en 🇨🇭.",
     "description": "The footer copyright"
+  },
+  "link.item.label.Contact": {
+    "message": "Contact",
+    "description": "The label of footer link with label=Contact linking to mailto:contact@graasp.org"
   }
 }
