@@ -18,4 +18,6 @@ Pour valider votre compte, vous devez :
 3. Utilisez cet e-mail pour [vous connecter par e-mail](../login#login-email) .
 4. Votre compte sera validé lorsque vous utiliserez le lien que nous vous envoyons par email.
 
-:::tip Si vous souhaitez modifier l'e-mail que vous utilisez avec votre compte Graasp, consultez [Comment modifier l'e-mail utilisé avec mon compte](../account/email#change-email) . :::
+:::tip
+Si vous souhaitez modifier l'e-mail que vous utilisez avec votre compte Graasp, consultez [Comment modifier l'e-mail utilisé avec mon compte](../account/email#change-email).
+:::
