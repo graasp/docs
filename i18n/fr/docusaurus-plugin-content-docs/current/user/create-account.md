@@ -6,8 +6,8 @@ sidebar_position: '5'
 
 Vous pouvez créer un compte Graasp en vous rendant sur [le formulaire d'inscription](https://auth.graasp.org/register)
 
-You will need to provide a name and an email. You will receive an email with a link to login to the platform.
+Vous devrez fournir un nom et une adresse e-mail. Vous recevrez par e-mail un lien pour vous connecter à la plateforme.
 
 Et voilà, vous disposez désormais d'un compte Graasp que vous pouvez utiliser pour créer, publier et consommer du contenu.
 
-We are happy to have you on board.
+Nous sommes heureux de vous compter parmi nos membres.
