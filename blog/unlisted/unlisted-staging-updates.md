@@ -16,64 +16,48 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
-We've revamped the item list in Builder with a sleek, redesigned interface featuring intuitive drag-and-drop capabilities. Additionally, we've improved the account profile page, quiz app and analytics dashboard! Read further for more details!
-
-<!-- Everything below this will not be shown in the post overview -->
-<!-- truncate -->
-
 ## Account
 
-- Implemented a dedicated email validation page to enhance security and ensure valid email addresses.
-- Added a new section for user preferences in the settings page, allowing users to customize their experience.
-- Enabled users to edit various sections of their profile page for better personalization and control.
-
-## Analytics
-
-- Removed the "Starting from Today" option in the **My Statistics** date picker to simplify date selection.
-- Improved Arabic translations across the dashboard
+- **Validate Email Page**: Show new email address in update page.
+- **Translations**: Update translations for all relevant components and pages.
+- **Dependencies**: Update dependencies to their latest versions.
 
 ## Builder
 
-We've revamped the item list view to feature a more attractive design, which will be refined step by step based on user feedback. This redesign introduces several new features:
+- **Multi-Operation Features**: Add back multi-operation functionalities for home, recycle bin, and folder screens.
 
-:::warning[Operations on multiple items]
-The multiple items operations have been disabled for now, but will come back in a very near future. Let us know if it's a key feature you need!
-:::
+  - **Click to select many items to move, copy or recycle**
 
-- **Drag & upload files in between items**
+![upload in between](./delete-many.gif)
 
-![upload in between](./upload-between-items.gif)
+- **Drag & Select many items**
 
-- **Drag & upload files in items**
+![upload in between](./drag-copy-many.gif)
 
-![upload in item](./upload-in-item.gif)
+- **Drag & Move many items in a folder**
 
-- It's finally here: **moving an item into a folder!**
+![upload in between](./drag-move-many.gif)
 
-![move in item](./move-in-item.gif)
-
-Additionally, the following change has been made in the Builder:
-
-- Display the current position on the map, if permitted.
-
-## Library
-
-- Updated all dependency libraries to their latest versions.
+- **Member Validation Warning Banner**: Due to a change of managing accounts in our database, we now validate members on sign up. Previously registered users are validated by default. New users might have to validate their email, otherwise a warning banner will notify them about validation requirements.
+- **Visibility Change Modal**: Display a modal when changing the visibility of a published item.
+- **Name Validation**: Ensure the name field is validated as a required value when adding an item.
+- **Loading States**: Show loading states in bookmarks, published items, and recycled items sections.
 
 ## Apps
 
-- **Quiz**:
-  - Enabled users to add twice the same questions
-  - Enhanced the clarity and quality of the explanation texts
+### Quiz
+
+- **Retry Button for Fill in the Blanks**: Add a retry button for fill-in-the-blank questions.
+- **Reset Selection on Retry**: Reset the user's selection when retrying multiple-choice questions.
 
 ## Backend
 
-- Enhanced the reordering mechanism to allow creating items at a specific position in a list.
-- Implemented dependency injection (DI) for streamlined service integration.
-- Mentioned email address in email notifications when updating your email.
-- Optimized performance with a smart filtering when requesting descendant elements.
-- Ensured automatic member logout upon deletion.
-- Updated all dependency libraries to their latest versions.
+- **Publication State Calculation**: Move the computation of publication states to the backend.
+- **Email Validation Restriction**: Restrict access for members who haven't validated their email, with an exception for legacy members who are validated by default.
+- **Dependencies**: Update all backend dependencies to their latest versions.
+
+<!-- Everything below this will not be shown in the post overview -->
+<!-- truncate -->
 
 <!-- Generic message -->
 
