@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Fresh updates for the Graasp platform
-date: 2024-07-15
+date: 2024-07-31
 unlisted: true
 authors:
   - graasp
@@ -16,45 +16,23 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
-## Account
+## Analytics
 
-- **Validate Email Page**: Show new email address in update page.
-- **Translations**: Update translations for all relevant components and pages.
-- **Dependencies**: Update dependencies to their latest versions.
+- **Implement RTL for Arabic language**: Ensure that the entire Analytics interface supports right-to-left text alignment for Arabic, providing a user-friendly experience for Arabic-speaking users.
+- **Update French translations**
 
 ## Builder
 
-- **Multi-Operation Features**: Add back multi-operation functionalities for home, recycle bin, and folder screens.
-
-  - **Click to select many items to move, copy or recycle**
-
-![upload in between](./delete-many.gif)
-
-- **Drag & Select many items**
-
-![upload in between](./drag-copy-many.gif)
-
-- **Drag & Move many items in a folder**
-
-![upload in between](./drag-move-many.gif)
-
-- **Member Validation Warning Banner**: Due to a change of managing accounts in our database, we now validate members on sign up. Previously registered users are validated by default. New users might have to validate their email, otherwise a warning banner will notify them about validation requirements.
-- **Visibility Change Modal**: Display a modal when changing the visibility of a published item.
-- **Name Validation**: Ensure the name field is validated as a required value when adding an item.
-- **Loading States**: Show loading states in bookmarks, published items, and recycled items sections.
-
-## Apps
-
-### Quiz
-
-- **Retry Button for Fill in the Blanks**: Add a retry button for fill-in-the-blank questions.
-- **Reset Selection on Retry**: Reset the user's selection when retrying multiple-choice questions.
+- **Allow downloading an item as a raw file (instead of a zip)**: Users can now download individual files directly without having them compressed into a zip archive, enhancing accessibility and ease of use.
+- **Implement RTL for Arabic language**: Adapt the Builder interface to support right-to-left text alignment for Arabic, ensuring a seamless user experience for Arabic-speaking users.
+- **Show thumbnails on map view**: Display thumbnail previews of items directly on the map view, allowing users to quickly identify and select items visually.
+- **Improve search**: Enhance the search functionality to include searching within content, descriptions, and names of items, making it easier for users to find specific items based on detailed criteria.
+- **Optimize item layout rendering when selecting items**: Improve the performance of selecting items, ensuring a smoother and more responsive user experience.
 
 ## Backend
 
-- **Publication State Calculation**: Move the computation of publication states to the backend.
-- **Email Validation Restriction**: Restrict access for members who haven't validated their email, with an exception for legacy members who are validated by default.
-- **Dependencies**: Update all backend dependencies to their latest versions.
+- **Publish only validated items**: Ensure that only items that have passed validation checks are published, maintaining the quality and integrity of the content available to users.
+- Implement member password routes (POST and update PATCH)
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
