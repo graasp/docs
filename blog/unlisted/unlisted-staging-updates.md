@@ -19,6 +19,42 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
+## Account
+
+add 404 page
+arabic view - rtl  
+fix bug selecting 100 items in storage table
+update translations
+update dependencies (#334) (f81f355)
+
+## Analytics
+update dependencies
+
+## Builder
+
+add helper text  
+update for item login
+
+## Library
+
+update for item login
+
+## Player
+
+update for item login
+
+## Apps
+
+- Label the image (new): work in progress
+
+## Backend
+
+allow exporting etherpad  
+item login users are different than members
+update dependencies
+french: update translations
+fix membership request out of fastify cors scope
+
 <!-- Generic message -->
 
 We warmly welcome and encourage feedback from our users to continuously improve our platform. You can contact us by email [admin@graasp.org](mailto:admin@graasp.org) or by submitting an issue in this [Github repository](https://github.com/graasp/graasp-feedback).
