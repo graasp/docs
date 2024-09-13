@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Updates to the Graasp platform
-date: 2024-08-26
+date: 2024-09-13
 unlisted: true
 authors:
   - graasp
@@ -16,12 +16,12 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
-Support for more file types.
+Now that summer is nearly over, we are back with some updates, bug fixes and support for more file types. Read on for more !
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Increased audio file type support
+## Player: Increased audio file type support
 
 | format              | support             | share of items |
 | ------------------- | ------------------- | -------------- |
@@ -41,6 +41,26 @@ Support for more file types.
 | audio/flac          | 🆕 support added    | <0.05%         |
 | audio/midi          | ❌ no support        | <0.05%         |
 | audio/x-ms-wma      | ❌ no support        | <0.05%         |
+
+## Builder
+
+- Update icons to fit the new design
+- Add a helper text in the publication page that reminds users they can use the "Enter" key to quickly create tags.
+
+## Account
+
+- A not-found page was added
+- **Support Arabic**: users who select the arabic language will now enjoy a right-to-left interface. Feedback welcome.
+- Small bug fixes and translation updates.
+
+## Analytics
+
+- Fixed a small issue related to how actions are counted in the interface.
+
+## Miscellaneous bug fixes
+
+- **Etherpad export**: It is now possible to export an etherpad document.
+- Small fixes and updates.
 
 <!-- Generic message -->
 
