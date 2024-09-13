@@ -32,15 +32,15 @@ Now that summer is nearly over, we are back with some updates, bug fixes and sup
 | audio/wav           | ✅ already supported | 1%             |
 | audio/mp3           | ✅ already supported | 1%             |
 | audio/ogg           | 🆕 support added    | 1%             |
-| audio/vnd.dlna.adts | 🆕 support added    | <0.5%          |
-| audio/x-flac        | 🆕 support added    | <0.05%         |
-| audio/x-stm         | ❌ no support        | <0.05%         |
-| audio/x-aiff        | ❌ no support        | <0.05%         |
-| audio/x-hx-aac-adts | ❌ no support        | <0.05%         |
-| audio/aac           | 🆕 support added    | <0.05%         |
-| audio/flac          | 🆕 support added    | <0.05%         |
-| audio/midi          | ❌ no support        | <0.05%         |
-| audio/x-ms-wma      | ❌ no support        | <0.05%         |
+| audio/vnd.dlna.adts | 🆕 support added    | < 0.5%          |
+| audio/x-flac        | 🆕 support added    | < 0.05%         |
+| audio/x-stm         | ❌ no support        | < 0.05%         |
+| audio/x-aiff        | ❌ no support        | < 0.05%         |
+| audio/x-hx-aac-adts | ❌ no support        | < 0.05%         |
+| audio/aac           | 🆕 support added    | < 0.05%         |
+| audio/flac          | 🆕 support added    | < 0.05%         |
+| audio/midi          | ❌ no support        | < 0.05%         |
+| audio/x-ms-wma      | ❌ no support        | < 0.05%         |
 
 ## Builder
 
