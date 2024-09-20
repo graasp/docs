@@ -33,17 +33,33 @@ Here we list the tools that you should have installed in order to make your deve
 
 ### Required {#required}
 
-- A modern browser: Chrome, Firefox or others will work, choose based on your personal preference
+- A modern browser: Arc, Chrome, Firefox, Safari or others will work, choose based on your personal preference (it is recommended to have at least 2 installed on your machine in cases where you need to debug browser compatibility issues)
 - [Node.js](https://nodejs.org/en/download) version 20.0 or above:
   - We recommend to use [`volta`, a node version manager](https://volta.sh/)
   - You can also use [`nvm`, an older node version manager](https://github.com/nvm-sh/nvm)
-- A code editor: we recommend that you use [VSCode](https://code.visualstudio.com) because we will be using [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) to create our development environment for the backend.
+- A code editor:
+  - We recommend [VSCode](https://code.visualstudio.com) as our main supported development IDE, because we will be using [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) to create our development environment for the backend.
+  - You can also use IntelliJ WebStorm, SublimeText, or even vi, vim, nvim, emacs or nano
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/): to run containers
+  :::tip
+    You do not need to login to Docker.
+  :::
 
 ### Nice to have {#nice-to-have}
 
-- [Postman](https://www.postman.com/downloads): lets you send API requests with a GUI
+These are a few tools that we find nice to have when developing. Feel free to install them if you see their value. If you don't see an added value maybe don't install them. You can always install them later once you think they can benefit you.
+
+- An API client that allows you to make requests to the backend:
+  - We recommend [Bruno](https://www.usebruno.com/): an API client similar to Postman or Insomnia.
+  - [Postman](https://www.postman.com/downloads): lets you send API requests with a GUI
 - [Starship](https://starship.rs/): a utility to improve your terminal prompt (git branch, node version etc...)
+
+### Special note for people running macOS
+
+Fo users on macOS here is a list of tools that we think will make your life easier:
+
+- [Rectangle.app](https://rectangleapp.com/) a window manager that allows you to re-organize your window layout with the keyboard. It also supports dragging and snapping to edges of the screen. Very light weight, try it out by pressing `ctrl + alt + left arrow`, your current window should now take half the horizontal space on the left. There is a pro version available. IMO the base version is already enough, but if you think you will benefit from the upgrade and want to support the work of the developer, maybe consider buying the pro version.
+- [brew](brew.sh) the missing package manager for macOS. You might already have installed it, but if not, it is a good tool to have.
 
 ## Best practices {#tools}
 
