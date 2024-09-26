@@ -42,7 +42,7 @@ Here we list the tools that you should have installed in order to make your deve
   - You can also use IntelliJ WebStorm, SublimeText, or even vi, vim, nvim, emacs or nano
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/): to run containers
   :::tip
-    You do not need to login to Docker.
+  You do not need to login to Docker.
   :::
 
 ### Nice to have {#nice-to-have}
@@ -59,7 +59,7 @@ These are a few tools that we find nice to have when developing. Feel free to in
 Fo users on macOS here is a list of tools that we think will make your life easier:
 
 - [Rectangle.app](https://rectangleapp.com/) a window manager that allows you to re-organize your window layout with the keyboard. It also supports dragging and snapping to edges of the screen. Very light weight, try it out by pressing `ctrl + alt + left arrow`, your current window should now take half the horizontal space on the left. There is a pro version available. IMO the base version is already enough, but if you think you will benefit from the upgrade and want to support the work of the developer, maybe consider buying the pro version.
-- [brew](brew.sh) the missing package manager for macOS. You might already have installed it, but if not, it is a good tool to have.
+- [brew](https://brew.sh/) the missing package manager for macOS. You might already have installed it, but if not, it is a good tool to have.
 
 ## Best practices {#tools}
 
