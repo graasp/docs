@@ -90,6 +90,10 @@ Additionally, we've also improved Graasp Builder with:
 - Small fixes and updates.
 - Backend maintenance
 
+## Backend
+
+- Add freeze and disable for item login.
+
 <!-- Generic message -->
 
 We warmly welcome and encourage feedback from our users to continuously improve our platform. You can contact us by email [admin@graasp.org](mailto:admin@graasp.org) or by submitting an issue in this [Github repository](https://github.com/graasp/graasp-feedback).

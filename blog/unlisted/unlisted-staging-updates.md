@@ -16,12 +16,25 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
-Now that summer is nearly over, we are back with some updates, bug fixes and support for more file types. Read on for more !
-
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-COMING SOON
+## Builder
+
+- Update translations.
+- Optimize thumbnails when fetching items.
+
+## Player
+
+- Optimize thumbnails when fetching items.
+
+## Library
+
+- On page fetching, show loading collections.
+
+# Backend
+
+- Optimize thumbnails when fetching items and caching.
 
 <!-- Generic message -->
 
