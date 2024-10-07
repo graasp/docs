@@ -27,7 +27,7 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 ## Auth
 
 - Update dependencies.
-- **Forgot Password**: We've added a **Forget Password** feature for easier account access. If you forget your password, you can refer to this [documentation](/docs/user/account/forgot-password).
+- **Forgot Password**: We've added a **Forget Password** feature for easier account access. If you forget your password, you can refer to this [documentation](/user/account/forgot-password).
 
 ## Builder
 
