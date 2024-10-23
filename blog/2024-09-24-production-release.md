@@ -90,7 +90,7 @@ Additionally, we've also improved Graasp Builder with:
 - Small fixes and updates.
 - Backend maintenance
 
-## Backend
+## Backend
 
 - Add freeze and disable for item login.
 
