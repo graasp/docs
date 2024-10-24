@@ -2,7 +2,7 @@
 sidebar-position: 10
 ---
 
-# Login
+# 🗝️ Login
 
 ## With Email {#login-email}
 

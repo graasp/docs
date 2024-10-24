@@ -16,8 +16,20 @@
     "description": "The label for category 📱 Mobile App in sidebar developerSidebar"
   },
   "sidebar.userSidebar.category.account": {
-    "message": "Account",
+    "message": "👤 Account",
     "description": "The label for category account in sidebar userSidebar"
+  },
+  "sidebar.userSidebar.category.player": {
+    "message": "▶️ Player",
+    "description": "The label for category player in sidebar userSidebar"
+  },
+  "sidebar.userSidebar.category.advanced": {
+    "message": "💪 Advanced",
+    "description": "The label for category advanced in sidebar userSidebar"
+  },
+  "sidebar.userSidebar.category.publication": {
+    "message": "📚 Publication",
+    "description": "The label for category advanced in sidebar userSidebar"
   },
   "sidebar.developerSidebar.category.guides": {
     "message": "📖 Guides",
