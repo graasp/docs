@@ -19,7 +19,43 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Coming soon…
+## Auth
+
+- french: update translations
+- german: update translations
+- Show message when resetting password is successful
+- Upgrade to Material UI 6
+- Allow to press Enter to login with email
+
+## Builder
+
+- Remove lang category and use item lang instead
+- Refactor creation and edition dialogs
+- Clear item selection on navigation
+- Upgrade to Material UI 6
+
+## Library
+
+- Show item lang instead of category lang
+- Change lang category filter to item lang
+- Upgrade to Material UI 6
+
+## Player
+
+- Upgrade to Material UI 6
+
+## Backend
+
+- Add simpler health endpoint for quicker health response
+- Index item lang in meilisearch
+- Remove GET tags endpoints
+- Split upload csv between individual and group creation
+- Improve schemas
+  - optional param for actions
+  - allow local file when updating item schema
+  - do not check password format on password login
+- Escape title in emails for special characters
+- Infrastructure: Put nudenet back in container, setup single db instance
 
 <!-- Generic message -->
 
