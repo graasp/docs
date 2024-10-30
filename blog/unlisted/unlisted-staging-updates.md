@@ -55,7 +55,9 @@ We're working on an improvement for categories in our OER library. To head to di
   - allow local file when updating item schema
   - do not check password format on password login
 - Escape title in emails for special characters
-- Infrastructure: Put nudenet back in container, setup single db instance
+- Infrastructure:
+  - Put nudenet back in container, setup single db instance
+  - Move Redis in a container
 
 <!-- Generic message -->
 
