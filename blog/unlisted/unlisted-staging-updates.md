@@ -19,25 +19,25 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
+We're working on an improvement for categories in our OER library. To head to direction, we first started to migrate the **language** categories. Starting from now, the item's language will be used by the searching engine in the library to find matching collections. Please set your items' language with your content's language if it exists. Currently Graasp supports _english_, _french_, _german_, _italian_, _spanish_ and _arabic_.
+
 ## Auth
 
-- french: update translations
-- german: update translations
+- Allow to press Enter to login with email
 - Show message when resetting password is successful
 - Upgrade to Material UI 6
-- Allow to press Enter to login with email
+- Update French and German translations
 
 ## Builder
 
-- Remove lang category and use item lang instead
+- Replace language categories with item lang
 - Refactor creation and edition dialogs
 - Clear item selection on navigation
 - Upgrade to Material UI 6
 
 ## Library
 
-- Show item lang instead of category lang
-- Change lang category filter to item lang
+- Use supported languages instead of language category in search bar
 - Upgrade to Material UI 6
 
 ## Player
