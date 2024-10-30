@@ -19,7 +19,7 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Auth
+## Auth
 
 - french: update translations
 - german: update translations
@@ -34,13 +34,13 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 - Clear item selection on navigation
 - Upgrade to Material UI 6
 
-## Library
+## Library
 
 - Show item lang instead of category lang
 - Change lang category filter to item lang
 - Upgrade to Material UI 6
 
-## Player
+## Player
 
 - Upgrade to Material UI 6
 
