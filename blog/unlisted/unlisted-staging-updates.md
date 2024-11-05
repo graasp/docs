@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Updates to the Graasp platform
-date: 2024-10-23
+date: 2024-11-05
 unlisted: true
 authors:
   - graasp
@@ -21,15 +21,15 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 ## Account
 
-- Update translations
-- Remove devtools in production
-- Update dependencies
-- Fix lang switch
+- Move homepage to /account. This is a first step towards our goal simplifying our client application.
 - Send umami analytics to our own server
+- Remove devtools in production
+- Update translations
+- Update dependencies
 
 ## Auth
 
-- Change password icon
+- Change password icon with a locker
 
 ## Builder
 
@@ -46,6 +46,7 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 - Optimize GET /recycled
 - Update translations
+- Improve endpoints' schemas
 
 <!-- Generic message -->
 
