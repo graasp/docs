@@ -13,43 +13,43 @@ The updates focus on improving user experience, performance, and infrastructure.
 
 We're working on an improvement for categories in our OER library. To head to direction, we first started to migrate the **language** categories. Starting from now, the item's language will be used by the searching engine in the library to find matching collections. Please set your items' language with your content's language if it exists. Currently Graasp supports _english_, _french_, _german_, _italian_, _spanish_ and _arabic_.
 
-## Auth
+## Auth:
 
-- Allow to press Enter to login with email
-- Show message when resetting password is successful
-- Upgrade to Material UI 6
-- Update French and German translations
+- **Allow to press enter to login with an email**: Enable the "Enter" key to submit login forms for a smoother login experience.
+- **Show message when resetting a password is successful**: Display a confirmation message after a successful password reset.
+- **Upgrade to Material UI 6**: Update the UI framework to Material UI version 6.
+- **Update French and German Translations**: Ensure accurate translations for French and German users.
 
-## Builder
+## Builder:
 
-- Replace language categories with item lang
-- Refactor creation and edition dialogs
-- Clear item selection on navigation
-- Upgrade to Material UI 6
+- **Replace Language Categories with Item Language**: Remove language categories, and use item language to use in Library's search engine.
+- **Refactor Creation and Edition Dialogs**: Redesign dialogs for item creation and editing to improve user experience.
+- **Clear Item Selection on Navigation**: Automatically deselect items when navigating away from the current view.
+- **Upgrade to Material UI 6**: Update the UI framework to Material UI version 6.
 
-## Library
+## Library:
 
-- Use supported languages instead of language category in search bar
-- Upgrade to Material UI 6
+- **Use Supported Languages Instead of Language Category in Search**: Allow users to filter search by supported languages instead of categories.
+- **Upgrade to Material UI 6**: Update the UI framework to Material UI version 6.
 
-## Player
+## Player:
 
-- Upgrade to Material UI 6
+- **Upgrade to Material UI 6**: Update the UI framework to Material UI version 6.
 
-## Backend
+## Backend:
 
-- Add simpler health endpoint for quicker health response
-- Index item lang in meilisearch
-- Remove GET tags endpoints
-- Split upload csv between individual and group creation
-- Improve schemas
-  - optional param for actions
-  - allow local file when updating item schema
-  - do not check password format on password login
-- Escape title in emails for special characters
-- Infrastructure:
-  - Put nudenet back in container, setup single db instance
-  - Move Redis in a container
+- **Add Simpler Health Endpoint for Quicker Health Response**: Introduce a streamlined health check endpoint for faster status verification.
+- **Index Item Language in Meilisearch**: Add item language as an indexed field in Meilisearch for improved search functionality.
+- **Remove GET Tags Endpoints**: Eliminate unnecessary `GET /tags` endpoints to simplify the API.
+- **Split Upload CSV Between Individual and Group Creation**: Separate CSV upload handling for individual and group item creation.
+- **Improve Schemas**:
+  - **Optional Param for Actions**: Allow certain action parameters to be optional in schemas.
+  - **Allow Local File When Updating Item Schema**: Permit the use of local files when updating item schema.
+  - **Do Not Check Password Format on Password Login**: Skip password format validation during login for improved flexibility.
+- **Escape Title in Emails for Special Characters**: Ensure special characters in email titles are correctly escaped.
+- **Infrastructure**:
+  - **Put Nudenet Back in Container, Set Up Single DB Instance**: Revert Nudenet to a containerized environment and configure a single database instance.
+  - **Move Redis in a Container**: Transition Redis to a containerized setup for consistency and ease of management.
 
 <!-- Generic message -->
 
