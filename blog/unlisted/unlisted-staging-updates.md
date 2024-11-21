@@ -21,21 +21,14 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 ## Builder:
 
-- Redesign the link creation modal to fix bugs when editing a valid link's text.
-- Redesign the folder creation and editing modals for improved functionality.
-
-## Apps:
-
-- **Quiz**:
-  - Translate various question types for better accessibility.
-  - Allow repeated words in "Fill the Blanks" questions.
+- Remove Published badge in item grid
+- Improve File Upload, Etherpad and App creation modals
 
 ## Backend:
 
-- Add support for tags by creating tag and item-tag entities, and introduce an endpoint to retrieve tags for items.
-- Include a temperature parameter in chatbot API queries for customization.
-- Rename item tag settings (hidden, public) as item visibility.
-- Correct the password reset email to include accurate content.
+- Add implementation endpoints for tag (create, delete tag)
+- Identify and treat the H5P files in the general file upload
+- add documentation to member endpoints
 
 <!-- Generic message -->
 
