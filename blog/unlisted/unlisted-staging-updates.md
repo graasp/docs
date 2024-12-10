@@ -23,12 +23,22 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 - Remove Published badge in item grid
 - Improve File Upload, Etherpad and App creation modals
+- Allow to delete pseudonymized login, if it was previously set. This will delete related guests.
+- Fix link crash when using an url without protocol
+- Fix color issues
+- Remove use of display name
+
+## Apps
+
+- Update of dependencies for climate apps, fixing their height
 
 ## Backend:
 
 - Add implementation endpoints for tag (create, delete tag)
 - Identify and treat the H5P files in the general file upload
 - add documentation to member endpoints
+- Fix schema errors
+- Decrease action export limit time
 
 <!-- Generic message -->
 
