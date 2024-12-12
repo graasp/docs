@@ -23,6 +23,10 @@
     "message": "▶️ Player",
     "description": "The label for category player in sidebar userSidebar"
   },
+  "sidebar.userSidebar.category.library": {
+    "message": "📚 Library",
+    "description": "The label for category library in sidebar userSidebar"
+  },
   "sidebar.userSidebar.category.advanced": {
     "message": "💪 Advanced",
     "description": "The label for category advanced in sidebar userSidebar"
