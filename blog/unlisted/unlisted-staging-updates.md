@@ -32,6 +32,10 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 - **Implement the new tag system**: Enable the use of tags for organizing and filtering content, with resource types integrated into search to improve discoverability.
 
+## Apps
+
+- **Quiz**: Prevent infinite loop for readers and network errors on legacy data
+
 ## Backend
 
 - **Enable POST and PATCH methods for item folders**: Allow the creation and updating of item folders via specific backend API endpoints.
