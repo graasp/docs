@@ -15,10 +15,10 @@ For the last update of the year, the Graasp team brings to you key updates and f
 
 - Remove the "Published" badge from the item grid
 - Enhance modals for File Upload, Etherpad, and App creation
-- Enable deletion of pseudonymized logins and their associated guest data
-- Fix crash when accessing links without a protocol
-- Resolve color display issues
-- Eliminate use of display names
+- Enable the deletion of pseudonymized logins and their associated guest data for better data management.
+- Fix the crash that occurs when accessing links without a protocol (e.g., missing "http://").
+- Address and resolve color display inconsistencies across the platform.
+- Eliminate use of display names for items
 
 ## Apps
 
@@ -26,10 +26,10 @@ For the last update of the year, the Graasp team brings to you key updates and f
 
 ## Backend
 
-- Implement endpoints for tag management (create and delete tags)
-- Handle and process H5P files in the general file upload
-- Add comprehensive documentation for member endpoints
-- Resolve schema errors
+- Implement endpoints for tag management, allowing users to create and delete tags efficiently.
+- Add support for handling and processing H5P files within the general file upload feature.
+- Provide comprehensive documentation for member endpoints to improve developer understanding and usage.
+- Fix schema errors to ensure proper data validation and consistency across the system.
 - Reduce the export time limit for actions
 
 As we wrap up 2024 and step into 2025, the team wishes you a year filled with new opportunities, growth, and happiness!
