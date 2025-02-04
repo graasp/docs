@@ -196,6 +196,20 @@ const config = {
         },
       };
     },
+    [
+      "@dipakparmar/docusaurus-plugin-umami",
+      /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
+      ({
+        websiteID: process.env.UMAMI_WEBSITE_ID, // Required
+        analyticsDomain: "umami.graasp.org", // Required
+        scriptName: "", // Optional
+        dataHostURL: "umami.graasp.org", // Optional
+        dataAutoTrack: true, // Optional
+        dataDoNotTrack: true, // Optional
+        dataCache: true, // Optional
+        dataDomains: "graasp.github.io", // comma separated list of domains, *Recommended*
+      }),
+    ],
   ],
   headTags: [
     {
