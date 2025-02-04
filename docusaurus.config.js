@@ -202,7 +202,7 @@ const config = {
       ({
         websiteID: process.env.UMAMI_WEBSITE_ID, // Required
         analyticsDomain: "umami.graasp.org", // Required
-        scriptName: "", // Optional
+        // scriptName: "", // Optional
         dataHostURL: "umami.graasp.org", // Optional
         dataAutoTrack: true, // Optional
         dataDoNotTrack: true, // Optional
