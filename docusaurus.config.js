@@ -1,6 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 import { themes } from "prism-react-renderer";
+import "dotenv/config";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -67,6 +68,7 @@ const config = {
             return undefined;
           },
           blogTitle: "News and Updates from the Graasp Team",
+          blogSidebarCount: "ALL",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -102,6 +104,11 @@ const config = {
             label: "User Resources",
           },
           { to: "/blog", label: "Blog", position: "left" },
+          {
+            href: "https://graasp.github.io/docs/blog/rss.xml",
+            position: "right",
+            label: "RSS",
+          },
           {
             href: "https://github.com/graasp/docs",
             position: "right",
@@ -196,18 +203,22 @@ const config = {
         },
       };
     },
+    [
+      "@dipakparmar/docusaurus-plugin-umami",
+      /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
+      ({
+        websiteID: process.env.UMAMI_WEBSITE_ID, // Required
+        analyticsDomain: "umami.graasp.org", // Required
+        // scriptName: "", // Optional
+        dataHostURL: "https://umami.graasp.org", // Optional
+        dataAutoTrack: true, // Optional
+        dataDoNotTrack: true, // Optional
+        dataCache: true, // Optional
+        dataDomains: "graasp.github.io", // comma separated list of domains, *Recommended*
+      }),
+    ],
   ],
-  headTags: [
-    {
-      tagName: "link",
-      attributes: {
-        rel: "preload",
-        href: "/fonts/Nunito.ttf",
-        as: "font",
-        crossorigin: "anonymous",
-      },
-    },
-  ],
+  headTags: [],
 };
 
 module.exports = config;

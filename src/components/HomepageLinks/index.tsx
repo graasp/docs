@@ -4,20 +4,19 @@ import React from "react";
 
 type HomepageLinkItem = {
   title: string;
-  key: string;
   Svg: React.ComponentType<React.ComponentProps<"svg">>;
   description: string;
   to: string;
 };
 
-const HomePageLinkList: HomepageLinkItem[] = [
+const HomePageLinkList = [
   {
+    key: "news",
     title: translate({
       id: "pages.home.latestNews",
       message: "Latest News",
       description: "Title for the latest news section",
     }),
-    key: "news",
     description: translate({
       id: "pages.home.latestNews.description",
       message:
@@ -28,12 +27,12 @@ const HomePageLinkList: HomepageLinkItem[] = [
     to: "blog",
   },
   {
+    key: "docs",
     title: translate({
       id: "pages.home.developerDocs",
       message: "Developer Docs",
       description: "Title for the developer docs section",
     }),
-    key: "docs",
     description: translate({
       id: "pages.home.developerDocs.description",
       message:
@@ -44,12 +43,12 @@ const HomePageLinkList: HomepageLinkItem[] = [
     to: "developer/intro",
   },
   {
+    key: "users",
     title: translate({
       id: "pages.home.userResources",
       message: "User Resources",
       description: "Title for the user resources section",
     }),
-    key: "users",
     description: translate({
       id: "pages.home.userResources.description",
       message:
@@ -59,7 +58,7 @@ const HomePageLinkList: HomepageLinkItem[] = [
     Svg: require("@site/static/img/home-users.svg").default,
     to: "user/intro",
   },
-];
+] as const;
 
 const HomepageLink = ({ title, description, Svg, to }: HomepageLinkItem) => {
   return (
@@ -74,10 +73,7 @@ const HomepageLink = ({ title, description, Svg, to }: HomepageLinkItem) => {
           </div>
           <div className="my-2">
             <div className="flex gap-4 justify-center">
-              <Svg
-                className="flex-grow-1 flex-shrink-0 w-24 h-24 md:w-36 md:h-36"
-                role="img"
-              />
+              <Svg className="flex-grow-1 flex-shrink-0 w-24 h-24 md:w-36 md:h-36" />
               <p className="my-auto">{description}</p>
             </div>
           </div>
@@ -90,8 +86,8 @@ const HomepageLink = ({ title, description, Svg, to }: HomepageLinkItem) => {
 const HomepageLinks = () => {
   return (
     <div className="place-content-center p-4">
-      {HomePageLinkList.map((link) => (
-        <HomepageLink key={link.key} {...link} />
+      {HomePageLinkList.map(({ key, ...link }) => (
+        <HomepageLink key={key} {...link} />
       ))}
     </div>
   );
