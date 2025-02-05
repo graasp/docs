@@ -1,6 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 import { themes } from "prism-react-renderer";
+import "dotenv/config";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -203,7 +204,7 @@ const config = {
         websiteID: process.env.UMAMI_WEBSITE_ID, // Required
         analyticsDomain: "umami.graasp.org", // Required
         // scriptName: "", // Optional
-        dataHostURL: "umami.graasp.org", // Optional
+        dataHostURL: "https://umami.graasp.org", // Optional
         dataAutoTrack: true, // Optional
         dataDoNotTrack: true, // Optional
         dataCache: true, // Optional
