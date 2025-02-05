@@ -104,6 +104,11 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
+            href: `${process.env.BASE ?? "/"}blog/rss.xml`,
+            position: "right",
+            label: "RSS",
+          },
+          {
             href: "https://github.com/graasp/docs",
             position: "right",
             label: "Github",
