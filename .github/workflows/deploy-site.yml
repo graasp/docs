@@ -38,6 +38,7 @@ jobs:
         run: yarn build
         env:
           UMAMI_WEBSITE_ID: ${{ secrets.UMAMI_WEBSITE_ID }}
+          BASE: /docs/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

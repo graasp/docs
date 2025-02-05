@@ -213,15 +213,15 @@ const config = {
     ],
   ],
   headTags: [
-    {
-      tagName: "link",
-      attributes: {
-        rel: "preload",
-        href: "/fonts/Nunito.ttf",
-        as: "font",
-        crossorigin: "anonymous",
-      },
-    },
+    // {
+    //   tagName: "link",
+    //   attributes: {
+    //     rel: "preload",
+    //     href: "/fonts/Nunito.ttf",
+    //     as: "font",
+    //     crossorigin: "anonymous",
+    //   },
+    // },
   ],
 };
 
