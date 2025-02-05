@@ -68,6 +68,7 @@ const config = {
             return undefined;
           },
           blogTitle: "News and Updates from the Graasp Team",
+          blogSidebarCount: "ALL",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -104,7 +105,7 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: `${process.env.BASE ?? "/"}blog/rss.xml`,
+            href: "https://graasp.github.io/docs/blog/rss.xml",
             position: "right",
             label: "RSS",
           },
@@ -217,17 +218,7 @@ const config = {
       }),
     ],
   ],
-  headTags: [
-    // {
-    //   tagName: "link",
-    //   attributes: {
-    //     rel: "preload",
-    //     href: "/fonts/Nunito.ttf",
-    //     as: "font",
-    //     crossorigin: "anonymous",
-    //   },
-    // },
-  ],
+  headTags: [],
 };
 
 module.exports = config;
