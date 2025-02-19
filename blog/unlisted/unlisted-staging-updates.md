@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Updates to the Graasp platform
-date: 2025-02-06
+date: 2025-02-19
 unlisted: true
 authors:
   - graasp
@@ -16,28 +16,39 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
+During the last weeks, the Graasp team has work diligently to bring you a new home experience. Read further for more details.
+
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Interfaces
+## Home Page & Navigation
 
-- **Flicker caused by suspense when loading translations**: Fix a flicker issue when translations load asynchronously to improve user experience.
-- **Logo display on Safari**: Resolve logo display issues in Safari browsers for consistent rendering across platforms.
-- **Fill FAQ content**: Replace mock data in the FAQ section with real content for a polished experience.
-- **Update the user profile link in user drop down**: Modify the user profile link in the user switcher to ensure correct redirection.
-- **Optimise Library home page content**: Retrieve content faster for the Library homepage
-- Use endpoints with generated API
-- Fix country selection in the map view
+With this update, we've redesigned the interface of your personal homepage for a more streamlined experience. It now displays, just like before, the items shared with you and your bookmarked content, but with enhanced accessibility. We hope this update makes it even easier to access the items you use most frequently!
 
-## Backend
+![home page](./screenshots/new-home-page.png)
 
-- **Add app and shortcuts endpoints**: Create new API endpoints for app and shortcut-specific functionalities.
-- **Add likes and creator functionality in Meilisearch**: Integrate "likes" into Meilisearch indexing to allow users search for liked items and filter by creator. Specific endpoints have been created of recent and liked collections.
-- **Allow readers to edit Etherpad**: Enable readers to edit Etherpad documents, expanding collaboration capabilities.
-- **Optimise retrieval of thumbnails**: Update the system to return `null` for items lacking a thumbnail, rather than an error.
-- **Replace non-breaking spaces in link metadata titles**: Replace non-breaking spaces with regular spaces for better title compatibility.
-- Improve and fix schemas for item validation
-- Clean up and remove obsolete host variables to reduce complexity and improve maintainability.
+Additionally, we've revamped the side menu of the Builder view. It now features the same navigation tree as in the Player, providing a clear view of your item's structure and a better understanding of the hierarchy of your content.
+
+![builder interface](./screenshots/builder-interface.png)
+
+**Bullet list of the improvements:**
+
+- Display accessible items and bookmarks directly on the home page for easy access.
+- Transform the drawer content into tabs in the right-hand side corner of the home page for a clearer navigation.
+- Include settings and tutorials within the member drop-down menu for easier access. Replace the “Profile” option with “Home” in the user menu popup for clearer options.
+- Show item tree navigation in the builder to enhance the user experience when working with complex items.
+
+Don't hesitate to share your feedback with us, so we can improve even more your experience with Graasp!
+
+## Bug Fixes & Updates
+
+- Resolve app resizing issues.
+- Prevent membership requests from being made for hidden items.
+- Update some French translations to improve clarity and inclusivity.
+- Address issues with notifications and login errors to ensure users are notified correctly and can log in without problems.
+- Fix websockets-related issues to maintain stable real-time communication and connectivity.
+- Ensure the player interface is scrolled to the top of the page on navigation to improve the user’s ability to find new content after navigating.
+- Fix the app and link description update process, ensuring changes to descriptions are applied and displayed correctly.
 
 <!-- Generic message -->
 
