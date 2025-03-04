@@ -40,6 +40,11 @@ Additionally, we've revamped the side menu of the Builder view. It now features 
 
 Don't hesitate to share your feedback with us, so we can improve even more your experience with Graasp!
 
+In addition, note those major new features:
+
+- A new option allows reader to write within an etherpad document (you can find the option when creating or editing an etherpad).
+- Links can have their URL changed.
+
 ## Bug Fixes & Updates
 
 - Resolve app resizing issues.
