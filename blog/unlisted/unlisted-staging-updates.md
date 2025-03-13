@@ -16,44 +16,27 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
-During the last weeks, the Graasp team has work diligently to bring you a new home experience. Read further for more details.
+Since the team is working on a consequent refactor of the backend, only minimal yet necessary changes are brought to you in this new release. Read further for more details.
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Home Page & Navigation
+## Resolution of Unwanted download of pdf files
 
-With this update, we've redesigned the interface of your personal homepage for a more streamlined experience. It now displays, just like before, the items shared with you and your bookmarked content, but with enhanced accessibility. We hope this update makes it even easier to access the items you use most frequently!
+Thanks to the feedback of one of our user, an annoying bug has been detected. This bug had been happening when you copy pdf files. Those copies were then, in the player view, automatically downloaded rather than displayed as usual.
 
-![home page](./screenshots/new-home-page.png)
+A fix has been made live for further copies. Thus if you copy pdf starting today, this bug should not happen anymore. Please let us know if it still happens to you.
 
-Additionally, we've revamped the side menu of the Builder view. It now features the same navigation tree as in the Player, providing a clear view of your item's structure and a better understanding of the hierarchy of your content.
+:::info[How to stop my pdf files to be downloaded?]
 
-![builder interface](./screenshots/builder-interface.png)
+If you have remaining faulty copies of pdf files, please delete them. And replace with the corresponding pdf file OR copy them again. The download action on new pdf files shouldn't happen anymore.
 
-**Bullet list of the improvements:**
+:::
 
-- Display accessible items and bookmarks directly on the home page for easy access.
-- Transform the drawer content into tabs in the right-hand side corner of the home page for a clearer navigation.
-- Include settings and tutorials within the member drop-down menu for easier access. Replace the “Profile” option with “Home” in the user menu popup for clearer options.
-- Show item tree navigation in the builder to enhance the user experience when working with complex items.
+### Backend changes (details)
 
-Don't hesitate to share your feedback with us, so we can improve even more your experience with Graasp!
-
-In addition, note those major new features:
-
-- A new option allows reader to write within an etherpad document (you can find the option when creating or editing an etherpad).
-- Links can have their URL changed.
-
-## Bug Fixes & Updates
-
-- Resolve app resizing issues.
-- Prevent membership requests from being made for hidden items.
-- Update some French translations to improve clarity and inclusivity.
-- Address issues with notifications and login errors to ensure users are notified correctly and can log in without problems.
-- Fix websockets-related issues to maintain stable real-time communication and connectivity.
-- Ensure the player interface is scrolled to the top of the page on navigation to improve the user’s ability to find new content after navigating.
-- Fix the app and link description update process, ensuring changes to descriptions are applied and displayed correctly.
+- Add backend implementation for deleting and uploading many files at once
+- Fix copy on files (path, remove automatic content disposition to attachment and cache-control)
 
 <!-- Generic message -->
 
