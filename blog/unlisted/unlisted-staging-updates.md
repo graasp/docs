@@ -33,6 +33,11 @@ If you have remaining faulty copies of pdf files, please delete them. And replac
 
 :::
 
+### Library (details)
+
+- Fix card thumbnail sizing in Safari
+- Fix card padding on mobile screens
+
 ### Backend changes (details)
 
 - Add backend implementation for deleting and uploading many files at once
