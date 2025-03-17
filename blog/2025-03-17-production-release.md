@@ -1,22 +1,12 @@
 ---
-title: Staging Updates
+title: March 17th, Updates
 description: Updates to the Graasp platform
 date: 2025-03-17
-unlisted: true
 authors:
   - graasp
 ---
 
-Below are the latest changes deployed on [Graasp Staging](https://builder.stage.graasp.org).
-
-:::warning[Important notes]
-
-- You might need to create a new account on [the staging environnement](https://auth.stage.graasp.org) since the staging environment uses a different database as production's.
-- Use a different browser or an incognito session to prevent cookie collision.
-
-:::
-
-Since the team is working on a consequent refactor of the backend, only minimal yet necessary changes are brought to you in this new release. Read further for more details.
+The team is currently working on a consequent refactor of the backend, but still bring to you fixes of reported bugs. Read further for more details.
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
@@ -33,6 +23,10 @@ If you have remaining faulty copies of pdf files, please delete them. And replac
 
 :::
 
+## Trash does not show sub-elements
+
+Under particular conditions, some sub-items might not appear in the trash despite being deleted. It has been quickly fixed by the team, in order for users to access their elements they want to retrieve. However, the total count of trashed items could be incorrect (the displayed number can be higher than expected). A patch to correct this error will follow soon.
+
 ### Library (details)
 
 - Fix card thumbnail sizing in Safari
@@ -42,13 +36,9 @@ If you have remaining faulty copies of pdf files, please delete them. And replac
 
 - Add backend implementation for deleting and uploading many files at once
 - Fix copy on files (path, remove automatic content disposition to attachment and cache-control)
-- Recycle bin shows deleted children (whose membership are inherited). Total count is falsy.
+- Recycle bin shows deleted children (whose membership are inherited). Total count can however be falsy.
 - Fix link in the email sent on membership request
 
 <!-- Generic message -->
 
 We warmly welcome and encourage feedback from our users to continuously improve our platform. You can contact us by email [admin@graasp.org](mailto:admin@graasp.org) or by submitting an issue in this [Github repository](https://github.com/graasp/graasp-feedback).
-
-:::info[For editors and developers]
-Feel free to update this text before we officially release it using the "Edit this page" button at the end of the article
-:::
