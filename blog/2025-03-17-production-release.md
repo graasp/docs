@@ -6,38 +6,42 @@ authors:
   - graasp
 ---
 
-The team is currently working on a consequent refactor of the backend, but still bring to you fixes of reported bugs. Read further for more details.
+The team is currently working on a consequent refactor of the backend, in the meantime, enjoy some bug fixes that were reported. Read further for more details.
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Resolution of Unwanted download of pdf files
+## Fixed an issue with PDF files auto-downloading as soon as element is opened
 
-Thanks to the feedback of one of our user, an annoying bug has been detected. This bug had been happening when you copy pdf files. Those copies were then, in the player view, automatically downloaded rather than displayed as usual.
+Thanks to the feedback of a user, an annoying bug was detected. The bug affected PDF items created by copy. The copied PDF files would automatically download when opened (in the builder and player view) instead of displaying as usual causing inconveniences and readability issues.
 
-A fix has been made live for further copies. Thus if you copy pdf starting today, this bug should not happen anymore. Please let us know if it still happens to you.
+We deployed a fix that will ensure future copies are not affected. So, if you copy a PDF file starting today, you should not be affected by the bug. Please let us know if it still happens to you.
 
-:::info[How to stop my pdf files to be downloaded?]
+:::info[How do I stop my PDF files from automatically downloading when I open them?]
 
-If you have remaining faulty copies of pdf files, please delete them. And replace with the corresponding pdf file OR copy them again. The download action on new pdf files shouldn't happen anymore.
+If you have PDF files that exhibit the faulty behavior, you should download them, then delete the faulty copy. You should create them again by uploading the downloaded PDF or creating it from a fresh copy of the known good file. Once done, the PDF file should not download automatically anymore.
 
 :::
 
-## Trash does not show sub-elements
+## Fixed an issue affecting sub-elements not displaying in the Trash
 
-Under particular conditions, some sub-items might not appear in the trash despite being deleted. It has been quickly fixed by the team, in order for users to access their elements they want to retrieve. However, the total count of trashed items could be incorrect (the displayed number can be higher than expected). A patch to correct this error will follow soon.
+When deleting an element with a parent (sub-element), under particular conditions, it would not appear in the Trash. As this issue affected users that were afraid of having lost content, it was quickly fixed by the team.
+Users should now be able to see and restore sub-elements from the Trash to retrieve wrongfully removed content.
+Important to note that the displayed total count of deleted items could be incorrect (the displayed number can be higher than expected). A fix to correct this error will follow soon.
+
+## Others
 
 ### Library (details)
 
 - Fix card thumbnail sizing in Safari
 - Fix card padding on mobile screens
 
-### Backend changes (details)
+### Backend (details)
 
 - Add backend implementation for deleting and uploading many files at once
-- Fix copy on files (path, remove automatic content disposition to attachment and cache-control)
-- Recycle bin shows deleted children (whose membership are inherited). Total count can however be falsy.
-- Fix link in the email sent on membership request
+- Fix erroneous copy of files (path, remove automatic content disposition to attachment and cache-control)
+- Recycle bin shows deleted children (whose membership are inherited). Total count can be over-shooting.
+- Fix link URL in membership request notification email
 
 <!-- Generic message -->
 
