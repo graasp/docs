@@ -1,3 +1,3 @@
 # 📱 Application mobile
 
-Documentation for the mobile platform of the Graasp products
+Documentation pour la plateforme mobile de Graasp
