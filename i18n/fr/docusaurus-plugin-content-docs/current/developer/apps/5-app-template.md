@@ -1,89 +1,85 @@
 ---
-title: App Template
 slug: app-template
 ---
 
-# Graasp App Template
+# Patron pour la conception d'applications Graasp
 
-We provide a template to quickly start a new app for Graasp with the [React framework](https://react.dev/) and our [query client](./apps-query-client).
+Nous fournissions un patron pour vous permettre de commencer rapidement le développement de votre app Graasp en utilisant le [framework React](https://react.dev/) et notre [client de requête](./apps-query-client).
 
-You can find the rest of the instructions on how to use the template in the [README of the template](https://github.com/graasp/graasp-app-starter-ts-vite/blob/main/README.md).
+Vous trouverez le reste des instructions sur comment utiliser le patron dans [le README du patron (en anglais)](https://github.com/graasp/graasp-app-starter-ts-vite/blob/main/README.md).
 
-:::note
-This documentation concerns the [version 1.1.0](https://github.com/graasp/graasp-app-starter-ts-vite/releases/tag/v1.1.0) of the template.
-:::
+:::note Ce document concerne la [version 1.1.0](https://github.com/graasp/graasp-app-starter-ts-vite/releases/tag/v1.1.0) du patron. :::
 
-## Using this template
+## Utilisation du patron
 
-The recommended way to use this template is with the [Graasp CLI](https://github.com/graasp/graasp-cli) which provides a setup wizard and some convenience tools when creating your project.
+Nous vous recommandons d'utiliser ce patron avec la [ligne de commande Graasp](https://github.com/graasp/graasp-cli) qui fournit un assistant de création et quelques raffinements utils à la création de votre app.
 
-Alternatively it is possible to create a new Github repo from this project using the Github Template function. In this case the local setup is left as an exercice to the reader.
+It est également possible de créer votre app directement dans GitHub en utilisation la fonction GitHub Template trouvable sur la page d'accueil du dépôt du patron. Si vous choisissez cette option, le démarrage du développement local est laissée en exercice au dévelopeur.
 
-### With the Graasp CLI
+### Avec la ligne de commande Graasp
 
-This template can be used with the [graasp CLI](https://www.npmjs.com/package/@graasp/cli?activeTab=readme) to setup your project in a single line:
+Ce patron peut être utilisé avec [la ligne de commande Graasp](https://www.npmjs.com/package/@graasp/cli?activeTab=readme) pour configurer projet avec une simple ligne:
 
 ```bash
 npx @graasp/cli@latest new -s graasp/graasp-app-starter-ts-vite
 ```
 
-The CLI will ask you a few questions to help you setup your project. It suggests sane defaults:
+La ligne de commande va vous poser quelques questions pour vous aider à configurer votre projet. Les valeurs par défaut proposées:
 
-- Deploying using GitHubActions (recommended)
-- Provide an appId
-- Auto-install project dependencies
-- Initialize a local git repository
+- Déploiement avec GitHub Actions (recommandé)
+- Générer un `appId`
+- Installation automatique des dépendances
+- Initialisation d'un dépôt git local
 
-<details >
-<summary><h3>Directly from GitHub</h3></summary>
+<details><summary><h3>Directement depuis GitHub</h3></summary></details>
 
-Should you choose to bootstrap your graasp app manually, you will need to execute the following steps.
+Si vous choisissez de commencer votre projet manuellement vous devrez effectuer les étapes comme suit:
 
-#### Cloning the template
+#### Cloner le patron
 
-Get a copy of this repo.
+Obtenir une copie du dépôt.
 
-##### Using the Template button
+##### Utilisation de la fonction "patron" (template)
 
-Click on the `Use this template` button. For more instructions head over to the [GitHub Docs on Using a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+Clickez sur le boutton `Use this template`. Pour plus d'instructions veuillez consulter [les instructions de la documentation GitHub sur l'utilisation des patrons](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
 
-##### Clone from the command line
+##### Clone depuis la ligne de commande
 
-With `git`:
+Avec `git`:
 
 ```sh
 git clone
 ```
 
-With the [GitHub CLI](https://cli.github.com/):
+Avec la ligne de commande [GitHub CLI](https://cli.github.com/):
 
 ```bash
 gh repo clone graasp/graasp-app-starter-ts-vite
 ```
 
-#### Adding Workflows
+#### Ajout des workflows
 
-To deploy your app using github actions.
+Pour déployer votre app avec Github Actions.
 
-#### Renaming
+#### Renommer
 
-You will have to look for the `Graasp App Template` string in yours project files and rename it to your project name
+Vous devrez chercher la chaîne de caractères `Graasp App Template` dans le code du projet et la remplacer par le nom de votre application.
 
-</details>
 
-### GitHub Repo setup
 
-If you choose to deploy your app with the provided GitHubActions workflows you will need to create the following secrets:
+### Configuration du dépôt GitHub
 
-- `APP_ID`: a UUID v4 that identifies your app for deployment
-- `APP_KEY`: a UUID v4 that authorizes your app with the Graasp API
-- `SENTRY_DSN`: your Sentry url to report issues and send telemetry
+Si vous choisissez de déployer votre application avec les workflows GitHub Actions fournis vous devrez créer les secrets suivants:
+
+- `APP_ID`: un UUID v4 qui identifie votre application de manière unique pour le déploiement
+- `APP_KEY`: a UUID v4 qui autorise votre application à utiliser l'API Graasp (à obtenir auprès de l'équipe de développement Graasp)
+- `SENTRY_DSN`: votre url Sentry pour collecter les rapports de crash et de télémétrie (optionnelle)
 
 ## Installation
 
-## Running the app
+## Lancer l'application
 
-Create a `.env.development` file with the following content:
+Créez un fichier `.env.development` à la racine du projet avec le contenu suivant:
 
 ```bash
 VITE_PORT=3005
@@ -93,9 +89,9 @@ VITE_GRAASP_APP_KEY=45678-677889
 VITE_VERSION=latest
 ```
 
-## Running the tests
+## Lancer les tests
 
-Create a `.env.test` file with the following content:
+Créez un fichier `.env.test` à la racine du projet avec le contenu suivant:
 
 ```bash
 VITE_PORT=3333
