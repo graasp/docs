@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://graasp.github.io/docs">
+    <img width="500px" src="./static/img/graasp-social-card.png" alt="Graasp social card"/>
+  </a>
+</p>
+
 # Graasp Documentation and news
 
 [![French](https://gitlocalize.com/repo/9771/fr/badge.svg)](https://gitlocalize.com/repo/9771/fr?utm_source=badge)
