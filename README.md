@@ -36,7 +36,7 @@ This command starts a local development server and opens up a browser window. Mo
 
 > [!WARNING]
 > If you want to locally develop one of the internationalisations you will have to start the app with the correct local:
-> `yarn start --locale fr` This is because the locales are different SPAs.
+> `yarn start --locale fr` This is because the locales are different SPAs (single page apps).
 
 ### Build
 
@@ -48,4 +48,4 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
-This repo deploys the website using GitHub Actions to deploy to GitHub Pages.
+This repo deploys the website to GiHub Pages using GitHub Actions.
