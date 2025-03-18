@@ -1,8 +1,13 @@
 # Graasp Documentation and news
 
+[![French](https://gitlocalize.com/repo/9771/fr/badge.svg)](https://gitlocalize.com/repo/9771/fr?utm_source=badge)
+[![German](https://gitlocalize.com/repo/9771/de/badge.svg)](https://gitlocalize.com/repo/9771/de?utm_source=badge)
+
 This repo hosts the code for the Graasp documentation and news website.
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+
+## Developing
 
 ### Installation
 
