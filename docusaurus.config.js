@@ -91,19 +91,19 @@ const config = {
           srcDark: "img/graasp-develop_dark.svg",
         },
         items: [
+          { to: "/blog", label: "Blog", position: "left" },
           {
             type: "doc",
             docId: "developer/intro",
             position: "left",
-            label: "Developer",
+            label: "Docs",
           },
           {
             type: "doc",
             docId: "user/intro",
             position: "left",
-            label: "User Resources",
+            label: "Guides",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://graasp.github.io/docs/blog/rss.xml",
             position: "right",
