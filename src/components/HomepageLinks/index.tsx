@@ -27,22 +27,6 @@ const HomePageLinkList = [
     to: "blog",
   },
   {
-    key: "docs",
-    title: translate({
-      id: "pages.home.developerDocs",
-      message: "Developer Docs",
-      description: "Title for the developer docs section",
-    }),
-    description: translate({
-      id: "pages.home.developerDocs.description",
-      message:
-        "From general architecture to code examples and individual code snippets explanations, everything necessary to understand and contribute to the Graasp project",
-      description: "Description for the developer docs section",
-    }),
-    Svg: require("@site/static/img/home-developers.svg").default,
-    to: "developer/intro",
-  },
-  {
     key: "users",
     title: translate({
       id: "pages.home.userResources",
@@ -58,11 +42,27 @@ const HomePageLinkList = [
     Svg: require("@site/static/img/home-users.svg").default,
     to: "user/intro",
   },
+  {
+    key: "docs",
+    title: translate({
+      id: "pages.home.developerDocs",
+      message: "Developer Docs",
+      description: "Title for the developer docs section",
+    }),
+    description: translate({
+      id: "pages.home.developerDocs.description",
+      message:
+        "From general architecture to code examples and individual code snippets explanations, everything necessary to understand and contribute to the Graasp project",
+      description: "Description for the developer docs section",
+    }),
+    Svg: require("@site/static/img/home-developers.svg").default,
+    to: "developer/intro",
+  },
 ] as const;
 
 const HomepageLink = ({ title, description, Svg, to }: HomepageLinkItem) => {
   return (
-    <div className="mx-auto mb-4 last:mb-0 max-w-md md:max-w-lg border rounded-lg hover:ring ring-indigo-500 hover:ease-in-out duration-300">
+    <div className="max-w-md md:max-w-lg border rounded-lg hover:ring ring-indigo-500 hover:ease-in-out duration-300">
       <Link
         to={to}
         className="no-underline text-current hover:no-underline hover:text-current"
@@ -85,7 +85,7 @@ const HomepageLink = ({ title, description, Svg, to }: HomepageLinkItem) => {
 
 const HomepageLinks = () => {
   return (
-    <div className="place-content-center p-4">
+    <div className="flex flex-wrap gap-4 justify-center justify-items-center items-stretch p-4 w-fit mx-auto">
       {HomePageLinkList.map(({ key, ...link }) => (
         <HomepageLink key={key} {...link} />
       ))}

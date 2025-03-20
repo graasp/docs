@@ -1,6 +1,5 @@
 import React from "react";
 import clsx from "clsx";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 
 import styles from "./index.module.css";
@@ -17,7 +16,7 @@ function HomepageHeader() {
       )}
     >
       <div className="container flex flex-col items-center">
-        <h1 className="hero__title font-extrabold w-max text-transparent bg-clip-text bg-gradient-to-br from-[#56B0F8] from-10% via-[#5050D2] to-90% to-[#C658D0]">
+        <h1 className="text-3xl md:text-5xl font-extrabold w-max text-transparent bg-clip-text bg-gradient-to-br from-[#56B0F8] from-10% via-[#5050D2] to-90% to-[#C658D0]">
           {translate({
             id: "pages.home.title",
             description: "The homepage welcome message",
