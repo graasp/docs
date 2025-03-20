@@ -52,4 +52,4 @@ Vous pouvez modifier l'e-mail utilisé avec votre compte Graasp sur [la page des
     1. Si vous obtenez une erreur, assurez-vous que vous utilisez un nouveau lien. Les liens durent 24 heures. Si votre lien est plus ancien, veuillez mettre à jour à nouveau votre email dans votre profil et utiliser le nouveau lien que vous recevrez.
     2. Assurez-vous de ne pas avoir créé de compte Graasp avec votre nouvelle adresse e-mail.
 
-9. Une fois la validation réussie, vous pouvez vous connecter avec votre nouvel email. Votre ancien email recevra un dernier message vous informant que vous avez déplacé votre compte vers votre nouvel email.
+9. Une fois la validation réussie, vous pouvez vous connecter avec votre nouvel email. Votre ancien email recevra un dernier message vous informant que vous avez remplacé l'email de votre compte avec un nouvel email.
