@@ -24,4 +24,6 @@ Il existe quelques [tutoriels en français](https://player.graasp.org/bd918837-5
 
 Il existe également des tutoriels disponibles dans d'autres langues comme [l'anglais](https://player.graasp.org/9d80d81f-ec9d-4bfb-836a-1c6b125aef2f) ou [l'allemand](https://player.graasp.org/07773683-c882-48b5-961e-1fe54833b58c)
 
-:::tip Vous pouvez lire cette documentation dans votre langue préférée, en la sélectionnant dans le menu déroulant en haut à droite de cette page. :::
+:::tip
+Vous pouvez lire cette documentation dans votre langue préférée, en la sélectionnant dans le menu déroulant en haut à droite de cette page.
+:::
