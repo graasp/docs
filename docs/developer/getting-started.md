@@ -21,14 +21,27 @@ We will assume that you have a UNIX compatible machine at your disposal (Mac, Li
 If not done already please install these required tools
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) (if using Mac or Windows), on Linux you should be good with installing the docker package.
-- [Node](https://nodejs.org/en/download) version 20 or above with `volta` or `nvm` (recommend, see the [intro section](./intro#required))
+- [Node](https://nodejs.org/en/download) version 22 or above with `volta` or `nvm` (recommend, see the [intro section](./intro#required))
 - `git` for version control operations
+
+## Node package managers
+
+We currently use `yarn` and `pnpm` as package managers in our projects. Please refer to the following sections to install these tools.
+
+### Installing `pnpm` with `volta` {#pnpm-volta}
+
+Volta allows you to install global packages:
+
+```sh
+volta install node
+volta install pnpm
+```
 
 ### Installing Yarn with `volta` {#with-volta}
 
 Volta allows you to use global packages as if you were using local ones.
 
-```bash
+```sh
 volta install node
 volta install yarn
 ```
@@ -67,16 +80,16 @@ We recommend using the Github CLI as it helps with interacting with GitHub troug
 1. Open the Docker Desktop app.
 
 :::note
-This app should run in the background. You do not need to add have it automatically start when you open your session. It simply needs to run when you want to use the backend to code.
+This app should run in the background. You do not need to have it automatically start when you open your session. It simply needs to run when you want to use the backend to code.
 :::
 
 2. Open the repo in VSCode. Make sure the ["Dev Containers" extension](https://code.visualstudio.com/docs/devcontainers/tutorial#_install-the-extension) is downloaded and enabled.
 
-3. Then open the folder in the dev-container by using the command palette `cmd`+`shift`+`P` (or `ctrl` instead of `cmd`), and typing **Open Folder in Container**.
+3. Open the folder in the dev-container by using the command palette `cmd`+`shift`+`P` (or `ctrl` instead of `cmd` on non-macOS systems), and typing **Open Folder in Container**.
 
 4. You should now wait for VSCode to pull the containers and initialize the development environnement. You will know that the process if finished once the window says: `workspace [Dev Container: Node.js & PostgreSQL @desktop-linux]` and no more loaders are present.
 
-If you encounter an error at this stage, make sure that the Docker Desktop app is open. If you encounter an issue with the definition of the dev-container not willing to start you can open an issue on the [graasp backend repository on GitHub](https://github.com/graasp/graasp/issues/new) or send an email to [the graasp developers](mailto:dev@graasp.org). We try to offer support as best as we can.
+If you encounter an error at this stage, make sure that the Docker Desktop app is open. If you encounter an issue with the definition of the dev-container not willing to start you can open an issue in the [graasp backend repository on GitHub](https://github.com/graasp/graasp/issues/new) or send an email to [the graasp developers](mailto:dev@graasp.org). We try to offer support as best as we can.
 
 ### Installing dependencies {#dependencies}
 
@@ -120,14 +133,25 @@ This part should be optional, but if you want to be as close as possible to the 
 See detailed information in the [section below](#recaptcha-key)
 :::
 
-<!-- TODO: this needs to be further detailed before we can make it visible
 #### OpenAI API Key {#open-ai-key}
 
 :::note
-Also optional, this part allows you to have access to ChatGPT functionality in the Graasp Apps running in your local environnement.
+Also optional, this part allows you to have access to LLMs from OpenAI in the Graasp Apps running in your local environnement.
 
 This requires an OpenAI account and a payment method. See [OpenAI documentation](https://openai.com/pricing).
-::: -->
+:::
+
+### Bootstrap the Database
+
+You have to run a few lines of SQL before you can use the database.
+
+Run this line in the terminal of the DevContainer. It will connect to the Postgres Engine running in the db container with the `docker` user and run the `bootstrapDB.sql` file. You will be asked for a password. Enter `docker`.
+
+```sh
+psql -h db -U docker -f bootstrapDB.sql
+```
+
+This will create the needed databases and their users for the Umami and Etherpad services and the test database.
 
 ### Launching the backend server {#running-backend}
 
@@ -141,7 +165,7 @@ Wait a moment, for the server to build, will see the `[Node] [nodemon] restartin
 
 If everything went well, opening [`http://localhost:3000/status`](http://localhost:3000/status) in your browser should greet you with "OK".
 
-If you are facing an error, check [the Troubleshooting page](./troubleshooting) to see if your issue is mentioned there.
+If you face an error, check [the Troubleshooting page](./troubleshooting) to see if your issue is mentioned there.
 
 :::tip
 Your browser might not be able to resolve the `localstack` domain when uploading and viewing files. To use localstack with the Docker installation, it is necessary to edit your `/etc/hosts` with the following line `127.0.0.1 localstack`. This is necessary because the backend creates signed urls with the localstack container hostname. Without changing the hosts, the development machine cannot resolve the `http://localstack` hostname.
@@ -155,26 +179,22 @@ With the backend server running we will now need to clone, install and run the c
 
 ### All the Clients
 
-There are 6 client application in Graasp:
+There are 2 frontend applications in Graasp:
 
-- [Builder](https://github.com/graasp/graasp-builder): service to create content
-- [Player](https://github.com/graasp/graasp-player): service to view created content
+- [Client](https://github.com/graasp/client): the core frontend application
 - [Library](https://github.com/graasp/graasp-library): service to publish content
-- [Analytics](https://github.com/graasp/graasp-analytics): service to explore interaction traces
-- [Auth](https://github.com/graasp/graasp-auth): service to log-in
-- [Account](https://github.com/graasp/graasp-account): service to manage your account
 
 For each one:
 
 - Clone the repo
-- Open the repo in VSCode (you can use the `Add folder to Workspace` option to have them all in the same window)
-- Open a terminal at the root of the repo, make sure you have node enabled and run `yarn` to install the project dependencies
+- Open the repo in VSCode
+- Install the dependencies, `pnpm i` for client and `yarn` for library.
 - Create the necessary `.env.development` file in each project. Look for instructions and examples about this in the Readme of each project
-- Start each project with `yarn start`
+- Start each project with `pnpm dev` (client) and `yarn start` (library)
 
 ### Generating reCaptcha keys for auth and the backend {#recaptcha-key}
 
-You will likely need to generate your own RECAPTCHA key in order for the auth frontend to be able to send requests to the backend. For this you will need a Google account.
+You will likely need to generate your own RECAPTCHA key in order for the client frontend to be able to send login/register requests to the backend. For this you will need a Google account.
 
 - Go to [the RECAPTCHA admin Console](https://www.google.com/recaptcha/admin)
 - Log into your google account
@@ -184,7 +204,7 @@ You will likely need to generate your own RECAPTCHA key in order for the auth fr
 - Add the `localhost` domain
 
 Once that is done, you should get 2 keys, a **Site key** and a **Secret key**.
-The **Site key** should go into the `.env.development` file from the Auth project under the `VITE_RECAPTCHA_SITE_KEY` variable.
+The **Site key** should go into the `.env.development` file from the Client project under the `VITE_RECAPTCHA_SITE_KEY` variable.
 The **Secret key** should go into the `.env.development` file from the backend project under the `<google-recaptcha-key>` placeholder.
 
 :::danger
@@ -196,19 +216,15 @@ Do not share these keys with anyone. Do not push them to version control (git). 
 With the default setup you should have the following:
 
 - Backend Server running on `http://localhost:3000`
-- Auth frontend running on `http://localhost:3001`
-- Builder frontend running on `http://localhost:3111`
-- Player frontend running on `http://localhost:3112`
+- Client frontend running on `http://localhost:3114`
 - Library frontend running on `http://localhost:3005`
-- Analytics frontend running on `http://localhost:3113`
-- Account frontend running on `http://locahost:3114`
 
-To start using the platform, open `http://localhost:3111`, `http://localhost:3112` or `http://localhost:3001`
+To start using the platform, open `http://localhost:3114`
 
-As this the backend server is all fresh and new, there are no user accounts yet. Register using any email you want (`toto@test.lol`, `test@google.com`) it does not need to be a real email (it should only look like one). No emails will leave your computer, everything will be local.
+Since your backend server is all fresh and new, there are no user accounts yet. Register using any email you want (`toto@test.lol`, `test@google.com`) it does not need to be a real email (it should only look like one). No emails will leave your computer, everything will be local.
 
 :::warning
-If you have trouble registering, check that you have generated reCaptcha keys and that they are set inside you .env* files (in the backend and in auth).
+If you have trouble registering, check that you have generated reCaptcha keys and that they are set inside you .env* files (in the backend and in client).
 :::
 
 Once you have registered with an email, open `http://localhost:1080`. There you should see a webUI called `MailCatcher`, it is a mail interface where you should see the registration email from graasp. Click on the link and continue the procedure.
