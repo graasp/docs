@@ -221,10 +221,10 @@ With the default setup you should have the following:
 
 To start using the platform, open `http://localhost:3114`
 
-Since your backend server is all fresh and new, there are no user accounts yet. Register using any email you want (`toto@test.lol`, `test@google.com`) it does not need to be a real email (it should only look like one). No emails will leave your computer, everything will be local.
+Since your backend server is all fresh and new, there are no user accounts yet. Register using any email you want (`toto@test.lol`, `test@google.com`) it does not need to be a real email (it should only look like one). No emails will leave your computer, everything will be local and handled by the `mailcatcher` container.
 
 :::warning
-If you have trouble registering, check that you have generated reCaptcha keys and that they are set inside you .env* files (in the backend and in client).
+If you have trouble registering, check that you have generated reCaptcha keys and that they are set inside your .env* files (in the backend and in the client).
 :::
 
 Once you have registered with an email, open `http://localhost:1080`. There you should see a webUI called `MailCatcher`, it is a mail interface where you should see the registration email from graasp. Click on the link and continue the procedure.
