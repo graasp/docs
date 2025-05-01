@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Updates to the Graasp platform
-date: 2025-03-17
+date: 2025-05-01
 unlisted: true
 authors:
   - graasp
@@ -16,34 +16,30 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
-Since the team is working on a consequent refactor of the backend, only minimal yet necessary changes are brought to you in this new release. Read further for more details.
+This update introduces helpful interface improvements—like maintenance messages and clearer translations, alongside backend enhancements for better performance, stability, and up-to-date infrastructure. Read further for details.
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Resolution of Unwanted download of pdf files
+![maintenance and bookmark management](./screenshots/maintenance-bookmarks.png)
 
-Thanks to the feedback of one of our user, an annoying bug has been detected. This bug had been happening when you copy pdf files. Those copies were then, in the player view, automatically downloaded rather than displayed as usual.
+## Maintenance notice
 
-A fix has been made live for further copies. Thus if you copy pdf starting today, this bug should not happen anymore. Please let us know if it still happens to you.
+To keep you informed and avoid surprises, the app now displays a clear message delivering maintenance dates when the system will undergo updates or temporarily be unavailable. This ensures that you’re aware of any planned downtime or disruptions before they affect your workflow, helping you plan accordingly and stay in control. It’s a small but important step toward improving transparency and communication with our users.
 
-:::info[How to stop my pdf files to be downloaded?]
+## Interface (details)
 
-If you have remaining faulty copies of pdf files, please delete them. And replace with the corresponding pdf file OR copy them again. The download action on new pdf files shouldn't happen anymore.
+- A message will now appear when the system is under maintenance.
+- Bookmarks on the home page can be removed by clicking on the "Manage" button.
+- You can now download items directly from the item menu.
+- Some missing translations were added to make actions clearer.
+- developer: The documentation (instructions for using the app) has been updated.
 
-:::
+## Backend (details)
 
-### Library (details)
-
-- Fix card thumbnail sizing in Safari
-- Fix card padding on mobile screens
-
-### Backend changes (details)
-
-- Add backend implementation for deleting and uploading many files at once
-- Fix copy on files (path, remove automatic content disposition to attachment and cache-control)
-- Recycle bin shows deleted children (whose membership are inherited). Total count is falsy.
-- Fix link in the email sent on membership request
+- A new feature was added so the system can report when it's in maintenance mode.
+- Improved recovery during item reordering.
+- Updates dependencies.
 
 <!-- Generic message -->
 
