@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Updates to the Graasp platform
-date: 2025-05-01
+date: 2025-05-07
 unlisted: true
 authors:
   - graasp
@@ -16,30 +16,17 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
-This update introduces helpful interface improvements—like maintenance messages and clearer translations, alongside backend enhancements for better performance, stability, and up-to-date infrastructure. Read further for details.
+A backend refactor has been implemented. Read further for details.
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-![maintenance and bookmark management](./screenshots/maintenance-bookmarks.png)
-
-## Maintenance notice
-
-To keep you informed and avoid surprises, the app now displays a clear message delivering maintenance dates when the system will undergo updates or temporarily be unavailable. This ensures that you’re aware of any planned downtime or disruptions before they affect your workflow, helping you plan accordingly and stay in control. It’s a small but important step toward improving transparency and communication with our users.
-
-## Interface (details)
-
-- A message will now appear when the system is under maintenance.
-- Bookmarks on the home page can be removed by clicking on the "Manage" button.
-- You can now download items directly from the item menu.
-- Some missing translations were added to make actions clearer.
-- developer: The documentation (instructions for using the app) has been updated.
+A backend refactor has been implemented, focused on file handling, app data files and app setting files, improving the overall architecture. These updates are reflected in the File Drop app, Excalidraw app, and the client frontend, enhancing the efficiency and stability across all components. The changes should be transparent, but let us know if you notice anything!
 
 ## Backend (details)
 
-- A new feature was added so the system can report when it's in maintenance mode.
-- Improved recovery during item reordering.
-- Updates dependencies.
+- Unified file handling for consistency
+- Updated dependencies for improved security and performance
 
 <!-- Generic message -->
 
