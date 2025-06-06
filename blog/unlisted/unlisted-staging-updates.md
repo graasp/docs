@@ -24,9 +24,10 @@ This update introduces a completed contact page, refined the import/export funct
 ### Frontend
 
 - **Complete Contact Page**: Implemented the full contact page UI and logic.
-- **Show Download Options**: Enabled "Download ZIP" for folders and "Download File" for single files. Downloading a ZIP will send an email to download the archive instead of direct download.
+- **Show Download Options**: Enabled "Download as ZIP" for folders and "Download" for single files. Downloading a ZIP will send an email to download the archive instead of direct download.
 - **Contact Info in Maintenance Banner**: Added contact information display in the site-wide maintenance banner.
 - **File Upload Error Notifications**: Added error messages when file uploads fail, improving user feedback.
+- **Quiz app**: The navigation is located below instead of above the question.
 
 ### Backend
 
