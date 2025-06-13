@@ -34,5 +34,9 @@
   "sidebar.userSidebar.category.publication": {
     "message": "📚 Publication",
     "description": "The label for category advanced in sidebar userSidebar"
+  },
+  "sidebar.developerSidebar.category.reference": {
+    "message": "reference",
+    "description": "The label for category reference in sidebar developerSidebar"
   }
 }
