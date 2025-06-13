@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "@dipakparmar/docusaurus-plugin-umami": "^2.1.7",
-    "@docusaurus/core": "^3.7.0",
-    "@docusaurus/preset-classic": "^3.7.0",
-    "@docusaurus/theme-mermaid": "^3.7.0",
+    "@docusaurus/core": "^3.8.1",
+    "@docusaurus/preset-classic": "^3.8.1",
+    "@docusaurus/theme-mermaid": "^3.8.1",
     "@fontsource-variable/nunito": "^5.1.1",
     "@mdx-js/react": "^3.1.0",
     "autoprefixer": "^10.4.20",
@@ -31,7 +31,7 @@
     "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.7.0",
+    "@docusaurus/module-type-aliases": "^3.8.1",
     "@tsconfig/docusaurus": "^2.0.3",
     "typescript": "^5.7.3"
   },

@@ -17,9 +17,9 @@ We rely on `release-please` to:
 
 Let's break these down and explain each one.
 
-### Detect releasable changes #{releasable-changes}
+### Detect releasable changes {#releasable-changes}
 
-`release-please` relies on [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to detect the type of change that is made on your main branch.
+`release-please` relies on [conventional commits](https://www.conventionalcommits.org/en/v1.0.0) to detect the type of change that is made on your main branch.
 
 ### Create a release proposal
 
@@ -27,10 +27,11 @@ When a releasable change is detected on your main branch, `release-please` creat
 Are considered releasable changes, commits that are `fix`, `feat`, `docs`.
 Are **not** considered releasable changes, commits that are `chore`, `build`, `ci` etc...
 
-> [!WARNING]
->
-> Make sure you merge commits with explicitly releasable names following the conventional commit nomenclature since `release-please` will not create a release if you tag them with `awesome feature !` for example.
-> For this you should make sure your PR title follows the conventional commits !
+:::WARNING
+
+Make sure you merge commits with explicitly releasable names following the conventional commit nomenclature since `release-please` will not create a release if you tag them with `awesome feature !` for example.
+For this you should make sure your PR title follows the conventional commits !
+:::
 
 ### Generate releases in GitHub
 
@@ -50,7 +51,7 @@ Given the information state in the previous section, failure to completely execu
 
 To fix this issue, we outline the steps that need to be taken to manually create the tag, release, and notify the deployment pipeline of the new version.
 
-### Fixing a failed release #{fix-release-please}
+### Fixing a failed release {#fix-release-please}
 
 First check if:
 
@@ -66,7 +67,7 @@ If you merged the release-please PR and do not see a `chore(main): release x.y.z
 If you do not see a tag named `vX.Y.Z` where `X.Y.Z` is the version you are trying to release, ensure your local copy of the repo is up-to-date. For there, create a tag with the command `git tag vX.Y.Z` replace `X.Y.Z` with your specific version: `git tag v1.45.7`.
 Push the tag by using the `git push --tags` you should see the newly created tag be pushed to your repository.
 
-If you do not see a github release, you should create. Navigate to the "Releases" page of your repo (you can find it on the right side of the repo home page). The select "Draft a new release" button to access the release creation page (it can also be accessed with the url: <https://github.com/OWNER/REPO/releases/new>).
+If you do not see a github release, you should create. Navigate to the "Releases" page of your repo (you can find it on the right side of the repo home page). The select "Draft a new release" button to access the release creation page (it can also be accessed with the url: `https://github.com/OWNER/REPO/releases/new`).
 There you should select the tag that matches the version you want to release, add the necessary title (usually the version name `vX.Y.Z`) and the body (you can copy wha release-please did in the PR). Check the `Set as the latest release` option and click `Publish release`.
 
 If the new version was not notified to the deployment pipeline (you do not see a workflow run in the graasp-deploy actions named: `update-staging-version`), you should directly update the version inside the `candidate-versions/latest.json`. Find the entry for your component and change the version to the latest version `vX.Y.Z`. Then commit to the main branch your change.
