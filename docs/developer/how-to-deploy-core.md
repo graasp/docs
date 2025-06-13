@@ -1,10 +1,9 @@
-
 # How to deploy a new backend version
 
 This guide shows you how to deploy a new backend version.
 We will provide steps for applying migrations.
 
-1. Create a release for the changes you want to deploy. The backend uses release-please for this purpose. If you have releasable changes you will find an open pull-request with a title similar to: `chore(main): release 1.66.0`. If you do not find an open pull-request refer to [the troubleshooting guide for release-please](./references/release-please.md#fix-release-please)
+1. Create a release for the changes you want to deploy. The backend uses release-please for this purpose. If you have releasable changes you will find an open pull-request with a title similar to: `chore(main): release 1.66.0`. If you do not find an open pull-request refer to [the troubleshooting guide for release-please](./reference/release-please.md)
    1. Review the changes in the PR.
    1. Merge the PR. The release please action will now push a new tag and create a GitHub release. For more information on how release please works see [the Release-please reference](./reference/release-please.md).
 1. Deploy the maintenance to block traffic to the services.

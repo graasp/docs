@@ -38,5 +38,9 @@
   "sidebar.developerSidebar.category.guides": {
     "message": "📖 Guides",
     "description": "The label for category guides in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.reference": {
+    "message": "reference",
+    "description": "The label for category reference in sidebar developerSidebar"
   }
 }
