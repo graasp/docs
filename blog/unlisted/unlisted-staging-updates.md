@@ -28,7 +28,7 @@ This update introduces a completed contact page, refined the import/export funct
 - **Contact Info in Maintenance Banner**: Added contact information display in the site-wide maintenance banner.
 - **File Upload Error Notifications**: Added error messages when file uploads fail, improving user feedback.
 
-### Apps
+### Apps
 
 - **Quiz**: The navigation is located below instead of above the question.
 
