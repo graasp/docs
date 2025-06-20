@@ -2,16 +2,25 @@
 sidebar_position: 3
 ---
 
-# DevOps / Deployment
+# DevOps
 
 In this section we describe how the Graasp cloud deployment is handled by going through the steps needed to deploy a new version.
 
 ## Context
 
-The Graasp infrastructure is deployed on the AWS cloud platform. AWS is used as a hosting provider, making compute and storage available to their customers who are responsible for configuring and using the resources made available.
-The Graasp source code is hosted on GitHub. We develop the Graasp platform as an open source project. You can get involved, contact us on GitHub!
+The Graasp infrastructure is deployed on the AWS cloud platform. AWS is used as a hosting provider, making compute and storage available to their customers who are responsible for configuring and using the resources they pay for.
+
+The Graasp source code is hosted on GitHub.
+We develop the Graasp platform as an open-source project.
+To get involved, [contact us on GitHub](https://github.com/graasp)!
+
 The orchestration and automation is carried out by GitHub Actions (CI runners).
-The infrastructure in defined with Typescript via terraform using the terraform CDKTF library. We do "Infrastructure as Code" (IaC). IaC allows us to manage our infrastructure the same way we manage our source code. We get version control and can use the same workflows as with code.
+These allow us to run workflows that perform code checking, build and deployment to our cloud infrastructure.
+
+The infrastructure is defined with Typescript via terraform using the terraform CDKTF library.
+We do "Infrastructure as Code" (IaC).
+IaC allows us to manage our infrastructure the same way we manage our source code.
+We use version control and can the same workflows as with code allowing us to review, merge and build our infrastructure as if it was just another code project.
 
 ## Deployment state
 
@@ -36,7 +45,7 @@ Deploys on AWS
 
 :::caution Coming soon !
 
-Current infrastructure wsa built by hand using a combination of AWS Console UI and AWS CLI.
+Current infrastructure was built by hand using a combination of AWS Console UI and AWS CLI.
 The transition to a fully managed infrastructure as code is in progress.
 This will allow us to migrate to different data-centers and keep track of changes made to the infra.
 

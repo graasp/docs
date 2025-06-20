@@ -1,9 +1,10 @@
-# Release Please Help Center
+# Release Please
 
 In this document we compile the behavior of the [`release-please`](https://github.com/googleapis/release-please) component.
 This component is provided by Google. We use [the Github Action provided by Google](https://github.com/googleapis/release-please-action). The repo contains some general documentation that is of interest to understand the general behavior of the tool.
 
 In this document we will focus on our usage of the tool and how to "fix" it when it fails (which has happened in the past).
+<!-- FIXME: Should we move the "how to fix it" part to a "how to guide" ? -->
 
 ## How we use the tool and what it is supposed to do
 
