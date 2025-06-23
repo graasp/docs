@@ -28,11 +28,10 @@ When a releasable change is detected on your main branch, `release-please` creat
 Commits tagged with `fix`, `feat`, `docs` are considered releasable changes.
 Commits that are `chore`, `build`, `ci` etc... are **not** considered releasable changes.
 
-:::WARNING
-
+::::WARNING
 Make sure you merge commits with explicitly releasable names following the conventional commit nomenclature since `release-please` will not create a release if you tag them with `awesome feature !` for example.
 Make sure your PR title follows the conventional commits !
-:::
+::::
 
 ### Generate releases in GitHub
 
