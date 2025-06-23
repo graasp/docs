@@ -47,7 +47,7 @@ backend server to be down to ensure migrations are performed without conflicts
 from users interacting with the platform. This process does not allow rolling
 deployments and requires a service interruption. We think that at our scale these
 trade-offs are acceptable as they allow us to reduce the complexity of deploying
-a new version of the platform. In the `db-only` state a single use task containing
+a new version of the platform. In the `db-only` state a single-use task containing
 the migration code is run.
 
 The `stopped` state stops all services and puts the platform in a "deep-sleep".

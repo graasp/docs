@@ -26,10 +26,10 @@ We use version control and can the same workflows as with code allowing us to re
 
 The infrastructure can be in any of the following states:
 
-- running: all services are running, the platform is available under normal conditions
-- restricted: services are running, but they are not available to the normal user, they see a maintenance screen
-- db-only: no services are running, only the database is available and a migration task is launched when transitioning to this state
-- stopped: nothing is running all services are at 0 and the db is temporarily stopped (max 7 days then AWS starts it again)
+- **running**: all services are running, the platform is available under normal conditions
+- **restricted**: services are running, but they are not available to the normal user, they see a maintenance screen
+- **db-only**: no services are running, only the database is available and a migration task is launched when transitioning to this state
+- **stopped**: nothing is running all services are at 0 and the db is temporarily stopped (max 7 days then AWS starts it again)
 
 ## Continuous integration (CI)
 
