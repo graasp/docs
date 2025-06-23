@@ -25,13 +25,13 @@ Let's break these down and explain each one.
 ### Create a release proposal
 
 When a releasable change is detected on your main branch, `release-please` creates a PR with that change.
-Are considered releasable changes, commits that are `fix`, `feat`, `docs`.
-Are **not** considered releasable changes, commits that are `chore`, `build`, `ci` etc...
+Commits tagged with `fix`, `feat`, `docs` are considered releasable changes.
+Commits that are `chore`, `build`, `ci` etc... are **not** considered releasable changes.
 
 :::WARNING
 
 Make sure you merge commits with explicitly releasable names following the conventional commit nomenclature since `release-please` will not create a release if you tag them with `awesome feature !` for example.
-For this you should make sure your PR title follows the conventional commits !
+Make sure your PR title follows the conventional commits !
 :::
 
 ### Generate releases in GitHub
@@ -39,12 +39,6 @@ For this you should make sure your PR title follows the conventional commits !
 Once you are satisfied with the PR proposal, you can merge it. This will trigger the `release-please` release process. It will create a github release with the content of the PR body as the release text.
 
 Additionally we also create a tag attached to the release commit.
-
-### Notifying the deploy pipeline
-
-With the created tag attached to the release commit, we notify the graasp-deploy pipeline which stores all the versions of the different graasp components.
-
-This tag will later be used to deploy the released version of the code to the desired environnement.
 
 ## Release please did not create the release correctly
 
@@ -56,7 +50,7 @@ To fix this issue, we outline the steps that need to be taken to manually create
 
 First check if:
 
-1. a release commit was done by release please
+1. a release commit was done by release-please
 1. a tag with the expected version as name was created
 1. a release was published in github
 1. the new version was notified to the deployment pipeline
@@ -68,9 +62,7 @@ If you merged the release-please PR and do not see a `chore(main): release x.y.z
 If you do not see a tag named `vX.Y.Z` where `X.Y.Z` is the version you are trying to release, ensure your local copy of the repo is up-to-date. For there, create a tag with the command `git tag vX.Y.Z` replace `X.Y.Z` with your specific version: `git tag v1.45.7`.
 Push the tag by using the `git push --tags` you should see the newly created tag be pushed to your repository.
 
-If you do not see a github release, you should create. Navigate to the "Releases" page of your repo (you can find it on the right side of the repo home page). The select "Draft a new release" button to access the release creation page (it can also be accessed with the url: `https://github.com/OWNER/REPO/releases/new`).
-There you should select the tag that matches the version you want to release, add the necessary title (usually the version name `vX.Y.Z`) and the body (you can copy wha release-please did in the PR). Check the `Set as the latest release` option and click `Publish release`.
-
-If the new version was not notified to the deployment pipeline (you do not see a workflow run in the graasp-deploy actions named: `update-staging-version`), you should directly update the version inside the `candidate-versions/latest.json`. Find the entry for your component and change the version to the latest version `vX.Y.Z`. Then commit to the main branch your change.
+If you do not see a github release, you should create it. Navigate to the "Releases" page of your repo (you can find it on the right side of the repo home page). Then select "Draft a new release" button to access the release creation page (it can also be accessed with the url: `https://github.com/OWNER/REPO/releases/new`).
+There you should select the tag that matches the version you want to release, add the necessary title (usually the version name `vX.Y.Z`) and the body (you can copy what release-please did in the PR). Check the `Set as the latest release` option and click `Publish release`.
 
 If you did everything right, you should be able to trigger a staging deployment and the pipeline should see that your component's new version is available for deployment.
