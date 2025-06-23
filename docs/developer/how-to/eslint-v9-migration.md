@@ -1,4 +1,8 @@
-# Migrating Eslint to v9
+# Migrate to Eslint v9
+
+In this document we describe **how to migrate to eslint v9** using the new flat-configs in your React Typescript project.
+
+## Migration tools
 
 Use the auto-migration tool:
 

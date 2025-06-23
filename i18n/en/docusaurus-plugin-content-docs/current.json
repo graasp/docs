@@ -15,6 +15,14 @@
     "message": "📖 Guides",
     "description": "The label for category guides in sidebar developerSidebar"
   },
+  "sidebar.developerSidebar.category.how-to": {
+    "message": "🤔 How to … ?",
+    "description": "The label for category how-to in sidebar developerSidebar"
+  },
+  "sidebar.developerSidebar.category.etiquette": {
+    "message": "🎩 Developer Etiquette",
+    "description": "The label for category etiquette in sidebar developerSidebar"
+  },
   "sidebar.userSidebar.category.account": {
     "message": "👤 Account",
     "description": "The label for category account in sidebar userSidebar"

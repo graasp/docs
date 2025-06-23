@@ -1,18 +1,17 @@
-# Deployment flow
+# Deployment
 
-In this reference document we present the main deployment flows for the Graasp platform.
+In this reference document we discuss the deployment of the Graasp platform.
+By deployment we understand the process of packaging the source code and making it available world wide to users.
+For this we rely on our infrastructure, which is the definition of the resources and their arrangement which allow us to make the platform available to clients.
 
-## Management of the infrastructure through code
+## Infrastructure definition and management
 
-We manage the infrastructure with code. This practice is called "infrastructure
-as code" or IaC for short. It allows to define the components of the deployed
-infrastructure through code making the management easier for users already
-familiar with these concepts.
+We manage the infrastructure with code. This practice is called "infrastructure as code" or IaC for short.
+It allows to define the components of the deployed infrastructure through code making the management easier for users already familiar with these concepts.
 
-The official instance of Graasp at [graasp.org](https://graasp.org) is hosted
-on AWS. AWS is the cloud provider making the computing resources available to
-run the Graasp platform.
-The IaC is created using Terraform and the AWS CDK for Typescript.
+The official instance of Graasp at [graasp.org](https://graasp.org) is hosted on AWS.
+AWS is the cloud provider making the computing resources available to run the Graasp platform.
+The IaC is created using [Terraform](https://developer.hashicorp.com/terraform), [the CDK for terraform (CDKTF)](https://developer.hashicorp.com/terraform/cdktf) and [the prebuilt AWS Provider for CDKTF](https://github.com/cdktf/cdktf-provider-aws).
 This makes the infrastructure specific to hosting with the services provided
 by AWS. In order to be independent of the cloud provider, the infrastructure
 should use abstractions that are available on all cloud providers.
