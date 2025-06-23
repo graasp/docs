@@ -11,9 +11,9 @@
     "message": "🛠️ Architecture",
     "description": "The label for category 🛠️ Architecture in sidebar developerSidebar"
   },
-  "sidebar.developerSidebar.category.📱 Mobile App": {
-    "message": "📱 Mobile App",
-    "description": "The label for category 📱 Mobile App in sidebar developerSidebar"
+  "sidebar.developerSidebar.category.guides": {
+    "message": "📖 Guides",
+    "description": "The label for category guides in sidebar developerSidebar"
   },
   "sidebar.userSidebar.category.account": {
     "message": "👤 Account",
@@ -34,9 +34,5 @@
   "sidebar.userSidebar.category.publication": {
     "message": "📚 Publication",
     "description": "The label for category advanced in sidebar userSidebar"
-  },
-  "sidebar.developerSidebar.category.guides": {
-    "message": "📖 Guides",
-    "description": "The label for category guides in sidebar developerSidebar"
   }
 }
