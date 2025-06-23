@@ -40,3 +40,14 @@ Github Pages used to host storybook (design system)
 ## Infrastructure
 
 You can read the full [deployment reference](../references/deployment.md) for more information on how the infrastructure is deployed and maintained.
+Deploys on AWS
+
+## Workers
+
+Since some features in Graasp involve heavy computational logic (e.g., exporting actions), these processes are submitted to queues. A separate service is responsible for handling workers that listen to these queues.
+
+In a local environment, the worker service runs within the same container as the core server and starts alongside it. A dashboard is available to monitor the queues and their jobs at `http:localhost:3000/ui`.
+
+In production, the worker service is launched as a separate task, allowing it to use its own CPU and resources independently.
+
+For more details, read more about [Queues and Workers in our references](../references/workers.md).
