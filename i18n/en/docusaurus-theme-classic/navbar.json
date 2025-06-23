@@ -22,5 +22,9 @@
   "item.label.Github": {
     "message": "Github",
     "description": "Navbar item with label Github"
+  },
+  "item.label.RSS": {
+    "message": "RSS",
+    "description": "Navbar item with label RSS"
   }
 }
