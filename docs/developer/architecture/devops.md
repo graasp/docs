@@ -39,14 +39,4 @@ Github Pages used to host storybook (design system)
 
 ## Infrastructure
 
-Deploys on AWS
-
-### Infrastructure as code (IaC)
-
-:::caution Coming soon !
-
-Current infrastructure was built by hand using a combination of AWS Console UI and AWS CLI.
-The transition to a fully managed infrastructure as code is in progress.
-This will allow us to migrate to different data-centers and keep track of changes made to the infra.
-
-:::
+You can read the full [deployment reference](../references/deployment.md) for more information on how the infrastructure is deployed and maintained.
