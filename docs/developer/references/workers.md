@@ -4,7 +4,7 @@ Graasp sometimes performs high-computation operations that can be resource-inten
 
 To prevent such issues, these heavy processes are offloaded to background workers through a job queueing system. The current offloaded jobs are:
 
-- Redindex meilisearch (every week at 3AM)
+- Re-index meilisearch (every week at 3AM)
 - Export a folder as raw content
 - Export a folder as a graasp archive (TODO)
 - Export actions of an item (TODO)
