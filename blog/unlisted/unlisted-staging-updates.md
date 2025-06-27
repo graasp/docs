@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Updates to the Graasp platform
-date: 2025-06-06
+date: 2025-06-27
 unlisted: true
 authors:
   - graasp
@@ -16,30 +16,26 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
-This update introduces a completed contact page, refined the import/export functionalities, and various backend optimizations and bug fixes for better performance and reliability. Read further for details.
+We introduce in this new release a range of improvements and fixes that make exporting smoother, as well as a full update of Graasp Library.
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-### Frontend
+## Export ZIP Improvements
 
-- **Complete Contact Page**: Implemented the full contact page UI and logic.
-- **Show Download Options**: Enabled "Download as ZIP" for folders and "Download" for single files. Downloading a ZIP will send an email to download the archive instead of direct download.
-- **Contact Info in Maintenance Banner**: Added contact information display in the site-wide maintenance banner.
-- **File Upload Error Notifications**: Added error messages when file uploads fail, improving user feedback.
+Exporting items and member data to zip files is now handled by a new zip library and dedicated background workers. This means exports are less likely to fail, and can handle larger data sets without slowing Graasp down. If you want to know more about technical details, [check this page](https://graasp.github.io/docs/developer/references/workers).
 
-### Apps
+## Change Library's underlaying dependency to [Tanstack-start](https://tanstack.com/start/latest)
 
-- **Quiz**: The navigation is located below instead of above the question.
+The Graasp team changed Graasp Library's primary dependency to tanstack-start for a more modern development stack and better suit the other dependencies. Almost no visual change should be noticed. The testing framework was also changed.
 
-### Backend
+## Fixes
 
-- **App Handling in export and import**: Backend logic added to handle both import and export of APP-specific items.
-- **Thumbnails Handling in export and import**: Enabled export and import of thumbnails for items, improving media consistency.
-- **Move Membership Endpoints**: Refactored routes related to memberships for better structure and maintainability.
-- **Send Export Notification Emails**: Added functionality to send email notifications when a raw export is completed.
-- **Featured Collections Endpoint**: Created an endpoint to manage and retrieve featured collections more efficiently.
-- **Allow transparent double like on items**: Resolved issue allowing users to like an item more than once.
+- **Cleaner Item Copies:** When you copy items, the original order is now checked and cleaned up automatically to prevent issues caused by bad data.
+- Whenever changes are made to the search index, all settings are automatically rebuilt so that filters and attributes stay up to date.
+- The system now checks that app origin URLs are formatted correctly, reducing the chance of configuration errors.
+- Some internal streaming processes now use more modern and reliable methods, which improves error handling and overall stability.
+- Several core libraries have been updated to their latest versions.
 
 <!-- Generic message -->
 
