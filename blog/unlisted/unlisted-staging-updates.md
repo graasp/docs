@@ -1,7 +1,7 @@
 ---
 title: Staging Updates
 description: Updates to the Graasp platform
-date: 2025-07-02
+date: 2025-07-17
 unlisted: true
 authors:
   - graasp
@@ -16,30 +16,19 @@ Below are the latest changes deployed on [Graasp Staging](https://builder.stage.
 
 :::
 
-We introduce in this new release a range of improvements and fixes that make exporting smoother, as well as a full update of Graasp Library.
+The Graasp team continues to improve the platform in different directions, focusing on consolidating the foundations, from the interfaces to server optimizations. You can find a more detailed list of the changes further.
 
 <!-- Everything below this will not be shown in the post overview -->
 <!-- truncate -->
 
-## Improvements to Export ZIP
-
-Exporting items and member data to zip files is now handled by a new zip library and dedicated background workers. This means exports are less likely to fail, and can handle larger data sets without slowing Graasp down. If you want to know more about technical details, [check this page](https://graasp.github.io/docs/developer/references/workers).
-
-## Library is now built with [Tanstack-start](https://tanstack.com/start/latest)
-
-The Graasp team changed Graasp Library's primary dependency to tanstack-start for a more modern development stack and better suit the other dependencies.
-
-> We’ve upgraded the internals without altering the user experience.
-
-The testing framework was also changed.
-
-## Fixes
-
-- **Cleaner Item Copies:** When you copy items, the original order is now checked and cleaned up automatically to prevent issues caused by bad data.
-- Whenever changes are made to the search index, all settings are automatically rebuilt so that filters and attributes stay up to date.
-- The system now checks that app origin URLs are formatted correctly, reducing the chance of configuration errors.
-- Some internal streaming processes now use more modern and reliable methods, which improves error handling and overall stability.
-- Several core libraries have been updated to their latest versions.
+- **Upgrade OpenAI models** to the latest versions for improved accuracy, performance, and feature support.
+- **Chatbot app**: Improve UI interface and upgrade AI models
+- Update French and German language translations
+- Resolve height issues for embedded apps
+- Update the login button styling to ensure consistent visibility by making its text color white in the app header
+- Update library dependencies
+- Improve scalability for indexing items, using a dedicated worker and improving data fetching
+- Ensure email addresses are lowercased when requesting an email change to prevent case sensitivity issues
 
 <!-- Generic message -->
 
