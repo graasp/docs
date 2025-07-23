@@ -54,11 +54,11 @@ With this update we improved on the following:
 - Update login button background color to ensure consistent visibility in the app header
 - Improve item indexing mechanism: using a dedicated worker and more efficient data-fetching
 - Fix a bug where email addresses could be saved with a mixed case. This affected the email update mechanism, where users could be locked out of the platform if they provided an email with mixed case. We now ensure saved emails are in lowercase when requesting an email change to prevent case sensitivity issues.
-- Improve the password login workflow. The backend codebase is simplied and the client handles the redirection mechanism.
-- Remove mobile sign in methods from the client.
-- Manually set `secure: true` for smtp.
-- Fix deleting items (permission check is fixed)
-- Optimize getting recycled items.
+- Improve the password login workflow. The backend codebase is simpler and the client handles the redirection mechanism.
+- Remove deprecated mobile sign in processes from the client.
+- Manually set `secure: true` for smtp to comply with NodeJS warning (`smtps` is deprecated).
+- Fix deleting items (permission check is fixed). Deleting items from the recycle bin is possible again.
+- Optimize getting recycled items. Displaying the trash should be faster.
 
 <!-- Generic message -->
 
