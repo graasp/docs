@@ -35,7 +35,7 @@ The chatbot app available inside Graasp has been updated to support a simple and
 
 ## Library
 
-- Include lang in the facets search for deisciplines, levels and resource-types
+- When searching across different criteria (`discipline`, `level`, `resource-type`), the selected language will be taken into account. This will narrow down the choices and present more relevant suggestions to the user.
 - Fix an issue where the `/all-collections` page of the library would not forward the search parameters to the new `/search` page. This affected mostly search engine results that would not display the expected result due to missing URL Search parameters.
 - Improve spacial awareness in the library by displaying the currently active page in the header. The styling of the links in the header was also updated.
 - Fix an issue in the collection page. The "copy link" feature copied an invalid link to the clipboard. It will now copy the correct link to view the collection in the player interface.
