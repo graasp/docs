@@ -1,5 +1,6 @@
 ---
 title: Copy and Reuse
+show-last-update-time: true
 ---
 
 # Why copying a capsule?
@@ -13,5 +14,11 @@ Before copying and reusing a capsule, it’s important to check the Creative Com
 # How to copy a capsule
 
 1. Once you’ve found a capsule you want to copy, click on the three dots menu (⋮), then click on **Copy**.
-1. You will be redirected to Builder. If you are logged out, a warning will be asked to login.
-1. Once logged in, you can select where you want to copy this capsule. Note that it can take a few instants before everything as been copied depending on the size of the capsule.
+
+![Copy Button](library_copy_button.png)
+
+2. You will be redirected to Builder. If you are logged out, a warning will be asked to login.
+
+![Copy warning logged out](copy_logged_out.png)
+
+3. Once logged in, you can select where you want to copy this capsule. Note that it can take a few instants before everything as been copied depending on the size of the capsule.
