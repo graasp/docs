@@ -13,7 +13,7 @@ The Graasp team continues to improve the platform in different directions, focus
 
 ## Workflow improvement to copy from the library
 
-The copy mechanism has been relocated to Builder, enabling dynamic feedback if the user is not currently logged in. This change helps provide immediate guidance and improves the overall user experience. A tutorial explaining how to use this feature is available [here](/docs/user/library/copy).
+The copy mechanism has been relocated to Builder, enabling dynamic feedback if the user is not currently logged in. This change helps provide immediate guidance and improves the overall user experience. A tutorial explaining how to use this feature is available [here](https://graasp.github.io/docs/user/library/copy).
 
 ## Builder folder layout
 
