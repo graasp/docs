@@ -20,6 +20,8 @@ Pages are currently in beta. Saved data **might be deleted** in future updates. 
 
 Pages are interactive, rich-text documents. Unlike standard items, Pages offer full-page editing using a visual editor—what you see is what you get.
 
+![builder page](../screenshots/2025-08-28-page.png)
+
 ---
 
 ## Key Features
@@ -54,6 +56,8 @@ To try Pages while in beta:
 :::warning[Beta Notice]
 Page content might not be saved permanently. Always keep a backup (e.g., paste your text in a regular document item or save it locally).
 :::
+
+![Copy Button](./screenshots/page-beta-create.png)
 
 ---
 
