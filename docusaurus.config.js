@@ -1,45 +1,45 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-import { themes } from "prism-react-renderer";
-import "dotenv/config";
+import { themes } from 'prism-react-renderer';
+import 'dotenv/config';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Graasp Docs",
-  staticDirectories: ["blog/screenshots", "static"],
-  tagline: "Enrich your Graasp experience",
-  favicon: "img/favicon.ico",
+  title: 'Graasp Docs',
+  staticDirectories: ['blog/screenshots', 'static'],
+  tagline: 'Enrich your Graasp experience',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: "https://graasp.github.io/",
+  url: 'https://graasp.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: process.env.BASE ?? "/docs/",
+  baseUrl: process.env.BASE ?? '/docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "graasp", // Usually your GitHub org/user name.
-  projectName: "docs", // Usually your repo name.
-  deploymentBranch: "gh-pages",
+  organizationName: 'graasp', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
 
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en", "fr"],
+    defaultLocale: 'en',
+    locales: ['en', 'fr'],
     localeConfigs: {
       en: {
-        htmlLang: "en-GB",
+        htmlLang: 'en-GB',
       },
     },
   },
 
   // add mermaid theme to enable diagrams in markdown
-  themes: ["@docusaurus/theme-mermaid"],
+  themes: ['@docusaurus/theme-mermaid'],
   markdown: {
     // enable mermaid diagrams in markdown
     mermaid: true,
@@ -47,31 +47,32 @@ const config = {
 
   presets: [
     [
-      "classic",
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/graasp/docs/blob/main",
-          routeBasePath: "/",
+          editUrl: 'https://github.com/graasp/docs/blob/main',
+          routeBasePath: '/',
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: ({ blogPath }) => {
-            if (blogPath.split("/").includes("unlisted")) {
+            if (blogPath.split('/').includes('unlisted')) {
               return `https://github.com/graasp/docs/blob/main/blog/${blogPath}`;
             }
             return undefined;
           },
-          blogTitle: "News and Updates from the Graasp Team",
-          blogSidebarCount: "ALL",
+          blogTitle: 'News and Updates from the Graasp Team',
+          blogSidebarCount: 'ALL',
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -82,103 +83,103 @@ const config = {
     ({
       // Replace with your project's social card
       // todo: create a social card
-      image: "img/graasp-social-card.png",
+      image: 'img/graasp-social-card.png',
       navbar: {
-        title: "Docs",
+        title: 'Docs',
         logo: {
-          alt: "Graasp",
-          src: "img/graasp-develop.svg",
-          srcDark: "img/graasp-develop_dark.svg",
+          alt: 'Graasp',
+          src: 'img/graasp-develop.svg',
+          srcDark: 'img/graasp-develop_dark.svg',
         },
         items: [
-          { to: "/blog", label: "Blog", position: "left" },
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
-            type: "doc",
-            docId: "developer/intro",
-            position: "left",
-            label: "Docs",
+            type: 'doc',
+            docId: 'developer/intro',
+            position: 'left',
+            label: 'Docs',
           },
           {
-            type: "doc",
-            docId: "user/intro",
-            position: "left",
-            label: "Guides",
+            type: 'doc',
+            docId: 'user/intro',
+            position: 'left',
+            label: 'Guides',
           },
           {
-            href: "https://graasp.github.io/docs/blog/rss.xml",
-            position: "right",
-            label: "RSS",
+            href: 'https://graasp.github.io/docs/blog/rss.xml',
+            position: 'right',
+            label: 'RSS',
           },
           {
-            href: "https://github.com/graasp/docs",
-            position: "right",
-            label: "Github",
+            href: 'https://github.com/graasp/docs',
+            position: 'right',
+            label: 'Github',
           },
           {
-            type: "localeDropdown",
-            position: "right",
+            type: 'localeDropdown',
+            position: 'right',
           },
         ],
       },
       footer: {
-        style: "dark",
+        style: 'dark',
         links: [
           {
-            title: "Docs",
+            title: 'Docs',
             items: [
               {
-                label: "User Tutorials",
-                to: "user/intro",
+                label: 'User Tutorials',
+                to: 'user/intro',
               },
               {
-                label: "Developer",
-                to: "developer/intro",
+                label: 'Developer',
+                to: 'developer/intro',
               },
               {
-                label: "App Development",
-                to: "/developer/apps/",
+                label: 'App Development',
+                to: '/developer/apps/',
               },
               {
-                label: "Troubleshooting",
-                to: "/developer/troubleshooting/",
+                label: 'Troubleshooting',
+                to: '/developer/troubleshooting/',
               },
             ],
           },
           {
-            title: "Graasp",
+            title: 'Graasp',
             items: [
               {
-                label: "Contact",
-                href: "mailto:contact@graasp.org",
+                label: 'Contact',
+                href: 'mailto:contact@graasp.org',
               },
               {
-                label: "Website",
-                href: "https://graasp.org",
+                label: 'Website',
+                href: 'https://graasp.org',
               },
               {
-                label: "Association",
-                href: "https://association.graasp.org",
+                label: 'Association',
+                href: 'https://association.graasp.org',
               },
               {
-                label: "Library",
-                href: "https://library.graasp.org",
+                label: 'Library',
+                href: 'https://library.graasp.org',
               },
             ],
           },
           {
-            title: "More",
+            title: 'More',
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: 'Blog',
+                to: '/blog',
               },
               {
-                label: "GitHub",
-                href: "https://github.com/graasp",
+                label: 'GitHub',
+                href: 'https://github.com/graasp',
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/graasp",
+                label: 'Twitter',
+                href: 'https://twitter.com/graasp',
               },
             ],
           },
@@ -194,27 +195,27 @@ const config = {
   plugins: [
     async function myPlugin(context, options) {
       return {
-        name: "docusaurus-tailwindcss",
+        name: 'docusaurus-tailwindcss',
         configurePostCss(postcssOptions) {
           // Appends TailwindCSS and AutoPrefixer.
-          postcssOptions.plugins.push(require("tailwindcss"));
-          postcssOptions.plugins.push(require("autoprefixer"));
+          postcssOptions.plugins.push(require('tailwindcss'));
+          postcssOptions.plugins.push(require('autoprefixer'));
           return postcssOptions;
         },
       };
     },
     [
-      "@dipakparmar/docusaurus-plugin-umami",
+      '@dipakparmar/docusaurus-plugin-umami',
       /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
       ({
         websiteID: process.env.UMAMI_WEBSITE_ID, // Required
-        analyticsDomain: "umami.graasp.org", // Required
+        analyticsDomain: 'umami.graasp.org', // Required
         // scriptName: "", // Optional
-        dataHostURL: "https://umami.graasp.org", // Optional
+        dataHostURL: 'https://umami.graasp.org', // Optional
         dataAutoTrack: true, // Optional
         dataDoNotTrack: true, // Optional
         dataCache: true, // Optional
-        dataDomains: "graasp.github.io", // comma separated list of domains, *Recommended*
+        dataDomains: 'graasp.github.io', // comma separated list of domains, *Recommended*
       }),
     ],
   ],
