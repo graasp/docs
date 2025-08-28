@@ -17,8 +17,8 @@ Before copying and reusing a capsule, it’s important to check the Creative Com
 
 ![Copy Button](library_copy_button.png)
 
-2. You will be redirected to Builder. If you are logged out, a warning will be asked to login.
+2. You will be redirected to Builder. If you are logged out, a message will ask you to log in.
 
 ![Copy warning logged out](copy_logged_out.png)
 
-3. Once logged in, you can select where you want to copy this capsule. Note that it can take a few instants before everything as been copied depending on the size of the capsule.
+3. Once logged in, you can select where you want to copy this capsule. Note that it can take a few instants before everything has been copied depending on the size of the capsule.
