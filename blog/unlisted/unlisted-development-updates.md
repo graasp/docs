@@ -1,5 +1,5 @@
 ---
-title: Staging Updates
+title: Development Updates
 description: Updates to the Graasp platform
 date: 2025-07-17
 unlisted: true
@@ -7,11 +7,11 @@ authors:
   - graasp
 ---
 
-Below are the latest changes deployed on [Graasp Staging](https://builder.stage.graasp.org).
+Below are the latest changes deployed on [Graasp Development](https://builder.dev.graasp.org).
 
 :::warning[Important notes]
 
-- You might need to create a new account on [the staging environment](https://auth.stage.graasp.org) since the staging environment uses a different database as production's.
+- You might need to create a new account on [the development environment](https://auth.dev.graasp.org) since the development environment uses a different database as production's.
 - Use a different browser or an incognito session to prevent cookie collision.
 
 :::
