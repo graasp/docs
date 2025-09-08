@@ -33,9 +33,9 @@ Pages are interactive, rich-text documents. Unlike standard items, Pages offer f
 - **Bold**, _Italic_, **_Underline_**, Strikethrough
 - Paragraph alignment (left, center, right, justify)
 
-<!-- ### 🧾 Rich Content Structure
+### 🧾 Rich Content Structure
 
-Coming soon -->
+- Links as card, embed or text
 
 ### 🤝 Real-Time Collaboration
 
