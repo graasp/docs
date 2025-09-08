@@ -48,10 +48,11 @@ Pages support **real-time collaborative editing** via [Yjs](https://yjs.dev/). M
 To try Pages while in beta:
 
 1. Go to the **Builder**.
-2. Click on the **New folder** button.
-3. Click **three times** on the folder title ("Create a folder").
-4. A new button will appear: **"Create page"**.
-5. Click it to create and open your Page.
+1. Go inside a folder.
+1. Click on the **New folder** button.
+1. Click **three times** on the folder title ("Create a folder").
+1. A new button will appear: **"Create page"**.
+1. Click it to create and open your Page.
 
 :::warning[Beta Notice]
 Page content might not be saved permanently. Always keep a backup (e.g., paste your text in a regular document item or save it locally).
