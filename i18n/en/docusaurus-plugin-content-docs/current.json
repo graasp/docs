@@ -31,6 +31,10 @@
     "message": "▶️ Player",
     "description": "The label for category player in sidebar userSidebar"
   },
+  "sidebar.userSidebar.category.builder": {
+    "message": "🛠️ Builder",
+    "description": "The label for category builder in sidebar userSidebar"
+  },
   "sidebar.userSidebar.category.library": {
     "message": "📚 Library",
     "description": "The label for category library in sidebar userSidebar"
