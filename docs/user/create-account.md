@@ -2,14 +2,34 @@
 sidebar_position: 5
 ---
 
+# Getting Started
 
-# Creating a Graasp Account
+This document we will guide you through your first steps with Graasp. It will show you how to:
 
-You can create a Graasp account by going to [the registration form](https://auth.graasp.org/register)
+- [ ] create an account
+- [ ] create your first resource
+- [ ] view and interact with your resource
+- [ ] share your resource with others
+- [ ] find resources made by others
 
-You will need to provide a name and an email.
-You will receive an email with a link to login to the platform.
+It should take no more than **45 minutes** to complete.
 
-And voilà, you now have a Graasp account that you can use to create, publish and consume content.
+## Creating an account
 
-We are happy to have you on board.
+You will need a Graasp account to create and publish content.
+
+Register an account:
+
+1. Go to [the registration form](https://graasp.org/auth/register)
+2. Enter your name and email.
+3. Choose if you would like to allow data collection for educational purposes. Learn more about [data collection](./account/data-collection).
+4. Accept the terms and conditions and validate.
+5. Click the link in the email that was just sent to you. Check the spam folder and double check the email-address on the page. The email may take a few minutes to arrive.
+
+You should now see a page titled "My Graasp". This is your personal space. The resources you create and the resources shared with you by other users will be shown here.
+
+## Creating content
+
+## Sharing content
+
+## Finding content
