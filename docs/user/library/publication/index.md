@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Publish to Graasp Library
 
 Collaboration is the cornerstone of Graasp Library, where educators and professionals come together to share, co-create and learn. By fostering a vibrant community around a shared library of resources, Graasp enables educators to access, adapt and develop collective knowledge. This shared platform allows to focus on innovation rather than reinventing the wheel, ultimately improving students' learning experiences.
