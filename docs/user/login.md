@@ -12,7 +12,7 @@ You can log in to Graasp using your email address. This method will send you an 
 
 **How it works:**
 
-1. Go to the Graasp login page.
+1. Go to the Graasp [login page](https://graasp.org/auth/login).
 2. Enter the email address associated with your Graasp account.
 3. Click **Receive a link to log in**.
 4. You will receive a **magic link** in your inbox.
@@ -21,8 +21,8 @@ You can log in to Graasp using your email address. This method will send you an 
 **Notes:**
 
 - The magic link is valid for a limited time for security reasons.
-- If you don’t receive the email, check your spam folder or verify that your email address is correct.
-- Some institutional email systems may block automated messages—contact your administrator if needed.
+- If you don’t receive the email, check your spam folder and verify that your email address is correct and has no typos.
+- Some institutional email systems may block automated messages. Contact your administrator if needed.
 
 ## With Password {#login-password}
 
@@ -30,7 +30,7 @@ If you previously set up a password to your account, you can log in using your e
 
 **Steps to log in:**
 
-1. Go to the Graasp login page.
+1. Go to the Graasp [login page](https://graasp.org/auth/login).
 2. Enter your **email address** and **password**.
 3. Click **Log in**.
 
