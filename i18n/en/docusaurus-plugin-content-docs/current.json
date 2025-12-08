@@ -39,6 +39,10 @@
     "message": "📚 Library",
     "description": "The label for category library in sidebar userSidebar"
   },
+  "sidebar.userSidebar.category.apps": {
+    "message": "🧩 Apps",
+    "description": "The label for category apps in sidebar userSidebar"
+  },
   "sidebar.userSidebar.category.advanced": {
     "message": "💪 Advanced",
     "description": "The label for category advanced in sidebar userSidebar"
