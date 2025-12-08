@@ -21,7 +21,7 @@ Our chatbot has received a full layout redesign along with powerful new features
 - Provide **conversation suggestions** to guide users
 - Overall cleaner and more intuitive interface
 
-Want to learn more? Check out the full documentation [here](/docs/user/apps/chatbot).
+Want to learn more? Check out the full documentation [here](/user/apps/chatbot).
 
 ![chatbot conversation](../docs/user/apps/chatbot.png)
 
