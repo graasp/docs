@@ -18,7 +18,7 @@ You can opt out of data collection at any time in your account settings. No data
 
 You can request a complete data deletion by contacting us via email: [data-management@graasp.org](mailto:data-management@graasp.org?subject=Data%20Deletion).
 
-You can [delete your account](./delete-account). This will anonymise your data and delete your traces inside our system to the notable exception of:
+You can delete your account. This will anonymise your data and delete your traces inside our system to the notable exception of:
 
 - logs inside our system (deleted regularly, but not immediately after your account deletion)
 - analytics data, as explained in [the data-collection purpose section](#data-collection-purpose)

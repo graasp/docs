@@ -1,6 +1,5 @@
 ---
 title: 🕹️ Graasp Apps
-
 ---
 
 The Graasp Platform supports interactive elements that are called `apps`. They are essentially single page web applications that can interact with the Graasp API (Application Programming Interface) allowing them to retrieve, and persist data as well as adapt what is show to users depending on the context.
