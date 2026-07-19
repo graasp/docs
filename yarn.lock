@@ -4448,9 +4448,9 @@ __metadata:
   linkType: hard
 
 "@fontsource-variable/nunito@npm:^5.1.1":
-  version: 5.1.1
-  resolution: "@fontsource-variable/nunito@npm:5.1.1"
-  checksum: 10/ff9868a6b8c6aed8a75b65dda6e0957e3eb12cb4c0364bd0ef6220cfef58ff6996db864945abf89bfd21c88bad45d46d7f0cb4f5450d435b9086b5f81854fce7
+  version: 5.3.0
+  resolution: "@fontsource-variable/nunito@npm:5.3.0"
+  checksum: 10/a5f4f8e312e88b82a5bffbf11951d3263b1a186ce148b5c77f507d425cffb2d80930e877a56d3a83619c2249838a442edcfc900197d015593a11b85016afb82b
   languageName: node
   linkType: hard
 
